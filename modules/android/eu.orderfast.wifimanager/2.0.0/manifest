@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 2.0.0
+apiversion: 3
+architectures: armeabi-v7a x86
+description: wifimanager
+author: OrderFAST
+license: per seat
+copyright: Copyright (c) 2014 by OrderFAST
+
+# these should not be edited
+name: wifimanager
+moduleid: eu.orderfast.wifimanager
+guid: babb5473-f6ab-4941-b0c1-cbb2384bd052
+platform: android
+minsdk: 6.0.3.GA

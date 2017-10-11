@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>com.bd.commonJS</id>
+    <name>commonJSApp</name>
+    <version>1.0</version>
+    <publisher>user</publisher>
+    <url>undefined</url>
+    <description>undefined</description>
+    <copyright>2017 by user</copyright>
+    <icon>appicon.png</icon>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>b66febe4-381b-48b7-9444-7ebabacda635</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <property name="run-on-main-thread" type="bool">true</property>
+    <ios>
+        <enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
+        <use-app-thinning>true</use-app-thinning>
+        <plist>
+            <dict>
+                <key>NSLocationAlwaysUsageDescription</key>
+                <string>
+                    Specify the reason for accessing the user's location information.
+                    This appears in the alert dialog when asking the user for permission to
+                    access their location.
+                </string>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
+                </array>
+                <key>NSPhotoLibraryUsageDescription</key>
+                <string>Can we save to your library?</string>
+                <key>NSCameraUsageDescription</key>
+                <string>Can we use your camera?</string>
+                <key>NSAppleMusicUsageDescription</key>
+                <string>Can we open your library?</string>
+                <key>NSMicrophoneUsageDescription</key>
+                <string>Can we use your microphone?</string>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+                <key>CFBundleURLTypes</key>
+                <array>
+                    <dict>
+                        <key>CFBundleTypeRole</key>
+                        <string>Editor</string>
+                        <key>CFBundleURLName</key>
+                        <string>com.bd.testall</string>
+                        <key>CFBundleURLSchemes</key>
+                        <array>
+                            <string>touchtest-commonjsapp</string>
+                        </array>
+                    </dict>
+                </array>
+                <key>NSAppTransportSecurity</key>
+                <dict>
+                    <key>NSAllowsArbitraryLoads</key>
+                    <true/>
+                </dict>
+                <key>NSAppTransportSecurity</key>
+                <dict>
+                    <key>NSAllowsArbitraryLoads</key>
+                    <true/>
+                    <key>NSExceptionDomains</key>
+                    <dict>
+                        <!-- Loosen security measure for www.foo.com domain -->
+                        <key>www.foo.com</key>
+                        <dict>
+                            <!-- Set TLS v1.0 as the minimum TLS version -->
+                            <key>NSExceptionMinimumTLSVersion</key>
+                            <string>TLSv1.0</string>
+                            <!-- Can use other ciphers besides forward secrecy ciphers -->
+                            <key>NSExceptionRequiresForwardSecrecy</key>
+                            <false/>
+                            <!-- Allow HTTP connections -->
+                            <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                            <true/>
+                        </dict>
+                    </dict>
+                </dict>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest>
+            <application>
+                <activity
+                    android:configChanges="keyboardHidden|orientation"
+                    android:label="commonJSApp"
+                    android:name=".CommonjsappActivity" android:theme="@style/Theme.Titanium">
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN"/>
+                        <category android:name="android.intent.category.LAUNCHER"/>
+                    </intent-filter>
+                    <intent-filter>
+                        <data android:scheme="touchtest-commonjsapp"/>
+                        <action android:name="android.intent.action.VIEW"/>
+                        <category android:name="android.intent.category.BROWSABLE"/>
+                        <category android:name="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+                    <intent-filter>
+                        <action android:name="android.intent.action.GET_CONTENT"/>
+                        <category android:name="android.intent.category.DEFAULT"/>
+                        <category android:name="android.intent.category.OPENABLE"/>
+                        <data android:mimeType="*/*"/>
+                    </intent-filter>
+                </activity>
+                <service android:enabled="true" android:exported="false" android:name="com.soasta.android.touchtest.TouchTestService"/>
+            </application>
+            <services>
+                <service type="interval" url="bgservice.js"/>
+            </services>
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+            <uses-permission android:name="android.permission.WAKE_LOCK"/>
+            <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+        </manifest>
+    </android>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs">ti.cloud</module>
+        <module platform="android" version="2.1.0">ti.touchid</module>
+        <module platform="iphone" version="2.1.2">ti.touchid</module>
+        <module platform="android">eu.orderfast.wifimanager</module>
+        <module platform="iphone">ti.map</module>
+        <module platform="android">ti.map</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="ipad">true</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">true</target>
+    </deployment-targets>
+    <sdk-version>6.2.2.GA</sdk-version>
+    <property name="appc-app-id" type="string">58763e8d73f343cf73fa997d</property>
+    <property name="com-appcelerator-apm-id" type="string">f9a248ff6ed949b68dea237cad9d5d9f00555300</property>
+    <property name="acs-authbase-url-development" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-development" type="string">fjeNTi0skZspqKYMFpYldzmzDknR83e9</property>
+    <property name="acs-oauth-key-development" type="string">VPXJsPsD0riQzGghvjcWmaRWhmy7Fwa6</property>
+    <property name="acs-api-key-development" type="string">yWZdWxBwHETRec2v4lBJxmpfUbtWiuC8</property>
+    <property name="acs-username-development" type="string">appc_app_user_dev</property>
+    <property name="acs-password-development" type="string">WqbhyJ4eyNrHszM80W</property>
+    <property name="acs-authbase-url-production" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-production" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-production" type="string">aamlYJRtWqeX05IVcOj9QPlhEDwNMmzF</property>
+    <property name="acs-oauth-key-production" type="string">S9Vni3hxONZ05ckgCmG77SGGhyxyqz4O</property>
+    <property name="acs-api-key-production" type="string">7vH1jCH1u6FJkhLR6Irxk3FJGC8mL0dr</property>
+    <property name="acs-username-production" type="string">appc_app_user</property>
+    <property name="acs-password-production" type="string">nnFxFMyn8lzc4gB0uE</property>
+    <property name="appc-org-id" type="string">100000208</property>
+    <property name="appc-creator-user-id" type="string">f4e06b94-4ca5-4024-afa5-fb7f70fa302f</property>
+    <property name="com-soasta-touchtest-version" type="string">8244.293</property>
+    <plugins>
+        <plugin>com.soasta.touchtest.android</plugin>
+        <plugin>hyperloop</plugin>
+    </plugins>
+    <property name="com-soasta-touchtest-ios-appId" type="string">550528</property>
+</ti:app>

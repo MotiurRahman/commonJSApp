@@ -1,0 +1,8 @@
+// this is a generated file - DO NOT EDIT
+
+TI_TOUCHID_TI_MODULE_VERSION=2.1.2
+TI_TOUCHID_OTHER_LDFLAGS=$(inherited) -framework LocalAuthentication
+TI_MAP_TI_MODULE_VERSION=2.12.1
+TI_MAP_OTHER_LDFLAGS=$(inherited) -weak_framework MapKit
+TI_MODULE_VERSION=$(inherited) $(TI_TOUCHID_TI_MODULE_VERSION) $(TI_MAP_TI_MODULE_VERSION) 
+OTHER_LDFLAGS=$(inherited) $(TI_TOUCHID_OTHER_LDFLAGS) $(TI_MAP_OTHER_LDFLAGS) 

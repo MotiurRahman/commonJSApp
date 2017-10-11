@@ -1,0 +1,465 @@
+
+10/11/2017, 11:49:14 AM
+
+Operating System
+  Name                        = Mac OS X
+  Version                     = 10.12.6
+  Architecture                = 64bit
+  # CPUs                      = 4
+  Memory                      = 8589934592
+
+Node.js
+  Node.js Version             = 6.11.2
+  npm Version                 = 3.10.10
+
+Titanium CLI
+  CLI Version                 = 5.0.14
+
+Titanium SDK
+  SDK Version                 = 6.2.2.GA
+  SDK Path                    = /Users/user/Library/Application Support/Titanium/mobilesdk/osx/6.2.2.GA
+  Target Platform             = iphone
+
+Command
+  /Users/user/.nvm/versions/node/v6.11.2/bin/node /Users/user/.appcelerator/install/6.2.4/package/node_modules/titanium/lib/titanium.js build --platform ios --log-level trace --sdk 6.2.2.GA --project-dir /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp --target simulator --ios-version 11.0 --device-family universal --device-id DC984789-FB36-47D5-8E35-3099369BC0C8 --skip-js-minify --liveview --deploy-type development --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 52459 --config-file /var/folders/vg/jyqkndw17s9317h6yzz65sdr0000gn/T/build-1507700931208.json --no-banner --project-dir /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp
+
+[TRACE]  [ioslib] Validating iOS Simulator UDID DC984789-FB36-47D5-8E35-3099369BC0C8
+[TRACE]  [ioslib] Found iOS Simulator UDID DC984789-FB36-47D5-8E35-3099369BC0C8
+[TRACE]  [ioslib] Selected iOS Simulator: iPhone 6
+[TRACE]  [ioslib]   UDID    = DC984789-FB36-47D5-8E35-3099369BC0C8
+[TRACE]  [ioslib]   iOS     = 11.0
+[TRACE]  [ioslib] Autoselected Xcode: 9.0
+[DEBUG]  Detecting modules in /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/modules
+[DEBUG]  Detected android module: com.soasta.touchtest 2.0 @ /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/modules/android/com.soasta.touchtest/2.0
+[DEBUG]  Detected android module: eu.orderfast.wifimanager 2.0.0 @ /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/modules/android/eu.orderfast.wifimanager/2.0.0
+[DEBUG]  Detected iphone module: com.soasta.touchtest 2.0 @ /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/modules/iphone/com.soasta.touchtest/2.0
+[DEBUG]  Detected iphone module: ti.googlesignin 1.1.5 @ /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/modules/iphone/ti.googlesignin/1.1.5
+[DEBUG]  Detected iphone module: ti.imagefactory 1.3.0 @ /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/modules/iphone/ti.imagefactory/1.3.0
+[DEBUG]  Detecting modules in /Users/user/Library/Application Support/Titanium/modules
+[DEBUG]  Detected android module: com.appcelerator.apm 2.0.0 @ /Users/user/Library/Application Support/Titanium/modules/android/com.appcelerator.apm/2.0.0
+[DEBUG]  Detected android module: facebook 5.2.0 @ /Users/user/Library/Application Support/Titanium/modules/android/facebook/5.2.0
+[DEBUG]  Detected android module: facebook 6.0.1 @ /Users/user/Library/Application Support/Titanium/modules/android/facebook/6.0.1
+[DEBUG]  Detected android module: facebook 6.1.0 @ /Users/user/Library/Application Support/Titanium/modules/android/facebook/6.1.0
+[DEBUG]  Detected android module: facebook 6.2.0 @ /Users/user/Library/Application Support/Titanium/modules/android/facebook/6.2.0
+[DEBUG]  Detected android module: hyperloop 2.1.3 @ /Users/user/Library/Application Support/Titanium/modules/android/hyperloop/2.1.3
+[DEBUG]  Detected android module: ti.admob 2.1.5 @ /Users/user/Library/Application Support/Titanium/modules/android/ti.admob/2.1.5
+[DEBUG]  Detected android module: ti.admob 3.0.0 @ /Users/user/Library/Application Support/Titanium/modules/android/ti.admob/3.0.0
+[DEBUG]  Detected android module: ti.admob 3.0.1 @ /Users/user/Library/Application Support/Titanium/modules/android/ti.admob/3.0.1
+[DEBUG]  Detected android module: ti.admob 3.0.2 @ /Users/user/Library/Application Support/Titanium/modules/android/ti.admob/3.0.2
+[DEBUG]  Detected android module: ti.cloudpush 3.4.1 @ /Users/user/Library/Application Support/Titanium/modules/android/ti.cloudpush/3.4.1
+[DEBUG]  Detected android module: ti.cloudpush 4.0.3 @ /Users/user/Library/Application Support/Titanium/modules/android/ti.cloudpush/4.0.3
+[DEBUG]  Detected android module: ti.map 2.3.10 @ /Users/user/Library/Application Support/Titanium/modules/android/ti.map/2.3.10
+[DEBUG]  Detected android module: ti.map 3.0.1 @ /Users/user/Library/Application Support/Titanium/modules/android/ti.map/3.0.1
+[DEBUG]  Detected android module: ti.map 3.3.0 @ /Users/user/Library/Application Support/Titanium/modules/android/ti.map/3.3.0
+[DEBUG]  Detected android module: ti.map 3.3.1 @ /Users/user/Library/Application Support/Titanium/modules/android/ti.map/3.3.1
+[DEBUG]  Detected android module: ti.touchid 1.0.0 @ /Users/user/Library/Application Support/Titanium/modules/android/ti.touchid/1.0.0
+[DEBUG]  Detected android module: ti.touchid 2.0.1 @ /Users/user/Library/Application Support/Titanium/modules/android/ti.touchid/2.0.1
+[DEBUG]  Detected android module: ti.touchid 2.1.0 @ /Users/user/Library/Application Support/Titanium/modules/android/ti.touchid/2.1.0
+[DEBUG]  Detected android module: ti.touchid 2.2.0 @ /Users/user/Library/Application Support/Titanium/modules/android/ti.touchid/2.2.0
+[DEBUG]  Detected commonjs module: ti.cloud 3.2.11 @ /Users/user/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.11
+[DEBUG]  Detected iphone module: com.appcelerator.apm 2.0.0 @ /Users/user/Library/Application Support/Titanium/modules/iphone/com.appcelerator.apm/2.0.0
+[DEBUG]  Detected iphone module: com.appcelerator.urlSession 2.0.0 @ /Users/user/Library/Application Support/Titanium/modules/iphone/com.appcelerator.urlSession/2.0.0
+[DEBUG]  Detected iphone module: com.appcelerator.urlSession 2.1.0 @ /Users/user/Library/Application Support/Titanium/modules/iphone/com.appcelerator.urlSession/2.1.0
+[DEBUG]  Detected iphone module: com.isat.test 1.0.0 @ /Users/user/Library/Application Support/Titanium/modules/iphone/com.isat.test/1.0.0
+[DEBUG]  Detected iphone module: facebook 5.2.7 @ /Users/user/Library/Application Support/Titanium/modules/iphone/facebook/5.2.7
+[DEBUG]  Detected iphone module: facebook 5.2.8 @ /Users/user/Library/Application Support/Titanium/modules/iphone/facebook/5.2.8
+[DEBUG]  Detected iphone module: facebook 5.2.9 @ /Users/user/Library/Application Support/Titanium/modules/iphone/facebook/5.2.9
+[DEBUG]  Detected iphone module: facebook 5.4.0 @ /Users/user/Library/Application Support/Titanium/modules/iphone/facebook/5.4.0
+[DEBUG]  Detected iphone module: hyperloop 2.1.3 @ /Users/user/Library/Application Support/Titanium/modules/iphone/hyperloop/2.1.3
+[DEBUG]  Detected iphone module: ti.admob 2.1.1 @ /Users/user/Library/Application Support/Titanium/modules/iphone/ti.admob/2.1.1
+[DEBUG]  Detected iphone module: ti.coremotion 2.0.0 @ /Users/user/Library/Application Support/Titanium/modules/iphone/ti.coremotion/2.0.0
+[DEBUG]  Detected iphone module: ti.coremotion 2.0.1 @ /Users/user/Library/Application Support/Titanium/modules/iphone/ti.coremotion/2.0.1
+[DEBUG]  Detected iphone module: ti.map 2.12.1 @ /Users/user/Library/Application Support/Titanium/modules/iphone/ti.map/2.12.1
+[DEBUG]  Detected iphone module: ti.map 2.7.1 @ /Users/user/Library/Application Support/Titanium/modules/iphone/ti.map/2.7.1
+[DEBUG]  Detected iphone module: ti.map 2.8.0 @ /Users/user/Library/Application Support/Titanium/modules/iphone/ti.map/2.8.0
+[DEBUG]  Detected iphone module: ti.map 2.8.2 @ /Users/user/Library/Application Support/Titanium/modules/iphone/ti.map/2.8.2
+[DEBUG]  Detected iphone module: ti.map 2.9.0 @ /Users/user/Library/Application Support/Titanium/modules/iphone/ti.map/2.9.0
+[DEBUG]  Detected iphone module: ti.safaridialog 1.0.5 @ /Users/user/Library/Application Support/Titanium/modules/iphone/ti.safaridialog/1.0.5
+[DEBUG]  Detected iphone module: ti.safaridialog 1.1.1 @ /Users/user/Library/Application Support/Titanium/modules/iphone/ti.safaridialog/1.1.1
+[DEBUG]  Detected iphone module: ti.touchid 1.2.2 @ /Users/user/Library/Application Support/Titanium/modules/iphone/ti.touchid/1.2.2
+[DEBUG]  Detected iphone module: ti.touchid 2.1.0 @ /Users/user/Library/Application Support/Titanium/modules/iphone/ti.touchid/2.1.0
+[DEBUG]  Detected iphone module: ti.touchid 2.1.2 @ /Users/user/Library/Application Support/Titanium/modules/iphone/ti.touchid/2.1.2
+[DEBUG]  Detected windows module: hyperloop 2.1.0 @ /Users/user/Library/Application Support/Titanium/modules/windows/hyperloop/2.1.0
+[DEBUG]  Detected windows module: hyperloop 2.1.1 @ /Users/user/Library/Application Support/Titanium/modules/windows/hyperloop/2.1.1
+[DEBUG]  Detected windows module: hyperloop 2.1.2 @ /Users/user/Library/Application Support/Titanium/modules/windows/hyperloop/2.1.2
+[DEBUG]  Detected windows module: hyperloop 2.1.3 @ /Users/user/Library/Application Support/Titanium/modules/windows/hyperloop/2.1.3
+[DEBUG]  Looking for Titanium module id=ti.cloud version=latest platform=commonjs deploy-type=development
+[INFO]   Found Titanium module id=ti.cloud version=3.2.11 platform=commonjs deploy-type=development path=/Users/user/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.11
+[DEBUG]  Looking for Titanium module id=ti.touchid version=2.1.2 platform=iphone deploy-type=development
+[INFO]   Found Titanium module id=ti.touchid version=2.1.2 platform=iphone deploy-type=development path=/Users/user/Library/Application Support/Titanium/modules/iphone/ti.touchid/2.1.2
+[DEBUG]  Looking for Titanium module id=ti.map version=latest platform=iphone deploy-type=development
+[INFO]   Found Titanium module id=ti.map version=2.9.0 platform=iphone deploy-type=development path=/Users/user/Library/Application Support/Titanium/modules/iphone/ti.map/2.9.0
+[INFO]   Found better matching module id=ti.map version=latest platform=ios,iphone deploy-type=development path=/Users/user/Library/Application Support/Titanium/modules/iphone/ti.map/2.12.1
+[DEBUG]  Detecting plugins in /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/plugins
+[DEBUG]  Detected plugin: com.soasta.touchtest.android @ /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/plugins/com.soasta.touchtest.android
+[DEBUG]  Detecting plugins in /Users/user/Library/Application Support/Titanium/plugins
+[DEBUG]  Detected plugin: com.appcelerator.test @ /Users/user/Library/Application Support/Titanium/plugins/com.appcelerator.test
+[DEBUG]  Detected plugin: hyperloop 2.1.3 @ /Users/user/Library/Application Support/Titanium/plugins/hyperloop/2.1.3
+[DEBUG]  Looking for Titanium plugin id=com.soasta.touchtest.android version=latest
+[INFO]   Found Titanium plugin id=com.soasta.touchtest.android version=latest 
+[DEBUG]  Looking for Titanium plugin id=hyperloop version=latest
+[INFO]   Found Titanium plugin id=hyperloop version=latest 
+[TRACE]  Snapshotting build directory
+[DEBUG]  Checking if log server port 25760 is available
+[DEBUG]  Log server port 25760 is available
+[DEBUG]  Titanium SDK iOS directory: /Users/user/Library/Application Support/Titanium/mobilesdk/osx/6.2.2.GA/iphone
+[INFO]   Deploy type: development
+[INFO]   Building for target: simulator
+[INFO]   Building using iOS SDK: 11.0
+[INFO]   Building for iOS Simulator: iPhone 6
+[DEBUG]  UDID: DC984789-FB36-47D5-8E35-3099369BC0C8
+[DEBUG]  Simulator type: iphone
+[DEBUG]  Simulator version: 11.0
+[INFO]   Building for device family: universal
+[DEBUG]  Setting Xcode target to Debug
+[DEBUG]  Setting Xcode build OS to iphonesimulator
+[DEBUG]  Xcode installation: /Applications/Xcode.app/Contents/Developer
+[DEBUG]  iOS WWDR certificate: installed
+[INFO]   Minimum iOS version: 8.0
+[INFO]   Logging enabled on port 25760
+[INFO]   Debugging disabled
+[INFO]   Profiler disabled
+[INFO]   Set to copy files instead of symlinking
+[INFO]   Initializing the build directory
+[TRACE]  TouchTest : Plugin is only for android, skipping...
+[TRACE]  Starting third-party framework detection
+[TRACE]  Scanning /Users/user/Library/Application Support/Titanium/modules/iphone/ti.touchid/2.1.2/platform for frameworks
+[TRACE]  Scanning /Users/user/Library/Application Support/Titanium/modules/iphone/ti.map/2.12.1/platform for frameworks
+[TRACE]  offline build file /var/folders/vg/jyqkndw17s9317h6yzz65sdr0000gn/T/build-70d51946adaf7562fee67fe314979ce37fe2adc0.json
+[TRACE]  online 1
+[TRACE]  sending request {"json":{"username":"morahman@axway.com","session":"f5679d248e782e9de8723764b3cca60ce53a8a1a IUdL4cGLS6jvN1O58aoInew7Me2iCeKuExBszOBi0wM0Tk4Vc9wrBOXfwdfSQw/duVsCmdhkoPN/T1lxOcYf7MTknIok3snstP2tW+7cDWSPjR0XMKTNfMbhhAjxayQlNhZSzL7m9vFRYvhwGNkgZjSMgjVXBrcxWW/It8LRUb8J4e7eH5SZlG1p9Vw6BpAB4iOp5nsmmpsEHbg1Nx03Xq708lJHo/9T9L3hk9yAUjml/S3EiY/X/lbGcqPd6dAaEXeWpyXZh5KskckwbYSFEd7BknbJHdSUE55Ji+Ho7kUhRGnSwFV42VdWhSw5PI6QSiytf2m3PxBkVu0/PVB4TprzW/BoX8+nQp6J3SbzIRDU/IyfWrppahtsW37xC4MRFh3ZzFIiEub3UfqWWyod4EzkgIyfzqO5jeChynQmxNpvENDeI0vme11X4grnsZWDa8xE6mWJdQcLo0XuJ3f+XTLkR9lkDwNnbt3l0AYvNWHFWLuXLFfrmUtZUHagPSQbvvmBWtEYJXQFbyZsdjFdWFUJ6klcYkHvzBDczb7Nd8XKXvm2LqLKY3V1qw1dbV3ujDXIWVueEKE3rgFsy+vdZlqRXdI0VlPjVlHfdmQVURIbFc8YZP+QY5g1Fklj22pC7JE86BA0wwrMw4FWZBsr25A4GhPXONhrhgp4TU28Lb/uVP2XbDf9SJbdxDpJP85c9yindDoUkR1Dlty7m/LNsw==","ipaddress":"192.168.0.3","fingerprint":"7cbabb78f59b73f186c7e5e782abc4452ffd572e","fingerprint_description":"Mac OSX Serial Number: C1MM8VDKDTY3","guid":"b66febe4-381b-48b7-9444-7ebabacda635","appid":"com.bd.commonJS","name":"commonJSApp","org_id":100000208,"deploytype":"development","tiappxml":"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ti:app \n  xmlns:ti=\"http://ti.appcelerator.org\">\n  <id>com.bd.commonJS</id>\n  <name>commonJSApp</name>\n  <version>1.0</version>\n  <publisher>user</publisher>\n  <url>undefined</url>\n  <description>undefined</description>\n  <copyright>2017 by user</copyright>\n  <icon>appicon.png</icon>\n  <fullscreen>false</fullscreen>\n  <navbar-hidden>false</navbar-hidden>\n  <analytics>true</analytics>\n  <guid>b66febe4-381b-48b7-9444-7ebabacda635</guid>\n  <property name=\"ti.ui.defaultunit\" type=\"string\">dp</property>\n  <property name=\"run-on-main-thread\" type=\"bool\">***</property>\n  <ios>\n    <enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>\n    <use-app-thinning>true</use-app-thinning>\n    <plist>\n      <dict>\n        <key>NSLocationAlwaysUsageDescription</key>\n        <string>\n                    Specify the reason for accessing the user's location information.\n                    This appears in the alert dialog when asking the user for permission to\n                    access their location.\n                </string>\n        <key>UISupportedInterfaceOrientations~iphone</key>\n        <array>\n          <string>UIInterfaceOrientationPortrait</string>\n        </array>\n        <key>UISupportedInterfaceOrientations~ipad</key>\n        <array>\n          <string>UIInterfaceOrientationPortrait</string>\n          <string>UIInterfaceOrientationPortraitUpsideDown</string>\n          <string>UIInterfaceOrientationLandscapeLeft</string>\n          <string>UIInterfaceOrientationLandscapeRight</string>\n        </array>\n        <key>NSPhotoLibraryUsageDescription</key>\n        <string>Can we save to your library?</string>\n        <key>NSCameraUsageDescription</key>\n        <string>Can we use your camera?</string>\n        <key>NSAppleMusicUsageDescription</key>\n        <string>Can we open your library?</string>\n        <key>NSMicrophoneUsageDescription</key>\n        <string>Can we use your microphone?</string>\n        <key>UIRequiresPersistentWiFi</key>\n        <false/>\n        <key>UIPrerenderedIcon</key>\n        <false/>\n        <key>UIStatusBarHidden</key>\n        <false/>\n        <key>UIStatusBarStyle</key>\n        <string>UIStatusBarStyleDefault</string>\n        <key>CFBundleURLTypes</key>\n        <array>\n          <dict>\n            <key>CFBundleTypeRole</key>\n            <string>Editor</string>\n            <key>CFBundleURLName</key>\n            <string>com.bd.testall</string>\n            <key>CFBundleURLSchemes</key>\n            <array>\n              <string>touchtest-commonjsapp</string>\n            </array>\n          </dict>\n        </array>\n        <key>NSAppTransportSecurity</key>\n        <dict>\n          <key>NSAllowsArbitraryLoads</key>\n          <true/>\n        </dict>\n        <key>NSAppTransportSecurity</key>\n        <dict>\n          <key>NSAllowsArbitraryLoads</key>\n          <true/>\n          <key>NSExceptionDomains</key>\n          <dict>\n            <!-- Loosen security measure for www.foo.com domain -->\n            <key>www.foo.com</key>\n            <dict>\n              <!-- Set TLS v1.0 as the minimum TLS version -->\n              <key>NSExceptionMinimumTLSVersion</key>\n              <string>TLSv1.0</string>\n              <!-- Can use other ciphers besides forward secrecy ciphers -->\n              <key>NSExceptionRequiresForwardSecrecy</key>\n              <false/>\n              <!-- Allow HTTP connections -->\n              <key>NSExceptionAllowsInsecureHTTPLoads</key>\n              <true/>\n            </dict>\n          </dict>\n        </dict>\n        <key>UIRequiresPersistentWiFi</key>\n        <false/>\n        <key>UIPrerenderedIcon</key>\n        <false/>\n        <key>UIStatusBarHidden</key>\n        <false/>\n        <key>UIStatusBarStyle</key>\n        <string>UIStatusBarStyleDefault</string>\n      </dict>\n    </plist>\n  </ios>\n  <android \n    xmlns:android=\"http://schemas.android.com/apk/res/android\">\n    <manifest>\n      <application>\n        <activity android:configChanges=\"keyboardHidden|orientation\" android:label=\"commonJSApp\" android:name=\".CommonjsappActivity\" android:theme=\"@style/Theme.Titanium\">\n          <intent-filter>\n            <action android:name=\"android.intent.action.MAIN\"/>\n            <category android:name=\"android.intent.category.LAUNCHER\"/>\n          </intent-filter>\n          <intent-filter>\n            <data android:scheme=\"touchtest-commonjsapp\"/>\n            <action android:name=\"android.intent.action.VIEW\"/>\n            <category android:name=\"android.intent.category.BROWSABLE\"/>\n            <category android:name=\"android.intent.category.DEFAULT\"/>\n          </intent-filter>\n          <intent-filter>\n            <action android:name=\"android.intent.action.GET_CONTENT\"/>\n            <category android:name=\"android.intent.category.DEFAULT\"/>\n            <category android:name=\"android.intent.category.OPENABLE\"/>\n            <data android:mimeType=\"*/*\"/>\n          </intent-filter>\n        </activity>\n        <service android:enabled=\"true\" android:exported=\"false\" android:name=\"com.soasta.android.touchtest.TouchTestService\"/>\n      </application>\n      <services>\n        <service type=\"interval\" url=\"bgservice.js\"/>\n      </services>\n      <uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>\n      <uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>\n      <uses-permission android:name=\"android.permission.WAKE_LOCK\"/>\n      <uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>\n    </manifest>\n  </android>\n  <mobileweb>\n    <precache/>\n    <splash>\n      <enabled>true</enabled>\n      <inline-css-images>true</inline-css-images>\n    </splash>\n    <theme>default</theme>\n  </mobileweb>\n  <modules>\n    <module platform=\"commonjs\">ti.cloud</module>\n    <module platform=\"android\" version=\"2.1.0\">ti.touchid</module>\n    <module platform=\"iphone\" version=\"2.1.2\">ti.touchid</module>\n    <module platform=\"android\">eu.orderfast.wifimanager</module>\n    <module platform=\"iphone\">ti.map</module>\n    <module platform=\"android\">ti.map</module>\n  </modules>\n  <deployment-targets>\n    <target device=\"android\">true</target>\n    <target device=\"ipad\">true</target>\n    <target device=\"iphone\">true</target>\n    <target device=\"mobileweb\">true</target>\n  </deployment-targets>\n  <sdk-version>6.2.2.GA</sdk-version>\n  <property name=\"appc-app-id\" type=\"string\">58763e8d73f343cf73fa997d</property>\n  <property name=\"com-appcelerator-apm-id\" type=\"string\">***</property>\n  <property name=\"acs-authbase-url-development\" type=\"string\">***</property>\n  <property name=\"acs-base-url-development\" type=\"string\">***</property>\n  <property name=\"acs-oauth-secret-development\" type=\"string\">***</property>\n  <property name=\"acs-oauth-key-development\" type=\"string\">***</property>\n  <property name=\"acs-api-key-development\" type=\"string\">***</property>\n  <property name=\"acs-username-development\" type=\"string\">***</property>\n  <property name=\"acs-password-development\" type=\"string\">***</property>\n  <property name=\"acs-authbase-url-production\" type=\"string\">***</property>\n  <property name=\"acs-base-url-production\" type=\"string\">***</property>\n  <property name=\"acs-oauth-secret-production\" type=\"string\">***</property>\n  <property name=\"acs-oauth-key-production\" type=\"string\">***</property>\n  <property name=\"acs-api-key-production\" type=\"string\">***</property>\n  <property name=\"acs-username-production\" type=\"string\">***</property>\n  <property name=\"acs-password-production\" type=\"string\">***</property>\n  <property name=\"appc-org-id\" type=\"string\">100000208</property>\n  <property name=\"appc-creator-user-id\" type=\"string\">f4e06b94-4ca5-4024-afa5-fb7f70fa302f</property>\n  <property name=\"com-soasta-touchtest-version\" type=\"string\">***</property>\n  <plugins>\n    <plugin>com.soasta.touchtest.android</plugin>\n    <plugin>hyperloop</plugin>\n  </plugins>\n  <property name=\"com-soasta-touchtest-ios-appId\" type=\"string\">***</property>\n</ti:app>","modules":[{"id":"ti.cloud","platform":["commonjs"],"deployType":["development"],"modulePath":"/Users/user/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.11","version":"3.2.11","manifest":{"version":"3.2.11","description":"Appcelerator Cloud Services","author":"Dawson Toth, Jeff English, Jon Alter, Paul Lv, Michael Goff, and Pedro Enrique","license":"Appcelerator Commercial License","copyright":"Copyright (c) 2011-2014 by Appcelerator,  Inc.","name":"ti.cloud","moduleid":"ti.cloud","guid":"1056b5d2-2bb5-4339-b930-297637aeec4e","platform":"commonjs","minsdk":"2.1.0"},"native":false,"libFile":"/Users/user/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.11/ti.cloud.js"},{"id":"ti.touchid","platform":["iphone"],"version":"2.1.2","deployType":["development"],"modulePath":"/Users/user/Library/Application Support/Titanium/modules/iphone/ti.touchid/2.1.2","manifest":{"version":"2.1.2","apiversion":"2","architectures":"armv7 arm64 i386 x86_64","description":"TouchId Module","author":"Pedro Enrique, Chee Kiat Ng & Hans Knoechel","license":"Apache License, Version 2.0","copyright":"Copyright (c) 2014-2016 by Appcelerator, Inc.","name":"TouchID","moduleid":"ti.touchid","guid":"0ee4118b-68f9-47c6-8c37-d68778ecb806","platform":"iphone","minsdk":"5.5.1"},"native":true,"libName":"libti.touchid.a","libFile":"/Users/user/Library/Application Support/Titanium/modules/iphone/ti.touchid/2.1.2/libti.touchid.a","hash":"3ab2a214d764d7712a25365afad7a2fc"},{"id":"ti.map","platform":["iphone"],"deployType":["development"],"modulePath":"/Users/user/Library/Application Support/Titanium/modules/iphone/ti.map/2.12.1","version":"2.12.1","manifest":{"version":"2.12.1","apiversion":"2","architectures":"armv7 arm64 i386 x86_64","description":"External version of Map module","author":"Jeff Haynie, Jon Alter, Pedro Enrique, Hans Knöchel, Vijay Singh","license":"Apache Public License v2","copyright":"Copyright (c) 2013-Present by Axway Appcelerator","name":"map","moduleid":"ti.map","guid":"fee93b77-8eb3-418c-8f04-013664c4af83","platform":"iphone","minsdk":"5.1.0"},"native":true,"libName":"libti.map.a","libFile":"/Users/user/Library/Application Support/Titanium/modules/iphone/ti.map/2.12.1/libti.map.a","hash":"c9d7a2bced1ec0b56ca78bbfc091bf50"}]},"gzip":true,"followAllRedirects":true,"url":"https://platform.appcelerator.com/api/v1/auth/build-verify"}
+[TRACE]  result from /build-verify=> {"key":"gSNl4CHckoT/lYgFETuDmw==","pepper":"MiYBS/1h8fTYx/q0kPosrg==","hmacKey":"73rCE8/+7kmyzxFARZSYzw==","o":100000208,"u":"f4e06b94-4ca5-4024-afa5-fb7f70fa302f","p":"enterprise","i":"59ddb0e0e1f3bf79749d1dd7","success":true}, err=null
+[INFO]   JavaScript files need to be encrypted
+[INFO]   Creating Xcode project
+[TRACE]  Removing pre-compile phase
+[TRACE]  Adding 2 native module libraries
+[TRACE]  No extensions to add
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/commonJSApp.xcodeproj/project.pbxproj
+[INFO]   Creating Entitlements.plist
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/commonJSApp.entitlements
+[INFO]   Creating Info.plist
+[DEBUG]  Checking for Splash Screen localization
+[INFO]   ATS explicitly disabled
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Info.plist
+[INFO]   Creating main.m
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/main.m
+[INFO]   Creating Xcode config files
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/project.xcconfig
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/module.xcconfig
+[INFO]   Copying Titanium libraries
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/lib/libTiCore.a
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/lib/libtiverify.a
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/lib/libti_ios_debugger.a
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/lib/libti_ios_profiler.a
+[INFO]   Copying Titanium iOS files
+[TRACE]  Skipping Classes/ApplicationRouting.m, it'll be processed later
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/commonJSApp_Prefix.pch
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/commonJSApp.xcodeproj/xcshareddata/xcschemes/commonJSApp.xcscheme
+[INFO]   Installing default LaunchScreen.storyboard
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/LaunchScreen.storyboard
+[INFO]   Creating debugger and profiler plists
+[DEBUG]  Skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app/debugger.plist
+[DEBUG]  Skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app/profiler.plist
+[INFO]   Analyzing Resources directory
+[INFO]   Analyzing platform files
+[INFO]   Analyzing module files
+[INFO]   Analyzing localized launch images
+[INFO]   Analyzing CommonJS modules
+[INFO]   Analyzing CommonJS module: ti.cloud
+[INFO]   Creating asset catalog
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/Contents.json
+[INFO]   Creating app icon set
+[TRACE]  Found generated 29x29 app icon: /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small.png
+[TRACE]  Found generated 58x58 app icon: /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small@2x.png
+[TRACE]  Found generated 87x87 app icon: /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small@3x.png
+[TRACE]  Found generated 40x40 app icon: /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small-40.png
+[TRACE]  Found generated 80x80 app icon: /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small-40@2x.png
+[TRACE]  Found generated 120x120 app icon: /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Small-40@3x.png
+[TRACE]  Found generated 120x120 app icon: /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-60@2x.png
+[TRACE]  Found generated 180x180 app icon: /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-60@3x.png
+[TRACE]  Found generated 76x76 app icon: /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-76.png
+[TRACE]  Found generated 152x152 app icon: /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-76@2x.png
+[TRACE]  Found generated 167x167 app icon: /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-83.5@2x.png
+[TRACE]  Found generated 1024x1024 app icon: /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/AppIcon.appiconset/appicon-Marketing.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/AppIcon.appiconset/Contents.json
+[INFO]   Creating launch logo image set
+[TRACE]  Found generated 320x320 launch logo: /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/LaunchLogo.imageset/LaunchLogo~iphone.png
+[TRACE]  Found generated 374x374 launch logo: /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/LaunchLogo.imageset/LaunchLogo@2x~iphone.png
+[TRACE]  Found generated 621x621 launch logo: /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/LaunchLogo.imageset/LaunchLogo@3x~iphone.png
+[TRACE]  Found generated 384x384 launch logo: /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/LaunchLogo.imageset/LaunchLogo~ipad.png
+[TRACE]  Found generated 1024x1024 launch logo: /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/LaunchLogo.imageset/LaunchLogo@2x~ipad.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/LaunchLogo.imageset/Contents.json
+[INFO]   Creating launch image set
+[DEBUG]  Unsupported launch image Resources/iphone/Default.png, skipping
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/LaunchImage.launchimage/Contents.json
+[INFO]   Creating assets image set
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/f58b0d04f3ad524648680e9940fb4e77323cb9bb.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/cb2e9b637cf08b6cee5c34a9d42ed14216474da9.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/30daf735e046ee9b83bdebc7f53a279eeddb5abe.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/a7ab5c64f63f4503378236c1ea554851307ccd40.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/d056537fe1cb114742471477881dd7885150958e.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/e45120acb37b1599fb10a1c7c70fe3a03c2b67a6.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/19781b2a470d2aa5114e77046b050cb1aa91edcc.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/560e51fb732801156ae1b849aedf137cc6aad560.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/528b44a10418d3f0861e98ac977c30043a5d2241.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/136716124b05efca9af4525c6aa522b0e1ddb196.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/c5155a9e0a1da951d2cce0c91593c7552969c908.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/72c4163d57e8ccf7527369fded88e5c16eb8ef09.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/e30e4fbf51e5995f41ab4281665d0e8537d4f4da.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/5965d8a3082b6ca0c34af00a2e3ea8bda8725b09.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/d5fa119756f2a797cf4bbfa385ccd8c1b13526ff.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/f034fadff2cb4b419f0b2f911a6e9552a57451e2.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/2c84f9140fd3b869a1be5bfbb9044ed69cfdf0d6.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/382aa6f67b8c0e0940d1306aab3896b2120c1549.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/d0f1f7c181d334652514adea063562821d273502.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/24a1a82e1a769b94d7668502a6f078ca3746258f.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/23500dc00e9f86998fbfd5deceafecb1d33f31ae.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/55a8b5c85dd56103ed37b114a77148016ba285e5.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/705be4ff906ee29a4ab7732b51fac5749e4f52e3.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/26b9e5261ac1801e9b2483f6dd5c87fe80407f5d.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/20b3d7ed32905b9e7cbeac52268d0d4c1855a88f.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/a26915c2f76caf184748ca183fd4cfb4fdc8542d.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/fab6b17bc3a211a117c9cc93aed043c1c1db61b8.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/d8693bf4db5fe50e47a148c1f4704b2087c70a99.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/e0c72006abb3aa00a6fccb06fa231ab4a3915383.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/8fc95227b6dc33acdcc2efafc4699a113f757d9a.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/6ac5e57098a6bea7b331656da9242b21a1b860a7.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/09c89bc012695e65408a15d962123997af7e2cc4.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/597a54783243b6674c43b08386d949d9dd350c73.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/f07a81bc958e0cd9fc83683625b2915567bf572b.imageset/Contents.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/de1cedba1acef9298b3090a3883bad7671421771.imageset/Contents.json
+[DEBUG]  Copying resources
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app/assets/chart.html
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app/chart.html
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app/motiur.pdf
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app/test.txt
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app/modules/ti.map/README
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app/ti.cloud/LICENSE
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app/ti.cloud/manifest
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app/ti.cloud/package.json
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-568h@2x.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-667h@2x.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Landscape-736h@3x.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Landscape.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Landscape@2x.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Portrait-736h@3x.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Portrait.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default-Portrait@2x.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/LaunchImage.launchimage/Default@2x.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/f58b0d04f3ad524648680e9940fb4e77323cb9bb.imageset/tab1.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/f58b0d04f3ad524648680e9940fb4e77323cb9bb.imageset/tab1@2x.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/f58b0d04f3ad524648680e9940fb4e77323cb9bb.imageset/tab1@3x.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/cb2e9b637cf08b6cee5c34a9d42ed14216474da9.imageset/tab2.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/cb2e9b637cf08b6cee5c34a9d42ed14216474da9.imageset/tab2@2x.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/cb2e9b637cf08b6cee5c34a9d42ed14216474da9.imageset/tab2@3x.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/30daf735e046ee9b83bdebc7f53a279eeddb5abe.imageset/0.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/a7ab5c64f63f4503378236c1ea554851307ccd40.imageset/1.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/d056537fe1cb114742471477881dd7885150958e.imageset/10.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/e45120acb37b1599fb10a1c7c70fe3a03c2b67a6.imageset/11.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/19781b2a470d2aa5114e77046b050cb1aa91edcc.imageset/12.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/560e51fb732801156ae1b849aedf137cc6aad560.imageset/13.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/528b44a10418d3f0861e98ac977c30043a5d2241.imageset/14.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/136716124b05efca9af4525c6aa522b0e1ddb196.imageset/15.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/c5155a9e0a1da951d2cce0c91593c7552969c908.imageset/16.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/72c4163d57e8ccf7527369fded88e5c16eb8ef09.imageset/17.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/e30e4fbf51e5995f41ab4281665d0e8537d4f4da.imageset/18.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/5965d8a3082b6ca0c34af00a2e3ea8bda8725b09.imageset/19.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/d5fa119756f2a797cf4bbfa385ccd8c1b13526ff.imageset/2.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/f034fadff2cb4b419f0b2f911a6e9552a57451e2.imageset/20.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/2c84f9140fd3b869a1be5bfbb9044ed69cfdf0d6.imageset/21.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/382aa6f67b8c0e0940d1306aab3896b2120c1549.imageset/22.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/d0f1f7c181d334652514adea063562821d273502.imageset/23.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/24a1a82e1a769b94d7668502a6f078ca3746258f.imageset/24.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/23500dc00e9f86998fbfd5deceafecb1d33f31ae.imageset/25.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/55a8b5c85dd56103ed37b114a77148016ba285e5.imageset/26.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/705be4ff906ee29a4ab7732b51fac5749e4f52e3.imageset/27.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/26b9e5261ac1801e9b2483f6dd5c87fe80407f5d.imageset/28.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/20b3d7ed32905b9e7cbeac52268d0d4c1855a88f.imageset/29.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/a26915c2f76caf184748ca183fd4cfb4fdc8542d.imageset/3.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/fab6b17bc3a211a117c9cc93aed043c1c1db61b8.imageset/4.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/d8693bf4db5fe50e47a148c1f4704b2087c70a99.imageset/5.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/e0c72006abb3aa00a6fccb06fa231ab4a3915383.imageset/6.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/8fc95227b6dc33acdcc2efafc4699a113f757d9a.imageset/7.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/6ac5e57098a6bea7b331656da9242b21a1b860a7.imageset/8.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/09c89bc012695e65408a15d962123997af7e2cc4.imageset/9.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/597a54783243b6674c43b08386d949d9dd350c73.imageset/flower.jpg
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/f07a81bc958e0cd9fc83683625b2915567bf572b.imageset/tab1.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Assets.xcassets/de1cedba1acef9298b3090a3883bad7671421771.imageset/motiur.jpg
+[DEBUG]  Copying CSS files
+[INFO]   Processing JavaScript files
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/.liveviewapp.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/_liveviewapp_js
+[DEBUG]  Copying /var/folders/vg/jyqkndw17s9317h6yzz65sdr0000gn/T/liveview.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/app_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/bgservice.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/bgservice_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/chart.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/chart_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/alertDialog.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/alertDialog_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/alertTest.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/alertTest_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/analytics.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/analytics_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/animate.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/animate_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/battery.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/battery_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/borderRadis.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/borderRadis_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/cameraTest.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/cameraTest_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/chartShow.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/chartShow_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/exception.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/exception_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/googleLogin.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/googleLogin_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/httpTest.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/httpTest_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/imageSize.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/imageSize_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/indicator.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/indicator_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/latLog.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/latLog_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/list_VeiwTest.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/list_VeiwTest_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/map.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/map_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/moduleTest.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/moduleTest_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/musicplayer.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/musicplayer_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/next.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/next_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/openFile.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/openFile_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/operation.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/operation_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/pdfReader.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/pdfReader_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/photoUpload.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/photoUpload_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/push.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/push_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/remoteImage.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/remoteImage_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/restart.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/restart_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/scrollViwTest.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/scrollViwTest_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/second.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/second_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/tableVeiwRefress.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/tableVeiwRefress_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/tableViewRow.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/tableViewRow_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/tableViewTextfield.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/tableViewTextfield_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/test.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/test_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/textField.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/textField_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/time.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/time_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/touchIDTest.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/touchIDTest_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/viewFile.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/viewFile_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/viewTest.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/viewTest_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/lib/webView.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/lib/webView_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/ui/common/FirstView.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/ui/common/FirstView_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/ui/handheld/ApplicationWindow.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/ui/handheld/ApplicationWindow_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/ui/handheld/android/ApplicationWindow.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/ui/handheld/android/ApplicationWindow_js
+[DEBUG]  Copying /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/Resources/ui/tablet/ApplicationWindow.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/ui/tablet/ApplicationWindow_js
+[DEBUG]  Copying /Users/user/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.11/ti.cloud.js => /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/ti_cloud/ti_cloud_js
+[INFO]   Writing app properties
+[DEBUG]  Writing /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets/_app_props__json
+[INFO]   Encrypting JavaScript files
+[DEBUG]  Preparing _liveviewapp_js
+[DEBUG]  Preparing app_js
+[DEBUG]  Preparing bgservice_js
+[DEBUG]  Preparing chart_js
+[DEBUG]  Preparing lib/alertDialog_js
+[DEBUG]  Preparing lib/alertTest_js
+[DEBUG]  Preparing lib/analytics_js
+[DEBUG]  Preparing lib/animate_js
+[DEBUG]  Preparing lib/battery_js
+[DEBUG]  Preparing lib/borderRadis_js
+[DEBUG]  Preparing lib/cameraTest_js
+[DEBUG]  Preparing lib/chartShow_js
+[DEBUG]  Preparing lib/exception_js
+[DEBUG]  Preparing lib/googleLogin_js
+[DEBUG]  Preparing lib/httpTest_js
+[DEBUG]  Preparing lib/imageSize_js
+[DEBUG]  Preparing lib/indicator_js
+[DEBUG]  Preparing lib/latLog_js
+[DEBUG]  Preparing lib/list_VeiwTest_js
+[DEBUG]  Preparing lib/map_js
+[DEBUG]  Preparing lib/moduleTest_js
+[DEBUG]  Preparing lib/musicplayer_js
+[DEBUG]  Preparing lib/next_js
+[DEBUG]  Preparing lib/openFile_js
+[DEBUG]  Preparing lib/operation_js
+[DEBUG]  Preparing lib/pdfReader_js
+[DEBUG]  Preparing lib/photoUpload_js
+[DEBUG]  Preparing lib/push_js
+[DEBUG]  Preparing lib/remoteImage_js
+[DEBUG]  Preparing lib/restart_js
+[DEBUG]  Preparing lib/scrollViwTest_js
+[DEBUG]  Preparing lib/second_js
+[DEBUG]  Preparing lib/tableVeiwRefress_js
+[DEBUG]  Preparing lib/tableViewRow_js
+[DEBUG]  Preparing lib/tableViewTextfield_js
+[DEBUG]  Preparing lib/test_js
+[DEBUG]  Preparing lib/textField_js
+[DEBUG]  Preparing lib/time_js
+[DEBUG]  Preparing lib/touchIDTest_js
+[DEBUG]  Preparing lib/viewFile_js
+[DEBUG]  Preparing lib/viewTest_js
+[DEBUG]  Preparing lib/webView_js
+[DEBUG]  Preparing ui/common/FirstView_js
+[DEBUG]  Preparing ui/handheld/ApplicationWindow_js
+[DEBUG]  Preparing ui/handheld/android/ApplicationWindow_js
+[DEBUG]  Preparing ui/tablet/ApplicationWindow_js
+[DEBUG]  Preparing ti_cloud/ti_cloud_js
+[DEBUG]  Preparing _app_props__json
+[DEBUG]  Running /Users/user/Library/Application Support/Titanium/mobilesdk/osx/6.2.2.GA/iphone/titanium_prep "com.bd.commonJS" "/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/assets"
+[DEBUG]  Writing application routing source file: /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Classes/ApplicationRouting.m
+[INFO]   Writing i18n files
+[DEBUG]  Compiling localization files
+[DEBUG]  Processing i18n file: en/strings.xml
+[DEBUG]  Processing i18n file: ja/strings.xml
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app/en.lproj/Localizable.strings
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app/ja.lproj/Localizable.strings
+[INFO]   Processing Titanium symbols
+[DEBUG]  Processing Titanium namespace resources
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app/modules/ui/images/badge.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app/modules/ui/images/closeButton.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app/modules/ui/images/photoDefault.png
+[TRACE]  No change, skipping /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Classes/defines.h
+[INFO]   Removing files
+[DEBUG]  Removing /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app.dSYM.tar.gz
+[DEBUG]  Removing empty directories
+[INFO]   Invoking xcodebuild
+[DEBUG]  Invoking: DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild build -target commonJSApp -configuration Debug -scheme commonJSApp -derivedDataPath /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/DerivedData OBJROOT=/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates SHARED_PRECOMPS_DIR=/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/PrecompiledHeaders SYMROOT=/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products -destination "platform=iOS Simulator,id=DC984789-FB36-47D5-8E35-3099369BC0C8,OS=11.0" ONLY_ACTIVE_ARCH=1
+[TRACE]  User defaults from command line:
+[TRACE]      IDEDerivedDataPathOverride = /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/DerivedData
+[TRACE]  Build settings from command line:
+[TRACE]      OBJROOT = /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates
+[TRACE]      ONLY_ACTIVE_ARCH = 1
+[TRACE]      SHARED_PRECOMPS_DIR = /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/PrecompiledHeaders
+[TRACE]      SYMROOT = /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products
+[TRACE]  
+[TRACE]  === BUILD TARGET commonJSApp OF PROJECT commonJSApp WITH CONFIGURATION Debug ===
+[TRACE]  Check dependencies
+[TRACE]  
+[TRACE]  CompileC build/Intermediates/commonJSApp.build/Debug-iphonesimulator/commonJSApp.build/Objects-normal/x86_64/ApplicationRouting.o Classes/ApplicationRouting.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+[TRACE]      cd /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone
+[TRACE]      export LANG=en_US.US-ASCII
+[TRACE]      export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/bin:/Users/user/.nvm/versions/node/v6.11.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/user/Library/Android/sdk/platform-tools:/Users/user/Library/Android/sdk/tools:/Users/user/android-ndk-r13::"
+[TRACE]      /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fmodules -gmodules -fmodules-cache-path=/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/DerivedData/ModuleCache -fmodules-prune-interval=86400 -fmodules-prune-after=345600 -fbuild-session-file=/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/DerivedData/ModuleCache/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror=non-modular-include-in-framework-module -Wno-trigraphs -fpascal-strings -O0 -fno-common -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wunreachable-code -Wno-implicit-atomic-properties -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wno-parentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wno-unused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEPLOYTYPE=development -DDEBUG=1 -DTI_VERSION=6.2.2 -DLAUNCHSCREEN_STORYBOARD=1 -DDEFAULT_BGCOLOR_RED=1 -DDEFAULT_BGCOLOR_GREEN=1 -DDEFAULT_BGCOLOR_BLUE=1 -DTI_LOG_SERVER_PORT=25760 -DOBJC_OLD_DISPATCH_PROTOTYPES=0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mios-simulator-version-min=8.0 -g -Wno-sign-conversion -Winfinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -fobjc-abi-version=2 -fobjc-legacy-dispatch -index-store-path /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/DerivedData/Index/DataStore -iquote /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJSApp.build/Debug-iphonesimulator/commonJSApp.build/commonJSApp-generated-files.hmap -I/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJSApp.build/Debug-iphonesimulator/commonJSApp.build/commonJSApp-own-target-headers.hmap -I/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJSApp.build/Debug-iphonesimulator/commonJSApp.build/commonJSApp-all-target-headers.hmap -iquote /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJSApp.build/Debug-iphonesimulator/commonJSApp.build/commonJSApp-project-headers.hmap -I/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/usr/include/libxml2 -Iheaders -I/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJSApp.build/Debug-iphonesimulator/commonJSApp.build/DerivedSources/x86_64 -I/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJSApp.build/Debug-iphonesimulator/commonJSApp.build/DerivedSources -Wno-arc-performSelector-leaks -F/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator -DDEBUG -include /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/PrecompiledHeaders/commonJSApp_Prefix-dmhbwfbcsyvtjfhdcmeofiddrlue/commonJSApp_Prefix.pch -MMD -MT dependencies -MF /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJSApp.build/Debug-iphonesimulator/commonJSApp.build/Objects-normal/x86_64/ApplicationRouting.d --serialize-diagnostics /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJSApp.build/Debug-iphonesimulator/commonJSApp.build/Objects-normal/x86_64/ApplicationRouting.dia -c /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Classes/ApplicationRouting.m -o /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJSApp.build/Debug-iphonesimulator/commonJSApp.build/Objects-normal/x86_64/ApplicationRouting.o
+[TRACE]  
+[TRACE]  Ld build/Products/Debug-iphonesimulator/commonJSApp.app/commonJSApp normal x86_64
+[TRACE]      cd /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone
+[TRACE]      export IPHONEOS_DEPLOYMENT_TARGET=8.0
+[TRACE]      export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/bin:/Users/user/.nvm/versions/node/v6.11.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/user/Library/Android/sdk/platform-tools:/Users/user/Library/Android/sdk/tools:/Users/user/android-ndk-r13::"
+[TRACE]      /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk -L/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator -L/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/lib -L/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Classes/APSAnalytics -L/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/Classes/APSHTTPClient -L/Users/user/Library/Application\ Support/Titanium/modules/iphone/ti.touchid/2.1.2 -L/Users/user/Library/Application\ Support/Titanium/modules/iphone/ti.map/2.12.1 -F/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator -filelist /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJSApp.build/Debug-iphonesimulator/commonJSApp.build/Objects-normal/x86_64/commonJSApp.LinkFileList -mios-simulator-version-min=8.0 -dead_strip -Xlinker -object_path_lto -Xlinker /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJSApp.build/Debug-iphonesimulator/commonJSApp.build/Objects-normal/x86_64/commonJSApp_lto.o -Xlinker -export_dynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -fobjc-link-runtime -stdlib=libc++ -ObjC -framework LocalAuthentication -framework LocalAuthentication -weak_framework MapKit -weak_framework MapKit -weak-lti_ios_profiler -weak-lti_ios_debugger -weak-lTiCore -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJSApp.build/Debug-iphonesimulator/commonJSApp.build/commonJSApp.app.xcent -weak_framework iAd -framework CoreMedia -weak_framework CoreMotion -lAPSAnalytics -weak_framework CoreText -framework EventKit -framework EventKitUI -weak_framework Security -licucore -framework Foundation -weak_framework UIKit -framework CoreGraphics -weak_framework AddressBook -framework AddressBookUI -framework CFNetwork -framework CoreLocation -weak_framework MapKit -framework MessageUI -framework MobileCoreServices -framework OpenGLES -framework QuartzCore -framework SystemConfiguration -lsqlite3 -lz -framework AudioToolbox -weak_framework MediaPlayer -framework AVFoundation -lxml2 -lAPSHTTPClient -ltiverify -lti.touchid -lti.map -Xlinker -dependency_info -Xlinker /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJSApp.build/Debug-iphonesimulator/commonJSApp.build/Objects-normal/x86_64/commonJSApp_dependency_info.dat -o /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app/commonJSApp
+[TRACE]  
+[TRACE]  GenerateDSYMFile build/Products/Debug-iphonesimulator/commonJSApp.app.dSYM build/Products/Debug-iphonesimulator/commonJSApp.app/commonJSApp
+[TRACE]      cd /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone
+[TRACE]      export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/bin:/Users/user/.nvm/versions/node/v6.11.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/user/Library/Android/sdk/platform-tools:/Users/user/Library/Android/sdk/tools:/Users/user/android-ndk-r13::"
+[TRACE]      /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app/commonJSApp -o /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app.dSYM
+[TRACE]  
+[TRACE]  Touch build/Products/Debug-iphonesimulator/commonJSApp.app
+[TRACE]      cd /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone
+[TRACE]      export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/bin:/Users/user/.nvm/versions/node/v6.11.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/user/Library/Android/sdk/platform-tools:/Users/user/Library/Android/sdk/tools:/Users/user/android-ndk-r13::"
+[TRACE]      /usr/bin/touch -c /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app
+[TRACE]  
+[TRACE]  CodeSign build/Products/Debug-iphonesimulator/commonJSApp.app
+[TRACE]      cd /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone
+[TRACE]      export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate
+[TRACE]      export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/bin:/Users/user/.nvm/versions/node/v6.11.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/user/Library/Android/sdk/platform-tools:/Users/user/Library/Android/sdk/tools:/Users/user/android-ndk-r13::"
+[TRACE]      
+[TRACE]  Signing Identity:     "-"
+[TRACE]      /usr/bin/codesign --force --sign - --timestamp=none /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Products/Debug-iphonesimulator/commonJSApp.app
+[TRACE]  
+[TRACE]  ** BUILD SUCCEEDED **
+[INFO]   Finished building the application in 1m 33s 899ms
+[INFO]   Launching iOS Simulator
+[TRACE]  [ioslib] Selected iOS Simulator: iPhone 6
+[TRACE]  [ioslib]   UDID    = DC984789-FB36-47D5-8E35-3099369BC0C8
+[TRACE]  [ioslib]   iOS     = 11.0
+[TRACE]  [ioslib] Autoselected Xcode: 9.0
+[TRACE]  [ioslib] Checking if simulator /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/Contents/MacOS/Simulator is already running
+[TRACE]  [ioslib] Simulator is not running
+[TRACE]  [ioslib] Tailing iPhone 6 Simulator system log: /Users/user/Library/Logs/CoreSimulator/DC984789-FB36-47D5-8E35-3099369BC0C8/system.log
+[TRACE]  [ioslib] Running: /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/Contents/MacOS/Simulator -CurrentDeviceUDID DC984789-FB36-47D5-8E35-3099369BC0C8
+[TRACE]  [ioslib] Simulator is booted
+[TRACE]  [ioslib] iPhone 6 Simulator started
+[TRACE]  [ioslib] Running: osascript "/Users/user/Library/Application Support/Titanium/mobilesdk/osx/6.2.2.GA/node_modules/ioslib/lib/sim_focus.scpt" "Simulator"
+[TRACE]  [ioslib] iPhone 6 Simulator successfully focused
+[TRACE]  [ioslib] Installing the app
+[TRACE]  [ioslib] App launched
+[TRACE]  [ioslib] Trying to connect to log server port 25760...
