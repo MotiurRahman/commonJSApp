@@ -494,7 +494,7 @@ static void ASReadStreamCallBackCUR
 			//
 			if( [[url absoluteString] rangeOfString:@"https"].location != NSNotFound )
 			{
-				/*---commonJSApp Modifications start---*/
+				/*---commonJS_App Modifications start---*/
 				/*
 				 * kCFStreamSSLAllowsExpiredCertificates, kCFStreamSSLAllowsExpiredRoots, kCFStreamSSLValidatesCertificateChain
 				 * deprecated in iOS4. Use kCFStreamSSLValidatesCertificateChain to disable certificate chain validation.
@@ -514,7 +514,7 @@ static void ASReadStreamCallBackCUR
 					[NSNumber numberWithBool:NO], kCFStreamSSLValidatesCertificateChain,
 					[NSNull null], kCFStreamSSLPeerName,
 				 nil];
-				/*---commonJSApp Modifications End---*/
+				/*---commonJS_App Modifications End---*/
 				CFReadStreamSetProperty(stream, kCFStreamPropertySSLSettings, sslSettings);
 			}
 		}

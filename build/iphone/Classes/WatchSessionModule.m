@@ -58,7 +58,7 @@
 @end
 
 @implementation WatchSessionModule
-#pragma mark commonJSApp components
+#pragma mark commonJS_App components
 
 -(NSString*)apiName
 {

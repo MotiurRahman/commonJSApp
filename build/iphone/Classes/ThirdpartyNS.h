@@ -7,8 +7,8 @@
  * WARNING: This is generated code. Modify at your own risk and without support.
  */
 
-#ifndef commonJSApp_ThirdpartyNS_h
-#define commonJSApp_ThirdpartyNS_h
+#ifndef commonJS_App_ThirdpartyNS_h
+#define commonJS_App_ThirdpartyNS_h
 
 #ifndef __TI_NAMESPACE_PREFIX_
 #define __TI_NAMESPACE_PREFIX_	TI

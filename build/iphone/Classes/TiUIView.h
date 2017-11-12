@@ -44,7 +44,7 @@ void ModifyScrollViewForKeyboardHeightAndContentHeightWithResponderRect(UIScroll
 @class TiViewProxy;
 
 /**
- Base class for all commonJSApp views.
+ Base class for all commonJS_App views.
  @see TiViewProxy
  */
 #ifdef TI_USE_AUTOLAYOUT
@@ -272,7 +272,7 @@ void ModifyScrollViewForKeyboardHeightAndContentHeightWithResponderRect(UIScroll
 - (void)setAccessibilityHidden_:(id)accessibilityHidden;
 
 /**
- Whether or not a view not normally picked up by the commonJSApp view hierarchy (such as wrapped iOS UIViews) was touched.
+ Whether or not a view not normally picked up by the commonJS_App view hierarchy (such as wrapped iOS UIViews) was touched.
  @return _YES_ if the view contains specialized content (such as a system view) which should register as a touch for this view, _NO_ otherwise.
  */
 -(BOOL)touchedContentViewWithEvent:(UIEvent*)event;

@@ -7,8 +7,8 @@
  * WARNING: This is generated code. Modify at your own risk and without support.
  */
 
-#ifndef commonJSApp_TiToJS_h
-#define commonJSApp_TiToJS_h
+#ifndef commonJS_App_TiToJS_h
+#define commonJS_App_TiToJS_h
 
 #ifdef USE_JSCORE_FRAMEWORK
 

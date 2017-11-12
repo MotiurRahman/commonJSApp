@@ -45,7 +45,7 @@
     BOOL rotatedWhileScrolling;
 }
 
-#pragma mark - commonJSApp Internal Use Only
+#pragma mark - commonJS_App Internal Use Only
 -(void)manageRotation;
 -(UIScrollView*)scrollview;
 -(void)setCurrentPage:(id)page animated:(NSNumber*)animate;

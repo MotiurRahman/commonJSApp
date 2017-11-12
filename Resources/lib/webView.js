@@ -1,14 +1,25 @@
 function webTest() {
-	var webview = Titanium.UI.createWebView({
-		url : 'https://letstango.com/',
-		//borderRadius : 2
-		//url : "https://quranicaudio.com/"
-
+	var win = Ti.UI.createWindow();
+	var webview = Ti.UI.createWebView({
+		url : '/index-withiframe.html'
 	});
-	var window = Titanium.UI.createWindow();
-	//window.add(webview);
-	Ti.Platform.openURL("https://www.facebook.com/LetsTangoME/");
-	return window;
+	var button = Ti.UI.createButton({
+		title : 'fromTitanium',
+		height : '50dp',
+		width : '130dp'
+	});
+	button.addEventListener('click', function(e) {
+		Ti.App.fireEvent('app:fromTitanium', {
+			message : 'event fired from Titanium, handled in WebView'
+		});
+	});
+	Ti.App.addEventListener('app:fromWebView', function(e) {
+		alert(e.message);
+	});
+
+	win.add(webview);
+	win.add(button);
+	return win;
 
 }
 

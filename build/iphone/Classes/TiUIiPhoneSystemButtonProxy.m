@@ -40,12 +40,12 @@ MAKE_SYSTEM_PROP_DEPRECATED_REPLACED(DONE,UIBarButtonSystemItemDone,@"UI.iPhone.
 MAKE_SYSTEM_PROP_DEPRECATED_REPLACED(FLEXIBLE_SPACE,UIBarButtonSystemItemFlexibleSpace,@"UI.iPhone.SystemButton.FLEXIBLE_SPACE",@"5.4.0",@"UI.iOS.SystemButton.FLEXIBLE_SPACE");
 MAKE_SYSTEM_PROP_DEPRECATED_REPLACED(FIXED_SPACE,UIBarButtonSystemItemFixedSpace,@"UI.iPhone.SystemButton.FIXED_SPACE",@"5.4.0",@"UI.iOS.SystemButton.FIXED_SPACE");
 
-MAKE_SYSTEM_PROP_DEPRECATED_REPLACED(ACTIVITY,UIcommonJSAppNativeItemSpinner,@"UI.iPhone.SystemButtonStyle.ACTIVITY",@"5.4.0",@"UI.iOS.SystemButtonStyle.ACTIVITY");
-MAKE_SYSTEM_PROP_DEPRECATED_REPLACED(SPINNER,UIcommonJSAppNativeItemSpinner,@"UI.iPhone.SystemButtonStyle.SPINNER",@"5.4.0",@"UI.iOS.SystemButtonStyle.SPINNER");
-MAKE_SYSTEM_PROP_DEPRECATED_REPLACED(INFO_LIGHT,UIcommonJSAppNativeItemInfoLight,@"UI.iPhone.SystemButtonStyle.INFO_LIGHT",@"5.4.0",@"UI.iOS.SystemButtonStyle.INFO_LIGHT");
-MAKE_SYSTEM_PROP_DEPRECATED_REPLACED(INFO_DARK,UIcommonJSAppNativeItemInfoDark,@"UI.iPhone.SystemButtonStyle.INFO_DARK",@"5.4.0",@"UI.iOS.SystemButtonStyle.INFO_DARK");
-MAKE_SYSTEM_PROP_DEPRECATED_REPLACED(DISCLOSURE,UIcommonJSAppNativeItemDisclosure,@"UI.iPhone.SystemButtonStyle.DISCLOSURE",@"5.4.0",@"UI.iOS.SystemButtonStyle.DISCLOSURE");
-MAKE_SYSTEM_PROP_DEPRECATED_REPLACED(CONTACT_ADD,UIcommonJSAppNativeItemContactAdd,@"UI.iPhone.SystemButtonStyle.CONTACT_ADD",@"5.4.0",@"UI.iOS.SystemButtonStyle.CONTACT_ADD");
+MAKE_SYSTEM_PROP_DEPRECATED_REPLACED(ACTIVITY,UIcommonJS_AppNativeItemSpinner,@"UI.iPhone.SystemButtonStyle.ACTIVITY",@"5.4.0",@"UI.iOS.SystemButtonStyle.ACTIVITY");
+MAKE_SYSTEM_PROP_DEPRECATED_REPLACED(SPINNER,UIcommonJS_AppNativeItemSpinner,@"UI.iPhone.SystemButtonStyle.SPINNER",@"5.4.0",@"UI.iOS.SystemButtonStyle.SPINNER");
+MAKE_SYSTEM_PROP_DEPRECATED_REPLACED(INFO_LIGHT,UIcommonJS_AppNativeItemInfoLight,@"UI.iPhone.SystemButtonStyle.INFO_LIGHT",@"5.4.0",@"UI.iOS.SystemButtonStyle.INFO_LIGHT");
+MAKE_SYSTEM_PROP_DEPRECATED_REPLACED(INFO_DARK,UIcommonJS_AppNativeItemInfoDark,@"UI.iPhone.SystemButtonStyle.INFO_DARK",@"5.4.0",@"UI.iOS.SystemButtonStyle.INFO_DARK");
+MAKE_SYSTEM_PROP_DEPRECATED_REPLACED(DISCLOSURE,UIcommonJS_AppNativeItemDisclosure,@"UI.iPhone.SystemButtonStyle.DISCLOSURE",@"5.4.0",@"UI.iOS.SystemButtonStyle.DISCLOSURE");
+MAKE_SYSTEM_PROP_DEPRECATED_REPLACED(CONTACT_ADD,UIcommonJS_AppNativeItemContactAdd,@"UI.iPhone.SystemButtonStyle.CONTACT_ADD",@"5.4.0",@"UI.iOS.SystemButtonStyle.CONTACT_ADD");
 
 
 @end

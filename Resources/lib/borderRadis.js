@@ -1,30 +1,23 @@
-function border(){
-
+function border() {
 	var win = Ti.UI.createWindow({
+		title : "Test",
+		backgroundColor : '#fff'
+	});
 
-title : 'Test Window',
+	var x = 10;
+	var y = 20;
+	var a = eval("x * y");
 
-backgroundColor : 'white',
-
-});
-
-
-
-var view = Ti.UI.createView({
-
-borderRadius : 20,
-
-backgroundColor : 'red',
-
-width : 50,
-
-height : 50
-
-});
-
-win.add(view);
-
-return win;
+	var label = Ti.UI.createLabel({
+		text : a,
+		color : "#333",
+		font : {
+			fontSize : 20
+		}
+	});
+	win.add(label);
+	return win;
 
 }
+
 module.exports = border;

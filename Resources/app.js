@@ -2,7 +2,7 @@ var win = Ti.UI.createWindow({
 	backgroundColor : 'red',
 	layout : "vertical"
 });
-win.open();
+
 // Create a Button.
 var request = Ti.UI.createButton({
 	title : 'Add view',
@@ -12,11 +12,18 @@ var request = Ti.UI.createButton({
 	top : 50
 });
 
+// var testmodulemo = require('com.bd.testmodulemo');
+// Ti.API.info("module is => " + testmodulemo);
+
 request.addEventListener('click', function(e) {
-	var nextPage = require('lib/httpTest');
+
+	var nextPage = require('lib/push');
 	var Next_win = new nextPage();
 	Next_win.open();
+
 });
 
 win.add(request);
+
+win.open();
 

@@ -16,6 +16,7 @@
 #import "KrollBridge.h"
 #import "TiBindingTiValue.h"
 #import "TiExceptionHandler.h"
+#import "SBJSON.h"
 
 #ifdef KROLL_COVERAGE
 # import "KrollCoverage.h"
@@ -74,7 +75,7 @@ NSDictionary* TiValueToDict(KrollContext *context, TiValueRef value)
 //
 NSString* TiValueToJSON(KrollContext *context, TiValueRef value)
 {
-	return [TiUtils jsonStringify:TiValueToId(context,value)];
+	return [SBJSON stringify:TiValueToId(context,value)];
 }
 
 //
@@ -320,10 +321,10 @@ bool KrollSetProperty(TiContextRef jsContext, TiObjectRef object, TiStringRef pr
 
 // forward declare these
 
-//@interface commonJSAppObject : NSObject
+//@interface commonJS_AppObject : NSObject
 //@end
 
-@interface commonJSAppObject (Private)
+@interface commonJS_AppObject (Private)
 -(NSDictionary*)modules;
 @end
 
@@ -347,9 +348,9 @@ void KrollPropertyNames(TiContextRef ctx, TiObjectRef object, TiPropertyNameAccu
 	{
 		id target = [o target];
 
-		if ([o isKindOfClass:[commonJSAppObject class]])
+		if ([o isKindOfClass:[commonJS_AppObject class]])
 		{
-			for (NSString *key in [[(commonJSAppObject*)o modules] allKeys])
+			for (NSString *key in [[(commonJS_AppObject*)o modules] allKeys])
 			{
 				TiStringRef value = TiStringCreateWithUTF8CString([key UTF8String]);
 				TiPropertyNameAccumulatorAddName(propertyNames,value);

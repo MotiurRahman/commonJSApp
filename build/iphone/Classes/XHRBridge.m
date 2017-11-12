@@ -14,6 +14,7 @@
 #import "TiProxy.h"
 #import "TiModule.h"
 #import "Mimetypes.h"
+#import "SBJSON.h"
 
 static XHRBridge *xhrBridge = nil;
 
@@ -63,17 +64,9 @@ static XHRBridge *xhrBridge = nil;
 	NSString *prearg = [url query];
 	NSString *arguments = prearg==nil ? @"" : [prearg stringByRemovingPercentEncoding];
 
-	// Decode Ascii unicode-characters
-	NSString *decodevalue = [[NSString alloc] initWithData:[arguments dataUsingEncoding:NSUTF8StringEncoding]
-                                                  encoding:NSNonLossyASCIIStringEncoding];
-
-	// Replace < and > characters with quotes
-	NSString *jsonString = [[decodevalue stringByReplacingOccurrencesOfString:@"<" withString:@"\""]
-                            stringByReplacingOccurrencesOfString:@">"
-                            withString:@"\""];
-
-	// Parse the JSON-string to a dictionary
-	NSDictionary *event = [TiUtils jsonParse:jsonString];
+    SBJSON *decoder = [[[SBJSON alloc] init] autorelease];
+    NSError *error = nil;
+    NSDictionary *event = [decoder fragmentWithString:arguments error:&error];
 
 	id<TiEvaluator> context = [[xhrBridge host] contextForToken:pageToken];
 	TiModule *tiModule = (TiModule*)[[xhrBridge host] moduleNamed:module context:context];

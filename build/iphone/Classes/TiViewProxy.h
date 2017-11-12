@@ -17,7 +17,7 @@
  */
 @protocol TiKeyboardFocusableView
 
-#pragma mark Public commonJSApp APIs.
+#pragma mark Public commonJS_App APIs.
 
 /**
  Tells the view to focus.
@@ -107,7 +107,10 @@ enum
 	int vzIndex;
 	BOOL hidden;	//This is the boolean version of ![TiUtils boolValue:visible def:yes]
 		//And has nothing to do with whether or not it's onscreen or 
-
+#if IS_XCODE_9
+  BOOL safeAreaProxyAdded;
+#endif
+  
 #pragma mark Parent/Children relationships
 	TiViewProxy *parent;
 	pthread_rwlock_t childrenLock;

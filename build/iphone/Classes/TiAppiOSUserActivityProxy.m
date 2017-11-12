@@ -15,7 +15,7 @@
 
 @implementation TiAppiOSUserActivityProxy
 
-#pragma mark commonJSApp Proxy components
+#pragma mark commonJS_App Proxy components
 
 -(NSString*)apiName
 {
@@ -189,7 +189,7 @@
 - (void)userActivityWillSave:(NSUserActivity *)userActivity
 {
     if([self _hasListeners:@"useractivitywillsave"]){
-        DebugLog(@"[WARN] commonJSApp.App.iOS.UserActivity.useractivitywillsave event is deprecated. Update user activity and then set commonJSApp.App.iOS.UserActivity.needsSave property to true if you need it to be saved before handing it off to another device.");
+        DebugLog(@"[WARN] commonJS_App.App.iOS.UserActivity.useractivitywillsave event is deprecated. Update user activity and then set commonJS_App.App.iOS.UserActivity.needsSave property to true if you need it to be saved before handing it off to another device.");
         [self fireEvent:@"useractivitywillsave" withObject:[[self copyActivity] autorelease]];
     }
 }

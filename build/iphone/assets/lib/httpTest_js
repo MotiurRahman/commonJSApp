@@ -15,51 +15,24 @@ function test() {
 
 	function syncTestForAppcelerator() {
 
-		var url = "https://193.146.1.116/mpac/mpacv2.asmx?WSDL";
-
-		var client = Ti.Network.createHTTPClient({
-
-			// function called when the response data is available
-
-			onload : function(e) {
-
-				Ti.API.info("Received text: " + this.responseText);
-
-				alert('success');
-
+		var xhr = Ti.Network.createHTTPClient({
+			onload : function onLoad() {
+				alert(JSON.stringify(this.responseText));
 			},
-
-			// function called when an error occurs, including a timeout
-
-			onerror : function(e) {
-
-				Ti.API.debug(e.error);
-
-				alert('error');
-
-			},
-			
-
-			timeout : 5000 // in milliseconds
-
+			onerror : function onError() {
+				alert("Errored: " + this.status + ": " + this.responseText);
+			}
 		});
 
-		//Set Header
-
-		
-
-		//var accessToken = Titanium.Utils.base64encode("00DN0000000Ap4u!AQ4AQIawfQBbd5YmcWpk5GEa7NjiLaQyP0m6phLLPM79L6KhSxxHYsIVNiOWo.RwNN0PIg");
-
-		//client.setRequestHeader("Authorization", "OAuth" + accessToken);
-
-		// Prepare the connection.
-
-		client.open("GET", url);
-		client.setRequestHeader("content-type", "application/json");
-
-		// Send the request.
-
-		client.send();
+		xhr.open("POST", "http://localhost:8080/api/car");
+		var authstr = 'Basic ' + Ti.Utils.base64encode('uu1ZPXaQ6L0cef2YLVrcj+IE9CAf1pmr:');
+		xhr.setRequestHeader("Authorization", authstr);
+		xhr.setRequestHeader("Content-Type", "application/json");
+		xhr.send(JSON.stringify({
+			"name" : "motiur",
+			"model" : "1988",
+			"color" : "white"
+		}));
 
 	}
 

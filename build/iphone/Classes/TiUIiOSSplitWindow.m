@@ -250,6 +250,12 @@
     }
     RELEASE_TO_NIL(masterProxy);
     masterProxy = [args retain];
+  
+#if IS_XCODE_9
+    TiWindowProxy *masterWindowProxy = (TiWindowProxy *)masterProxy;
+    masterWindowProxy.isMasterWindow = YES;
+#endif
+  
     if (viewsInitialized) {
         [self initProxy:masterProxy withWrapper:masterViewWrapper];
     }
@@ -270,7 +276,12 @@
     }
     RELEASE_TO_NIL(detailProxy);
     detailProxy = [args retain];
-    
+  
+#if IS_XCODE_9
+    TiWindowProxy *detailWindowProxy = (TiWindowProxy *)detailProxy;
+    detailWindowProxy.isDetailWindow = YES;
+#endif
+  
     if (viewsInitialized) {
         [self initProxy:detailProxy withWrapper:detailViewWrapper];
     }

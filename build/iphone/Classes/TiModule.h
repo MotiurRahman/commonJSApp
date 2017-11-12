@@ -13,7 +13,7 @@
 @class TiHost;
 
 /**
- The base class for all commonJSApp modules
+ The base class for all commonJS_App modules
  */
 @interface TiModule : TiProxy 
 {
@@ -51,30 +51,30 @@
 // lifecycle
 
 /**
- commonJSApp Platform calls this method on startup.
+ commonJS_App Platform calls this method on startup.
  */
 -(void)startup;
 
 /**
- commonJSApp Platform calls this method on shutdown.
+ commonJS_App Platform calls this method on shutdown.
  @param sender The sender of the event.
  */
 -(void)shutdown:(id)sender;
 
 /**
- commonJSApp Platform calls this method on suspend.
+ commonJS_App Platform calls this method on suspend.
  @param sender The sender of the event.
  */
 -(void)suspend:(id)sender;
 
 /**
- commonJSApp Platform calls this method on entering background.
+ commonJS_App Platform calls this method on entering background.
  @param sender The sender of the event.
  */
 -(void)paused:(id)sender;
 
 /**
- commonJSApp Platform calls this method on resume.
+ commonJS_App Platform calls this method on resume.
  @param sender The sender of the event.
  */
 -(void)resume:(id)sender;

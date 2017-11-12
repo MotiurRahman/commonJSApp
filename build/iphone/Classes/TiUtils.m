@@ -36,7 +36,7 @@ extern NSString * const TI_APPLICATION_RESOURCE_DIR;
 static NSDictionary* encodingMap = nil;
 static NSDictionary* typeMap = nil;
 static NSDictionary* sizeMap = nil;
-static NSString* kAppUUIDString = @"com.commonjsapp.uuid"; // don't obfuscate
+static NSString* kAppUUIDString = @"com.commonjs_app.uuid"; // don't obfuscate
 
 bool Base64AllocAndEncodeData(const void *inInputData, size_t inInputDataSize, char **outOutputDataPtr, size_t *outOutputDataSize)
 {
@@ -129,9 +129,21 @@ bool Base64AllocAndEncodeData(const void *inInputData, size_t inInputDataSize, c
     return (mainScreenBoundsSize.height == 667 || mainScreenBoundsSize.width == 667);
 }
 
++ (BOOL)isRetinaiPhone6Plus
+{
+    CGSize mainScreenBoundsSize = [[UIScreen mainScreen] bounds].size;
+    return (mainScreenBoundsSize.height == 736 || mainScreenBoundsSize.width == 736);
+}
+
++ (BOOL)isRetinaiPhoneX
+{
+    CGSize mainScreenBoundsSize = [[UIScreen mainScreen] bounds].size;
+    return (mainScreenBoundsSize.height == 812 || mainScreenBoundsSize.width == 812);
+}
+
 +(BOOL)isRetinaHDDisplay
 {
-    return ([UIScreen mainScreen].scale == 3.0);
+    return [UIScreen mainScreen].scale == 3.0;
 }
 
 +(BOOL)isRetinaDisplay
@@ -208,7 +220,16 @@ bool Base64AllocAndEncodeData(const void *inInputData, size_t inInputDataSize, c
 #endif
 }
 
-+(BOOL)isIOSVersionOrGreater:(NSString *)version
++ (BOOL)isIOS11OrGreater
+{
+#if IS_XCODE_9
+  return [TiUtils isIOSVersionOrGreater:@"11.0"];
+#else
+  return NO;
+#endif
+}
+
++ (BOOL)isIOSVersionOrGreater:(NSString *)version
 {
     return [[[UIDevice currentDevice] systemVersion] compare:version options:NSNumericSearch] != NSOrderedAscending;
 }
@@ -816,12 +837,19 @@ bool Base64AllocAndEncodeData(const void *inInputData, size_t inInputDataSize, c
 	NSString *os = [TiUtils isIPad] ? @"~ipad" : @"~iphone";
 
 	if ([TiUtils isRetinaHDDisplay]) {
-		// first try -736h@3x iphone6 Plus specific
+		// first try -736h@3x iPhone 6 Plus specific
 		NSString *testpath = [NSString stringWithFormat:@"%@-736h@3x.%@",partial,ext];
 		if ([fm fileExistsAtPath:testpath]) {
 			return [NSURL fileURLWithPath:testpath];
 		}
-		// second try plain @3x
+    
+    		// second try -2436h@3x iPhone X specific
+    		testpath = [NSString stringWithFormat:@"%@-2436h@3x.%@", partial, ext];
+    		if ([fm fileExistsAtPath:testpath]) {
+    			return [NSURL fileURLWithPath:testpath];
+   		}
+
+    		// third try plain @3x
 		testpath = [NSString stringWithFormat:@"%@@3x.%@",partial,ext];
 		if ([fm fileExistsAtPath:testpath]) {
 			return [NSURL fileURLWithPath:testpath];

@@ -55,7 +55,7 @@
 @end
 
 /**
- Protocol for containment controller. Implemented by UIViewControllers that can host commonJSApp Windows
+ Protocol for containment controller. Implemented by UIViewControllers that can host commonJS_App Windows
  */
 @protocol TiControllerContainment <NSObject>
 @required

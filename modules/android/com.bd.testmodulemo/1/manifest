@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1
+apiversion: 3
+architectures: armeabi-v7a x86
+description: testmodulemo
+author: Your Name
+license: Specify your license
+copyright: Copyright (c) 2017 by Your Company
+
+# these should not be edited
+name: testmodulemo
+moduleid: com.bd.testmodulemo
+guid: 08efb64c-5b8b-43e1-8136-c8e4521afa67
+platform: android
+minsdk: 6.2.2.GA

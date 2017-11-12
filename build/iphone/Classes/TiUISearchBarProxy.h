@@ -27,7 +27,7 @@
 //	but is internal ONLY, and should NOT be used by javascript.
 @property(nonatomic,readwrite,assign) BOOL showsCancelButton;
 
-#pragma mark - commonJSApp Internal Use
+#pragma mark - commonJS_App Internal Use
 -(void)ensureSearchBarHierarchy;
 -(void)setSearchBar:(UISearchBar *)searchBar;
 

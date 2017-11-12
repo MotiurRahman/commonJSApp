@@ -401,7 +401,7 @@
   * @private
   */
 	Module.patch = function (globalCtx, url, port) {
-		var defaultURL = process.platform === 'android' && process.hardware === 'sdk' ? '10.0.2.2' : Ti.Platform.model === 'Simulator' ? '127.0.0.1' : '192.168.0.3';
+		var defaultURL = process.platform === 'android' && process.hardware === 'sdk' ? '10.0.2.2' : Ti.Platform.model === 'Simulator' ? '127.0.0.1' : '192.168.0.2';
 		Module._globalCtx = globalCtx;
 		global._globalCtx = globalCtx;
 		Module._url = url || defaultURL;
@@ -766,7 +766,7 @@
 		console.error('Backtrace:\n', ('' + err.error.backtrace).replace(/'\n'/g, '\n'));
 	});
 
-	Module.patch(globalScope, '192.168.0.3', '8324');
+	Module.patch(globalScope, '192.168.0.2', '8324');
 
 	// Prevent display from sleeping
 

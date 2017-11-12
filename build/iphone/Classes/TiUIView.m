@@ -782,7 +782,7 @@ DEFINE_EXCEPTIONS
 
 /**
  This section of code for shadow support adapted from contributions by Martin Guillon
- See https://github.com/appcelerator/_commonjsapp_mobile/pull/2996
+ See https://github.com/appcelerator/_commonjs_app_mobile/pull/2996
  */
 -(CALayer *)shadowLayer
 {

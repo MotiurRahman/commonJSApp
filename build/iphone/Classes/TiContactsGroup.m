@@ -353,7 +353,7 @@
 {
 	CNSaveRequest *saveRequest = [[CNSaveRequest alloc] init];
 	[saveRequest deleteGroup: [[group mutableCopy] autorelease]];
-	// Do not be tempted to autorelease here. https://github.com/appcelerator/_commonjsapp_mobile/commit/a0d4a50d51f1afe85f92cf9e0d2ce8cca08fcf2f
+	// Do not be tempted to autorelease here. https://github.com/appcelerator/_commonjs_app_mobile/commit/a0d4a50d51f1afe85f92cf9e0d2ce8cca08fcf2f
 	// It will be released in ContactsModule.m line 315 in (void)save
 	return saveRequest;
 }
@@ -362,7 +362,7 @@
 {
 	CNSaveRequest *saveRequest = [[CNSaveRequest alloc] init];
 	[saveRequest addGroup:group toContainerWithIdentifier:containerIdentifier];
-	// Do not be tempted to autorelease here. https://github.com/appcelerator/_commonjsapp_mobile/commit/a0d4a50d51f1afe85f92cf9e0d2ce8cca08fcf2f
+	// Do not be tempted to autorelease here. https://github.com/appcelerator/_commonjs_app_mobile/commit/a0d4a50d51f1afe85f92cf9e0d2ce8cca08fcf2f
 	// It will be released in ContactsModule.m line 315 in (void)save
 	return saveRequest;
 }

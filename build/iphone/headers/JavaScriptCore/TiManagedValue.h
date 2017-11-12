@@ -1,8 +1,8 @@
 /**
- * commonJSApp commonJSApp License
- * This source code and all modifications done by commonJSApp
+ * commonJS_App commonJS_App License
+ * This source code and all modifications done by commonJS_App
  * are licensed under the Apache Public License (version 2) and
- * are Copyright (c) 2009-2014 by commonJSApp, Inc.
+ * are Copyright (c) 2009-2014 by commonJS_App, Inc.
  */
 
 /*

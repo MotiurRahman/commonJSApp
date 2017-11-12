@@ -32,7 +32,7 @@ extern NSString * const TI_APPLICATION_DEPLOYTYPE;
 extern NSString * const TI_APPLICATION_GUID;
 extern NSString * const TI_APPLICATION_BUILD_TYPE;
 
-NSString * commonJSApp$ModuleRequireFormat = @"(function(exports){"
+NSString * commonJS_App$ModuleRequireFormat = @"(function(exports){"
 		"var __OXP=exports;var module={'exports':exports};var __dirname=\"%@\";var __filename=\"%@\";%@;\n"
 		"if(module.exports !== __OXP){return module.exports;}"
 		"return exports;})({})";
@@ -42,7 +42,7 @@ NSString * commonJSApp$ModuleRequireFormat = @"(function(exports){"
 void TiBindingRunLoopAnnounceStart(TiBindingRunLoop runLoop);
 
 
-@implementation commonJSAppObject
+@implementation commonJS_AppObject
 
 -(NSDictionary*)modules
 {
@@ -333,7 +333,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 	[self removeProxies];
 	RELEASE_TO_NIL(preload);
 	RELEASE_TO_NIL(context);
-	RELEASE_TO_NIL(_commonjsapp);
+	RELEASE_TO_NIL(_commonjs_app);
 	OSSpinLockLock(&krollBridgeRegistryLock);
 	CFSetRemoveValue(krollBridgeRegistry, self);
 	OSSpinLockUnlock(&krollBridgeRegistryLock);
@@ -541,7 +541,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 -(void)gc
 {
 	[context gc];
-	[_commonjsapp gc];
+	[_commonjs_app gc];
 }
 
 #pragma mark Delegate
@@ -560,18 +560,18 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 
 -(void)didStartNewContext:(KrollContext*)kroll
 {
-	// create commonJSApp global object
+	// create commonJS_App global object
 	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
 
-	// Load the "commonJSApp" object into the global scope
+	// Load the "commonJS_App" object into the global scope
 	NSString *basePath = (url==nil) ? [TiHost resourcePath] : [[[url path] stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"."];
-	_commonjsapp = [[commonJSAppObject alloc] initWithContext:kroll host:host context:self baseURL:[NSURL fileURLWithPath:basePath]];
+	_commonjs_app = [[commonJS_AppObject alloc] initWithContext:kroll host:host context:self baseURL:[NSURL fileURLWithPath:basePath]];
 
 	TiContextRef jsContext = [kroll context];
-	TiValueRef tiRef = [KrollObject toValue:kroll value:_commonjsapp];
+	TiValueRef tiRef = [KrollObject toValue:kroll value:_commonjs_app];
 
-	NSString *_commonjsappNS = [NSString stringWithFormat:@"T%sanium","it"];
-	TiStringRef prop = TiStringCreateWithCFString((CFStringRef) _commonjsappNS);
+	NSString *_commonjs_appNS = [NSString stringWithFormat:@"T%sanium","it"];
+	TiStringRef prop = TiStringCreateWithCFString((CFStringRef) _commonjs_appNS);
 	TiStringRef prop2 = TiStringCreateWithCFString((CFStringRef) [NSString stringWithFormat:@"%si","T"]);
 	TiObjectRef globalRef = TiContextGetGlobalObject(jsContext);
 	TiObjectSetProperty(jsContext, globalRef, prop, tiRef,
@@ -593,7 +593,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 	{
 		for (NSString *name in preload)
 		{
-			KrollObject *ti = (KrollObject*)[_commonjsapp valueForKey:name];
+			KrollObject *ti = (KrollObject*)[_commonjs_app valueForKey:name];
 			NSDictionary *values = [preload valueForKey:name];
 			for (id key in values)
 			{
@@ -647,7 +647,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 		NSNotification *notification = [NSNotification notificationWithName:kTiContextShutdownNotification object:self];
 		[[NSNotificationCenter defaultCenter] postNotification:notification];
 	}
-	[_commonjsapp gc];
+	[_commonjs_app gc];
 
 	if (shutdownCondition)
 	{
@@ -662,7 +662,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 {
 	TiThreadPerformOnMainThread(^{[self unregisterForMemoryWarning];}, NO);
 	[self removeProxies];
-	RELEASE_TO_NIL(_commonjsapp);
+	RELEASE_TO_NIL(_commonjs_app);
 	RELEASE_TO_NIL(console);
 	RELEASE_TO_NIL(context);
 	RELEASE_TO_NIL(preload);
@@ -764,7 +764,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 	NSString *filename = [[sourceURL path] stringByReplacingOccurrencesOfString:[[[NSBundle mainBundle] resourceURL] path] withString:@""];
 	NSString *dirname = [filename stringByDeletingLastPathComponent];
 
-	NSString *js = [[NSString alloc] initWithFormat:commonJSApp$ModuleRequireFormat, dirname, filename, code];
+	NSString *js = [[NSString alloc] initWithFormat:commonJS_App$ModuleRequireFormat, dirname, filename, code];
 
 	/* This most likely should be integrated with normal code flow, but to
 	 * minimize impact until a in-depth reconsideration of KrollContext can be
@@ -971,7 +971,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 
 
 	if (![wrapper respondsToSelector:@selector(replaceValue:forKey:notification:)]) {
-		@throw [NSException exceptionWithName:@"org.commonjsapp.kroll"
+		@throw [NSException exceptionWithName:@"org.commonjs_app.kroll"
 										 reason:[NSString stringWithFormat:@"Module \"%@\" failed to leave a valid exports object", filename]
 									 userInfo:nil];
 	}

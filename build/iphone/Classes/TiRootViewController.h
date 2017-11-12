@@ -58,7 +58,7 @@
     NSInteger activeAlertControllerCount;
 }
 
-//commonJSApp Support
+//commonJS_App Support
 -(CGRect)resizeView;
 -(void)repositionSubviews;
 -(UIView *)topWindowProxyView;

@@ -68,9 +68,9 @@
 {
 	switch ((int)styleCache)
 	{
-		case UIcommonJSAppNativeItemInfoLight:
-		case UIcommonJSAppNativeItemInfoDark:
-		case UIcommonJSAppNativeItemDisclosure:
+		case UIcommonJS_AppNativeItemInfoLight:
+		case UIcommonJS_AppNativeItemInfoDark:
+		case UIcommonJS_AppNativeItemDisclosure:
 			return suggestedResizing & ~(UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
 		default: {
 			break;

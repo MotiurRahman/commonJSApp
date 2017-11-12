@@ -162,7 +162,7 @@
 		if (resultClass==nil)
 		{
 			DebugLog(@"[WARN] Attempted to load %@: Could not find class definition.",className);
-			@throw [NSException exceptionWithName:@"org.commonjsapp.module"
+			@throw [NSException exceptionWithName:@"org.commonjs_app.module"
 										   reason:[NSString stringWithFormat:@"invalid method (%@) passed to %@",name,[self class]]
 										 userInfo:nil];
 		}
@@ -240,7 +240,7 @@
 
 -(id)bindCommonJSModule:(NSString*)code
 {
-	NSString *js = [[NSString alloc] initWithFormat:commonJSApp$ModuleRequireFormat,code];
+	NSString *js = [[NSString alloc] initWithFormat:commonJS_App$ModuleRequireFormat,code];
 
 	id result = [[self pageContext] evalJSAndWait:js];
 	[js release];

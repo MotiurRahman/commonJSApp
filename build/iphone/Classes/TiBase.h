@@ -60,7 +60,7 @@ extern "C" {
 	#define KMETHOD_DEBUG MEMORY_DEBUG
 #endif
 
-// in simulator we redefine to format for commonJSApp Developer console
+// in simulator we redefine to format for commonJS_App Developer console
 
 
 #define TI_INLINE static __inline__
@@ -309,13 +309,13 @@ void TiExceptionThrowWithNameAndReason(NSString *exceptionName, NSString *reason
 #define DEFINE_EXCEPTIONS \
 - (void) throwException:(NSString *) reason subreason:(NSString*)subreason location:(NSString *)location\
 {\
-	NSString * exceptionName = [@"org.commonjsapp." stringByAppendingString:NSStringFromClass([self class])];\
+	NSString * exceptionName = [@"org.commonjs_app." stringByAppendingString:NSStringFromClass([self class])];\
 	TiExceptionThrowWithNameAndReason(exceptionName,reason,subreason,location);\
 }\
 \
 + (void) throwException:(NSString *) reason subreason:(NSString*)subreason location:(NSString *)location\
 {\
-	NSString * exceptionName = @"org.commonjsapp";\
+	NSString * exceptionName = @"org.commonjs_app";\
 	TiExceptionThrowWithNameAndReason(exceptionName,reason,subreason,location);\
 }\
 
@@ -426,28 +426,28 @@ DebugLog(@"[WARN] Ti.%@ DEPRECATED in %@, in favor of Ti.%@",api,in,newapi);
 
  //MUST BE NEGATIVE, as it inhabits the same space as UIBarButtonSystemItem
 enum {
-	UIcommonJSAppNativeItemNone = -1, 
-	UIcommonJSAppNativeItemSpinner = -2,
-	UIcommonJSAppNativeItemProgressBar = -3,
+	UIcommonJS_AppNativeItemNone = -1, 
+	UIcommonJS_AppNativeItemSpinner = -2,
+	UIcommonJS_AppNativeItemProgressBar = -3,
 	
-	UIcommonJSAppNativeItemSlider = -4,
-	UIcommonJSAppNativeItemSwitch = -5,
-	UIcommonJSAppNativeItemMultiButton = -6,
-	UIcommonJSAppNativeItemSegmented = -7,
+	UIcommonJS_AppNativeItemSlider = -4,
+	UIcommonJS_AppNativeItemSwitch = -5,
+	UIcommonJS_AppNativeItemMultiButton = -6,
+	UIcommonJS_AppNativeItemSegmented = -7,
 	
-	UIcommonJSAppNativeItemTextView = -8,
-	UIcommonJSAppNativeItemTextField = -9,
-	UIcommonJSAppNativeItemSearchBar = -10,
+	UIcommonJS_AppNativeItemTextView = -8,
+	UIcommonJS_AppNativeItemTextField = -9,
+	UIcommonJS_AppNativeItemSearchBar = -10,
 	
-	UIcommonJSAppNativeItemPicker = -11,
-	UIcommonJSAppNativeItemDatePicker = -12,
+	UIcommonJS_AppNativeItemPicker = -11,
+	UIcommonJS_AppNativeItemDatePicker = -12,
 	
-	UIcommonJSAppNativeItemInfoLight = -13,
-	UIcommonJSAppNativeItemInfoDark = -14,
+	UIcommonJS_AppNativeItemInfoLight = -13,
+	UIcommonJS_AppNativeItemInfoDark = -14,
 	
-	UIcommonJSAppNativeItemDisclosure = -15,
+	UIcommonJS_AppNativeItemDisclosure = -15,
 	
-	UIcommonJSAppNativeItemContactAdd = -16
+	UIcommonJS_AppNativeItemContactAdd = -16
 };
 
 
@@ -467,6 +467,7 @@ enum {
 #define TI_KEYBOARD_PORTRAIT_HEIGHT		216
 #define TI_KEYBOARD_LANDSCAPE_HEIGHT	140
 
+#define TI_SEARCHBAR_HEIGHT              56
 
 #ifdef DEBUG
 #define FRAME_DEBUG(f) \
@@ -633,7 +634,7 @@ void incrementKrollCounter();
 void decrementKrollCounter();
 #endif
 /**
- *	TiThreadPerformOnMainThread should replace all commonJSApp instances of
+ *	TiThreadPerformOnMainThread should replace all commonJS_App instances of
  *	performSelectorOnMainThread, ESPECIALLY if wait is to be yes. That way,
  *	exceptional-case main thread activities can process them outside of the
  *	standard event loop.

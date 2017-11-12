@@ -209,7 +209,7 @@ TI_INLINE void waitForMemoryPanicCleared();   //WARNING: This must never be run 
 
 - (void)boot
 {
-	DebugLog(@"[INFO] %@/%@ (%s.42c7196)",TI_APPLICATION_NAME,TI_APPLICATION_VERSION,TI_VERSION_STR);
+	DebugLog(@"[INFO] %@/%@ (%s.3620088)",TI_APPLICATION_NAME,TI_APPLICATION_VERSION,TI_VERSION_STR);
 	
 	sessionId = [[TiUtils createUUID] retain];
 	TITANIUM_VERSION = [[NSString stringWithCString:TI_VERSION_STR encoding:NSUTF8StringEncoding] retain];
@@ -505,7 +505,9 @@ TI_INLINE void waitForMemoryPanicCleared();   //WARNING: This must never be run 
 
 - (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:kTiUserNotificationSettingsNotification object:self userInfo:notificationSettings];
+  [[NSNotificationCenter defaultCenter] postNotificationName:kTiUserNotificationSettingsNotification
+                                                      object:self
+                                                    userInfo:@{ @"userNotificationSettings": notificationSettings }];
 }
 
 - (void) application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forLocalNotification:(UILocalNotification *)notification withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void (^)())completionHandler {
@@ -1183,8 +1185,8 @@ expectedTotalBytes:(int64_t)expectedTotalBytes {
     UIDevice *currentDevice = [UIDevice currentDevice];
     NSString *currentLocaleIdentifier = [[NSLocale currentLocale] localeIdentifier];
     NSString *currentDeviceInfo = [NSString stringWithFormat:@"%@/%@; %@; %@;",[currentDevice model],[currentDevice systemVersion],[currentDevice systemName],currentLocaleIdentifier];
-    NSString *kcommonJSAppUserAgentPrefix = [NSString stringWithFormat:@"%s%s%s %s%s","Appc","eler","ator","Tita","nium"];
-    return [NSString stringWithFormat:@"%@/%s (%@)",kcommonJSAppUserAgentPrefix,TI_VERSION_STR,currentDeviceInfo];
+    NSString *kcommonJS_AppUserAgentPrefix = [NSString stringWithFormat:@"%s%s%s %s%s","Appc","eler","ator","Tita","nium"];
+    return [NSString stringWithFormat:@"%@/%s (%@)",kcommonJS_AppUserAgentPrefix,TI_VERSION_STR,currentDeviceInfo];
 }
 
 - (NSString*)userAgent
@@ -1408,7 +1410,7 @@ performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem
             errorString = [error localizedDescription];
         } else {
             // If we have no data...
-            // This should never happen on a commonJSApp app using the node.js CLI
+            // This should never happen on a commonJS_App app using the node.js CLI
             errorString = @"File not found";
         }
         if(errorString != nil) {

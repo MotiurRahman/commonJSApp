@@ -20,9 +20,9 @@ extern NSString * const APSDeployTypeProduction;
 
 /**
  * The APSAnalytics class configures the application to use the APS analytic services
- * to send analytic data that can be viewed on the commonJSApp Dashboard.
+ * to send analytic data that can be viewed on the commonJS_App Dashboard.
  *
- * For information on getting started with commonJSApp Platform Services,
+ * For information on getting started with commonJS_App Platform Services,
  * see [Appclerator Platform Services for iOS](http://bit.ly/1kqteQS).
  */
 @interface APSAnalytics : NSObject
