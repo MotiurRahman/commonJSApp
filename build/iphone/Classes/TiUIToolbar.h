@@ -15,10 +15,10 @@
 @end
 
 @interface TiUIToolbar : TiUIView <LayoutAutosizing, TiToolbarLayoutDelegate> {
-    UIToolbar *toolBar;
-    BOOL hideTopBorder;
-    BOOL showBottomBorder;
-    BOOL extendsBackground;
+  UIToolbar *toolBar;
+  BOOL hideTopBorder;
+  BOOL showBottomBorder;
+  BOOL extendsBackground;
 }
 
 - (UIToolbar *)toolBar;

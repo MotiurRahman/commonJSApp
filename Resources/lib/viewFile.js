@@ -1,29 +1,23 @@
 function view() {
 
-	var tabGroup = Ti.UI.createTabGroup();
-	tabGroup.addTab(createTab());
+	var win = Ti.UI.createWindow({
+		backgroundColor : '#fff'
+	});
 
-	function createTab() {
-		var win = Ti.UI.createWindow({
-			title : "",
-			backgroundColor : '#fff'
-		});
+	var btn = Ti.UI.createButton({
+		title : 'Trigger'
+	});
 
-		win.add(Ti.UI.createWebView({
-			//backgroundColor : "transparent",
-			url : 'http://www.appcelerator.com/',
-			width:'80%',
-			height:'100%'
-			
-		}));
-		var tab = Ti.UI.createTab({
-			title : "Hello",
-			window : win
-		});
+	var webview = Ti.UI.createWebView({
+		url : 'https://appcelerator.com'
+	});
 
-		return tab;
-	}
+	webview.addEventListener('load', function(e) {
+		Ti.API.warn(e.source.html);
+	});
 
-	return tabGroup;
+	win.add(webview);
+	return win;
+
 };
 module.exports = view;

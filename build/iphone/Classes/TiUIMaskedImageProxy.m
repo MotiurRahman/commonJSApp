@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -15,17 +15,16 @@
 
 @implementation TiUIMaskedImageProxy
 
--(void)_initWithProperties:(NSDictionary *)properties
+- (void)_initWithProperties:(NSDictionary *)properties
 {
-	[self replaceValue:NUMINT(kCGBlendModeSourceIn) forKey:@"mode" notification:NO];
-	[super _initWithProperties:properties];
+  [self replaceValue:NUMINT(kCGBlendModeSourceIn) forKey:@"mode" notification:NO];
+  [super _initWithProperties:properties];
 }
 
--(NSString*)apiName
+- (NSString *)apiName
 {
-    return @"Ti.UI.MaskedImage";
+  return @"Ti.UI.MaskedImage";
 }
-
 
 @end
 

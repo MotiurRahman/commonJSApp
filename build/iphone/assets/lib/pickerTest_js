@@ -1,0 +1,36 @@
+function pickerTest(){
+
+
+
+
+
+
+
+
+
+
+
+for(var win=Ti.UI.createWindow({layout:'vertical'}),picker=Ti.UI.createPicker({top:20}),fruit=[],i=0;5>i;i++)
+fruit.push(Ti.UI.createPickerRow({title:'Bananas:'+i}));
+
+
+picker.add(fruit),
+win.add(picker);
+
+var btn=Ti.UI.createButton({
+title:'Add _row',
+top:50});
+
+
+
+
+
+
+
+
+
+return btn.addEventListener('click',function(){fruit.length=0,fruit.push(Ti.UI.createPickerRow({title:'Bananas'})),picker.add(fruit)}),win.add(btn),win;
+
+}
+
+module.exports=pickerTest;

@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -12,20 +12,20 @@
 #import <CoreSpotlight/CoreSpotlight.h>
 
 @interface TiAppiOSSearchQueryProxy : TiProxy {
-    CSSearchQuery *query;
-    NSString *queryString;
-    NSArray<NSString*> *attributes;
+  CSSearchQuery *query;
+  NSString *queryString;
+  NSArray<NSString *> *attributes;
 }
 
-- (id)_initWithPageContext:(id<TiEvaluator>)context andArguments:(NSDictionary*)args;
+- (id)_initWithPageContext:(id<TiEvaluator>)context andArguments:(NSDictionary *)args;
 
-- (CSSearchQuery*)query;
+- (CSSearchQuery *)query;
 
 - (void)start:(id)unused;
 
 - (void)cancel:(id)unused;
 
-- (NSNumber*)isCancelled:(id)unused;
+- (NSNumber *)isCancelled:(id)unused;
 
 @end
 #endif

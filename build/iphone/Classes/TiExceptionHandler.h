@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -39,7 +39,7 @@
 /**
  * Returns the call stack as a static string. May or may not include the most recent function.
  */
-@property (nonatomic, readonly)	NSString *backtrace;
+@property (nonatomic, readonly) NSString *backtrace;
 
 - (id)initWithMessage:(NSString *)message sourceURL:(NSString *)sourceURL lineNo:(NSInteger)lineNo;
 - (id)initWithDictionary:(NSDictionary *)dictionary;
@@ -73,7 +73,7 @@
 /**
  * The Exception Handler class. Singleton instance accessed via <defaultExceptionHandler>
  */
-@interface TiExceptionHandler : NSObject < TiExceptionHandlerDelegate >
+@interface TiExceptionHandler : NSObject <TiExceptionHandlerDelegate>
 
 /**
  * Delegate for error/exception handling
@@ -96,4 +96,3 @@
 - (void)reportScriptError:(TiScriptError *)error;
 
 @end
-

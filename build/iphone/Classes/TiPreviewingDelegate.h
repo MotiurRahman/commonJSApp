@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -8,13 +8,13 @@
  */
 #ifdef USE_TI_UIIOSPREVIEWCONTEXT
 
-#import <Foundation/Foundation.h>
-#import "TiWindowProxy.h"
+#import "TiUIiOSPreviewActionGroupProxy.h"
+#import "TiUIiOSPreviewActionProxy.h"
+#import "TiUIiOSPreviewContextProxy.h"
 #import "TiViewController.h"
 #import "TiViewProxy.h"
-#import "TiUIiOSPreviewContextProxy.h"
-#import "TiUIiOSPreviewActionProxy.h"
-#import "TiUIiOSPreviewActionGroupProxy.h"
+#import "TiWindowProxy.h"
+#import <Foundation/Foundation.h>
 
 @class TiUIiOSPreviewContextProxy;
 
@@ -24,17 +24,17 @@
     The preview context that holds actions
     and action groups.
  */
-@property(nonatomic, retain) TiUIiOSPreviewContextProxy *previewContext;
+@property (nonatomic, retain) TiUIiOSPreviewContextProxy *previewContext;
 
 /**
     The event to be set when source is a UITableView.
  */
-@property(nonatomic, retain) NSDictionary* listViewEvent;
+@property (nonatomic, retain) NSDictionary *listViewEvent;
 
 /**
     Initializes a new previewContext.
  */
-- (instancetype)initWithPreviewContext:(TiUIiOSPreviewContextProxy*)previewContext;
+- (instancetype)initWithPreviewContext:(TiUIiOSPreviewContextProxy *)previewContext;
 
 /**
     Creates a new source rect that represents the

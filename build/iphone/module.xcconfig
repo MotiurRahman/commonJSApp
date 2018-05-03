@@ -1,1 +1,6 @@
 // this is a generated file - DO NOT EDIT
+
+TI_BARCODE_TI_MODULE_VERSION=1.10.1
+TI_BARCODE_OTHER_LDFLAGS=$(inherited) -lstdc++.6.0.9 -liconv
+TI_MODULE_VERSION=$(inherited) $(TI_BARCODE_TI_MODULE_VERSION) 
+OTHER_LDFLAGS=$(inherited) $(TI_BARCODE_OTHER_LDFLAGS) 

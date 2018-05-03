@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -8,14 +8,14 @@
  */
 #import "TiUIView.h"
 
-@interface TiUIButtonBar : TiUIView<LayoutAutosizing> {
-	NSInteger selectedIndex;
-	BOOL controlSpecifiedWidth;
-	UISegmentedControl * segmentedControl;
+@interface TiUIButtonBar : TiUIView <LayoutAutosizing> {
+  NSInteger selectedIndex;
+  BOOL controlSpecifiedWidth;
+  UISegmentedControl *segmentedControl;
 }
 
-- (void)setTabbedBar: (BOOL)newIsTabbed;
+- (void)setTabbedBar:(BOOL)newIsTabbed;
 
--(IBAction)onSegmentChange:(id)sender;
+- (IBAction)onSegmentChange:(id)sender;
 
 @end

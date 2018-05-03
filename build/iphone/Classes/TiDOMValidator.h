@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -12,9 +12,9 @@
 
 @interface TiDOMValidator : NSObject
 
-+(BOOL)checkElementName:(NSString*)pName;
-+(BOOL)checkAttributeName:(NSString*)pName;
-+(BOOL)checkNamespacePrefix:(NSString*)pName;
-+(BOOL)checkNamespaceURI:(NSString*)pName;
++ (BOOL)checkElementName:(NSString *)pName;
++ (BOOL)checkAttributeName:(NSString *)pName;
++ (BOOL)checkNamespacePrefix:(NSString *)pName;
++ (BOOL)checkNamespaceURI:(NSString *)pName;
 @end
 #endif

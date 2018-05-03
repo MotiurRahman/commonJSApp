@@ -1,11 +1,11 @@
 Ti.API.info('bg-service1: service page');
 
-function getCoords() {
-	Ti.Geolocation.getCurrentPosition(function(e) {
-		Ti.API.warn(e);
-	});
+function getCoords(){
+Ti.Geolocation.getCurrentPosition(function(e){
+Ti.API.warn(e);
+});
 }
 
-setInterval(function() {
-	getCoords();
-}, 10000); 
+setInterval(function(){
+getCoords();
+},1e4);

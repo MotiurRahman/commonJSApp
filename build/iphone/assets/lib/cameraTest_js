@@ -1,32 +1,103 @@
-function cameraTest() {
+function cameraTest(){
 
-	var button = Titanium.UI.createButton({
-		title : 'Open Camera',
-		width : 100,
-		height : 50
-	});
-	var welcomeWindow = Titanium.UI.createWindow({
-		backgroundColor : "#000"
-	});
 
-	button.addEventListener('click', function() {
-		Titanium.Media.showCamera({
-			success : function() {
-			},
-			error : function() {
-			},
-			cancel : function() {
-			},
-			saveToPhotoGallery : false,
-			allowEditing : false,
-			mediaTypes : [Ti.Media.MEDIA_TYPE_PHOTO]
-		});
-	});
 
-	welcomeWindow.add(button);
 
-	return welcomeWindow;
+
+
+
+
+
+
+
+
+
+
+function calculateAspectRatioFit(srcWidth,srcHeight,maxWidth,maxHeight){
+
+var ratio=Math.min(maxWidth/srcWidth,maxHeight/srcHeight);
+
+return{
+width:srcWidth*ratio,
+height:srcHeight*ratio};
 
 }
 
-module.exports = cameraTest;
+function login(email,pass){
+Cloud.Users.login({
+login:email,
+password:pass},
+function(e){
+if(e.success){
+var user=e.users[0];
+alert("Success:\nid: "+user.id+"\nsessionId: "+Cloud.sessionId+"\nfirst name: "+user.first_name+"\nlast name: "+user.last_name);
+}else
+alert("Error:\n"+(e.error&&e.message||JSON.stringify(e)));
+
+});
+}var Cloud=require("ti.cloud"),button=Titanium.UI.createButton({title:"Open Gallery",width:100,height:50,top:20}),win=Titanium.UI.createWindow({backgroundColor:"#000",layout:"vertical"});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return login("motiur.mbstu@gmail.com","1234"),button.addEventListener("click",function(){Titanium.Media.openPhotoGallery({success:function(event){if(Ti.API.debug("Our type was: "+event.mediaType),event.mediaType==Ti.Media.MEDIA_TYPE_PHOTO){var obj=calculateAspectRatioFit(event.media.width,event.media.height,700,700),img=event.media;img.imageAsCompressed(1);var imageView=Ti.UI.createImageView({image:img,top:100});win.add(imageView),Cloud.Photos.create({photo:img},function(e){if(e.success){var photo=e.photos[0];alert("Success:\nid: "+photo.id+"\nfilename: "+photo.filename+"\nsize: "+photo.size,"updated_at: "+photo.updated_at)}else alert("Error:\n"+(e.error&&e.message||JSON.stringify(e)))})}else alert("got  wrong type back ="+event.mediaType)},cancel:function(){},error:function(error){var a=Titanium.UI.createAlertDialog({title:"Camera"});error.code==Titanium.Media.NO_CAMERA?a.setMessage("Please run this test on device"):a.setMessage("Unexpected error: "+error.code),a.show()},saveToPhotoGallery:!0,allowEditing:!0,mediaTypes:[Ti.Media.MEDIA_TYPE_VIDEO,Ti.Media.MEDIA_TYPE_PHOTO]})}),win.add(button),win;
+
+}
+
+module.exports=cameraTest;

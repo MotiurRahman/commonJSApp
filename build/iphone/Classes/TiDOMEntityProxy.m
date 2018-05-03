@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -11,28 +11,31 @@
 #import "TiDOMEntityProxy.h"
 
 @implementation TiDOMEntityProxy
--(NSString*)apiName
+- (NSString *)apiName
 {
-    return @"Ti.XML.Entity";
+  return @"Ti.XML.Entity";
 }
 
--(id)nodeValue
+- (id)nodeValue
 {
-	// DOM spec says nodeValue must return null
-	return [NSNull null];
+  // DOM spec says nodeValue must return null
+  return [NSNull null];
 }
 
--(id)notationName{
-    //TODO
-    return [NSNull null];
+- (id)notationName
+{
+  //TODO
+  return [NSNull null];
 }
--(id)publicId{
-    //TODO
-    return [NSNull null];
+- (id)publicId
+{
+  //TODO
+  return [NSNull null];
 }
--(id)systemId{
-    //TODO
-    return [NSNull null];
+- (id)systemId
+{
+  //TODO
+  return [NSNull null];
 }
 @end
 #endif

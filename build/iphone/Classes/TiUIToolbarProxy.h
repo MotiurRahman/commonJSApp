@@ -12,8 +12,8 @@
 #import "TiViewProxy.h"
 
 @interface TiUIToolbarProxy : TiViewProxy <TiToolbar> {
-    @private
-    NSString *_apiName;
+  @private
+  NSString *_apiName;
 }
 
 - (id)_initWithPageContext:(id<TiEvaluator>)context_ args:(NSArray *)args apiName:(NSString *)apiName;

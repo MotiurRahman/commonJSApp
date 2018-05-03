@@ -1,38 +1,38 @@
-function chartShow() {
+function chartShow(){
 
-	var win = Titanium.UI.createWindow({
-		backgroundColor : '#fff'
-	});
+var win=Titanium.UI.createWindow({
+backgroundColor:'#fff'}),
 
-	var chartView = Ti.UI.createWebView({
-		//height : 200,
-		//width : 320,
-		left : 0,
-		top : 0,
-		showScrollbars : false,
-		touchEnabled : false,
-		url : 'http://epoverty.herokuapp.com/charts'
-	});
-	win.add(chartView);
 
-	var button = Ti.UI.createButton({
-		title : 'Regenerate',
-		top : 220,
-	});
-	win.add(button);
+chartView=Ti.UI.createWebView({
 
-	button.addEventListener('click', function() {
-		alert("its working");
-		var options = {};
-		alert("its working not");
-		options.data = new Array(Math.floor(Math.random() * 1001), Math.floor(Math.random() * 1001), Math.floor(Math.random() * 1001), Math.floor(Math.random() * 1001), Math.floor(Math.random() * 1001));
 
-		Ti.App.fireEvent('renderChart', options);
-		alert("its working yet");
-	});
+left:0,
+top:0,
+showScrollbars:!1,
+touchEnabled:!1,
+url:'http://epoverty.herokuapp.com/charts'});
 
-	return win;
+win.add(chartView);
+
+var button=Ti.UI.createButton({
+title:'Regenerate',
+top:220});
+
+
+
+
+
+
+
+
+
+
+
+
+
+return win.add(button),button.addEventListener('click',function(){var _Mathfloor=Math.floor;alert('its working');var options={};alert('its working not'),options.data=[_Mathfloor(1001*Math.random()),_Mathfloor(1001*Math.random()),_Mathfloor(1001*Math.random()),_Mathfloor(1001*Math.random()),_Mathfloor(1001*Math.random())],Ti.App.fireEvent('renderChart',options),alert('its working yet')}),win;
 
 }
 
-module.exports = chartShow;
+module.exports=chartShow;

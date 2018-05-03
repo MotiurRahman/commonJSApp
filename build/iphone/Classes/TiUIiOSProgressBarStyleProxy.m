@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -13,14 +13,14 @@
 
 @implementation TiUIiOSProgressBarStyleProxy
 
--(NSString*)apiName
+- (NSString *)apiName
 {
-    return @"Ti.UI.iOS.ProgressBarStyle";
+  return @"Ti.UI.iOS.ProgressBarStyle";
 }
 
-MAKE_SYSTEM_PROP(PLAIN,UIProgressViewStyleDefault);
-MAKE_SYSTEM_PROP(DEFAULT,UIProgressViewStyleDefault);
-MAKE_SYSTEM_PROP(BAR,UIProgressViewStyleBar);
+MAKE_SYSTEM_PROP(PLAIN, UIProgressViewStyleDefault);
+MAKE_SYSTEM_PROP(DEFAULT, UIProgressViewStyleDefault);
+MAKE_SYSTEM_PROP(BAR, UIProgressViewStyleBar);
 
 @end
 

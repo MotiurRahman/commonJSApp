@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -13,43 +13,42 @@
 
 @implementation TiUIActivityIndicatorProxy
 
--(NSArray *)keySequence
+- (NSArray *)keySequence
 {
-    return [NSArray arrayWithObjects:
-            @"visible",
-            @"font",
-            @"message",
-            @"color",
-            @"style",
-            @"indicatorColor",
-            nil];
+  return [NSArray arrayWithObjects:
+                      @"visible",
+                  @"font",
+                  @"message",
+                  @"color",
+                  @"style",
+                  @"indicatorColor",
+                  nil];
 }
 
--(NSMutableDictionary*)langConversionTable
+- (NSMutableDictionary *)langConversionTable
 {
-    return [NSMutableDictionary dictionaryWithObject:@"message" forKey:@"messageid"];
+  return [NSMutableDictionary dictionaryWithObject:@"message" forKey:@"messageid"];
 }
 
--(void)_initWithProperties:(NSDictionary*)properties
+- (void)_initWithProperties:(NSDictionary *)properties
 {
-    [self initializeProperty:@"visible" defaultValue:NUMBOOL(NO)];
-    [super _initWithProperties:properties];
+  [self initializeProperty:@"visible" defaultValue:NUMBOOL(NO)];
+  [super _initWithProperties:properties];
 }
 
-
--(NSString*)apiName
+- (NSString *)apiName
 {
-    return @"Ti.UI.ActivityIndicator";
+  return @"Ti.UI.ActivityIndicator";
 }
 
 #ifndef TI_USE_AUTOLAYOUT
--(TiDimension)defaultAutoWidthBehavior:(id)unused
+- (TiDimension)defaultAutoWidthBehavior:(id)unused
 {
-    return TiDimensionAutoSize;
+  return TiDimensionAutoSize;
 }
--(TiDimension)defaultAutoHeightBehavior:(id)unused
+- (TiDimension)defaultAutoHeightBehavior:(id)unused
 {
-    return TiDimensionAutoSize;
+  return TiDimensionAutoSize;
 }
 #endif
 

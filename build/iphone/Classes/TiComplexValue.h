@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -15,8 +15,8 @@
  container like this.
  */
 @interface TiComplexValue : NSObject {
-	id value;
-	NSDictionary *properties;
+  id value;
+  NSDictionary *properties;
 }
 
 /**
@@ -24,16 +24,16 @@
  @param value The value to set.
  @param properties The additional properties.
  */
--(id)initWithValue:(id)value properties:(NSDictionary*)properties;
+- (id)initWithValue:(id)value properties:(NSDictionary *)properties;
 
 /**
  Returns the underlying value.
  */
-@property(nonatomic,readonly) id value;
+@property (nonatomic, readonly) id value;
 
 /**
  Returns the associated properties dictionary.
  */
-@property(nonatomic,readonly) NSDictionary *properties;
+@property (nonatomic, readonly) NSDictionary *properties;
 
 @end

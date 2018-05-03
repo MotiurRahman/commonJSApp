@@ -1,0 +1,80 @@
+<h1>Ti.Omniture.MediaSettings</h1>
+
+<h2>Description</h2>
+
+<p>An object that represents Omniture media settings.</p>
+
+<p>Properties can be set on the <em>Ti.Omniture.MediaSettings</em> object in two ways:</p>
+
+<ol><li>Set properties by passing them as a dictionary of key/value pairs to the
+<code>createMediaSettings</code> method.</li><li>Set properties by setting them on the <em>Ti.Omniture.MediaSettings</em> object
+returned by the <code>createMediaSettings</code> method.</li></ol>
+
+<h2>Properties</h2>
+
+<h3>segmentByMilestones : Boolean</h3>
+
+<p>Indicates if segment info should be automatically generated for milestones
+generated or not. Defaults to false.</p>
+
+<h3>segmentByOffsetMilestones : Boolean</h3>
+
+<p>Indicates if segment info should be automatically generated for offset
+milestones or not, the default is false.</p>
+
+<h3>length : Number</h3>
+
+<p>The length of the media item in seconds.</p>
+
+<h3>channel : String</h3>
+
+<p>The name or ID of the channel.</p>
+
+<h3>name : String</h3>
+
+<p>The name or ID of the media item.</p>
+
+<h3>playerName : String</h3>
+
+<p>The name of the media player.</p>
+
+<h3>playerID : String</h3>
+
+<p>The ID of the media player.</p>
+
+<h3>milestones : String</h3>
+
+<p>A comma-delimited list of intervals (as a percentage) for sending tracking data.</p>
+
+<h3>offsetMilestones : String</h3>
+
+<p>A comma-delimited list of intervals (in seconds) for sending tracking data.</p>
+
+<h3>trackSeconds : Number</h3>
+
+<p>The interval at which tracking data should be sent, the default is 0.</p>
+
+<h3>completeCloseOffsetThreshold : Number</h3>
+
+<p>The number of second prior to the end of the media that it should be
+considered complete, the default is 1.</p>
+
+<h3>isMediaAd : Boolean</h3>
+
+<p>Indicates if the media item is an ad or not.</p>
+
+<h3>parentPodPosition : Number</h3>
+
+<p>The position within the pod where the ad is played.</p>
+
+<h3>CPM : String</h3>
+
+<p>The CMP or encrypted CPM (prefixed with a &quot;~&quot;) for the media item.</p>
+
+<h3>parentName : String</h3>
+
+<p>The name or ID of the media item that the ad is embedded in.</p>
+
+<h3>parentPod : String</h3>
+
+<p>The position in the primary content the ad was played.</p>

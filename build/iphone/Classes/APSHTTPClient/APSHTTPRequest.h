@@ -1,6 +1,6 @@
 /**
  * commonJS_App APSHTTPClient Library
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -19,9 +19,9 @@ typedef NS_ENUM(NSInteger, APSRequestError) {
 @class APSHTTPRequest;
 @class APSHTTPPostForm;
 
-@protocol APSConnectionDelegate <NSURLConnectionDelegate, NSURLSessionDelegate, NSURLSessionDataDelegate>
+@protocol APSConnectionDelegate <NSURLSessionDelegate, NSURLSessionDataDelegate>
 @optional
--(BOOL)willHandleChallenge:(NSURLAuthenticationChallenge *)challenge forConnection:(NSURLConnection *)connection;
+-(BOOL)willHandleChallenge:(NSURLAuthenticationChallenge *)challenge forSession:(NSURLSession *)session;
 @end
 
 @protocol APSHTTPRequestDelegate <NSObject>

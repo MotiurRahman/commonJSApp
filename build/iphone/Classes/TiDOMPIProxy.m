@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -13,32 +13,31 @@
 // Corresponds to Interface ProcessingInstruction of DOM2 Spec.
 @implementation TiDOMPIProxy
 
--(NSString*)apiName
+- (NSString *)apiName
 {
-    return @"Ti.XML.ProcessingInstruction";
+  return @"Ti.XML.ProcessingInstruction";
 }
 
--(NSString *)data
+- (NSString *)data
 {
-	return [node stringValue];
+  return [node stringValue];
 }
 
--(void)setData:(NSString *)data
+- (void)setData:(NSString *)data
 {
-	ENSURE_TYPE(data, NSString);
-	[node setStringValue:data];
+  ENSURE_TYPE(data, NSString);
+  [node setStringValue:data];
 }
 
--(void)setNodeValue:(NSString *)data
+- (void)setNodeValue:(NSString *)data
 {
-	[self setData:data];
+  [self setData:data];
 }
 
--(NSString*)target
+- (NSString *)target
 {
-    return [node name];
+  return [node name];
 }
-
 
 @end
 #endif

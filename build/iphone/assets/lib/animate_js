@@ -1,28 +1,28 @@
-function animattionData() {
-	var win = Ti.UI.createWindow({
-		backgroundColor : "white"
-	});
+function animattionData(){
 
-	var imageView;
-	var images = [];
-	for (var i = 0; i < 30; i++) {
-		images.push('/images/' + i + ".png");
-	}
-	win.addEventListener('open', Load_Anim);
 
-	function Load_Anim() {
-		imageView = Titanium.UI.createImageView({
-			images : images,
-			duration : 50,
-			repeatCount : 0,
-			width : Ti.UI.SIZE,
-			height : Ti.UI.SIZE,
-		});
-		win.add(imageView);
-		imageView.start();
-	}
 
-	return win;
+
+
+
+
+
+
+
+
+function Load_Anim(){
+imageView=Titanium.UI.createImageView({
+images:images,
+duration:50,
+repeatCount:0,
+width:Ti.UI.SIZE,
+height:Ti.UI.SIZE}),
+
+win.add(imageView),
+imageView.start();
+}for(var imageView,win=Ti.UI.createWindow({backgroundColor:"white"}),images=[],i=0;30>i;i++)images.push("/images/"+i+".png");
+
+return win.addEventListener("open",Load_Anim),win;
 }
 
-module.exports = animattionData;
+module.exports=animattionData;

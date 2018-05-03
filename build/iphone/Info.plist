@@ -51,8 +51,10 @@
 	<string>UIStatusBarStyleDefault</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Specify the reason for accessing the user's location information.
-                    This appears in the alert dialog when asking the user for permission to
-                    access their location.</string>
+
+					This appears in the alert dialog when asking the user for permission to
+
+					access their location.</string>
 	<key>UISupportedInterfaceOrientations~iphone</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -64,10 +66,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Can we save to your library?</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Can we use your camera?</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Can we save to your library?</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Can we save to your library file?</string>
 	<key>NSAppleMusicUsageDescription</key>
 	<string>Can we open your library?</string>
 	<key>NSMicrophoneUsageDescription</key>

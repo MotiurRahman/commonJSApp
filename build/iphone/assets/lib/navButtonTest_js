@@ -1,0 +1,63 @@
+function navButton(){
+
+var win2=Titanium.UI.createWindow({
+backgroundColor:'red',
+title:'Red Window'}),
+
+
+win1=Titanium.UI.iOS.createNavigationWindow({
+window:win2}),
+
+
+win3=Titanium.UI.createWindow({
+backgroundColor:'blue',
+title:'Blue Window'}),
+
+
+button=Titanium.UI.createButton({
+title:'Open Blue'});
+
+button.addEventListener('click',function(){
+win1.openWindow(win3,{
+animated:!0});
+
+}),
+
+win2.add(button);
+var button2=Titanium.UI.createButton({
+title:'Close Blue Window'});
+
+button2.addEventListener('click',function(){
+win1.closeWindow(win3,{
+animated:!1});
+
+
+});
+var b7=Titanium.UI.createButton({
+title:'Change the Left Nav',
+height:40,
+width:145,
+top:160}),
+
+
+
+leftnav=!1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return b7.addEventListener('click',function(){if(!leftnav){var b=Titanium.UI.createButton({});win3.leftNavButton=b,leftnav=!0}else win3.setLeftNavButton(null),leftnav=!1}),win3.add(b7),win3.add(button2),win1;
+
+}
+
+module.exports=navButton;

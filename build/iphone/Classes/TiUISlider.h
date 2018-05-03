@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -10,20 +10,19 @@
 
 #import "TiUIView.h"
 
+@interface TiUISlider : TiUIView <LayoutAutosizing> {
+  @private
+  UISlider *sliderView;
+  NSDate *lastTouchUp;
+  NSTimeInterval lastTimeInterval;
 
-@interface TiUISlider : TiUIView<LayoutAutosizing> {
-@private
-	UISlider *sliderView;
-	NSDate* lastTouchUp;
-	NSTimeInterval lastTimeInterval;
-	
-	UIControlState thumbImageState;
-	UIControlState rightTrackImageState;
-	UIControlState leftTrackImageState;
-    TiDimension leftTrackLeftCap;
-    TiDimension leftTrackTopCap;
-    TiDimension rightTrackLeftCap;
-    TiDimension rightTrackTopCap;
+  UIControlState thumbImageState;
+  UIControlState rightTrackImageState;
+  UIControlState leftTrackImageState;
+  TiDimension leftTrackLeftCap;
+  TiDimension leftTrackTopCap;
+  TiDimension rightTrackLeftCap;
+  TiDimension rightTrackTopCap;
 }
 
 /**
@@ -32,7 +31,6 @@
  * animated-flag in one command.
  */
 - (void)_setValue:(id)value;
-
 
 @end
 

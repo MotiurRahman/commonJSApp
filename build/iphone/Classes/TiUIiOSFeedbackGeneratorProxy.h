@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -15,9 +15,9 @@
  * Enumeration to handle the feedback generator type in this proxy.
  */
 typedef NS_ENUM(NSInteger, TiUIiOSFeedbackGeneratorType) {
-    TiUIiOSFeedbackGeneratorTypeSelection = 0,
-    TiUIiOSFeedbackGeneratorTypeImpact = 1,
-    TiUIiOSFeedbackGeneratorTypeNotification = 2
+  TiUIiOSFeedbackGeneratorTypeSelection = 0,
+  TiUIiOSFeedbackGeneratorTypeImpact = 1,
+  TiUIiOSFeedbackGeneratorTypeNotification = 2
 };
 
 /**
@@ -27,8 +27,8 @@ typedef NS_ENUM(NSInteger, TiUIiOSFeedbackGeneratorType) {
  * haptic feedbacks.
  */
 @interface TiUIiOSFeedbackGeneratorProxy : TiProxy {
-    UIFeedbackGenerator *generator;
-    TiUIiOSFeedbackGeneratorType type;
+  UIFeedbackGenerator *generator;
+  TiUIiOSFeedbackGeneratorType type;
 }
 
 /**

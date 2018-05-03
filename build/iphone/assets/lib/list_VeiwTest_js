@@ -1,68 +1,148 @@
-function listView() {
+function listView(){
 
-	var win = Ti.UI.createWindow({
-		backgroundColor : 'white'
-	});
+var win=Ti.UI.createWindow({
+backgroundColor:'white'}),
 
-	var view_list = Titanium.UI.createView({
 
-		height : Ti.UI.SIZE
 
-	});
 
-	var view_bottom = Titanium.UI.createView({
+myTemplate={
+childTemplates:[{
+type:'Ti.UI.ImageView',
+bindId:'pic',
+properties:{
+width:'50dp',
+height:'50dp',
+left:0}},
 
-		height : 70,
-		bottom : 0,
-		backgroundColor : "red"
+{
+type:'Ti.UI.Label',
+bindId:'info',
+properties:{
+color:'black',
+font:{
+fontFamily:'Arial',
+fontSize:'20dp',
+fontWeight:'bold'},
 
-	});
+left:'60dp',
+top:0}},
 
-	// Create a Button.
-	var check = Ti.UI.createButton({
-		title : 'check',
-		height : Ti.UI.SIZE,
-		width : Ti.UI.SIZE,
+{
+type:'Ti.UI.Label',
+bindId:'es_info',
+properties:{
+color:'gray',
+font:{
+fontFamily:'Arial',
+fontSize:'14dp'},
 
-	});
+left:'60dp',
+top:'25dp'}}]},
 
-	// Listen for click events.
-	check.addEventListener('click', function() {
-		alert('\'check\' was clicked!');
-	});
 
-	// Add to the parent view.
-	view_bottom.add(check);
 
-	var data = [{
-		properties : {
-			title : 'Row 1'
-		}
-	}, {
-		properties : {
-			title : 'Row 2'
-		}
-	}, {
-		properties : {
-			title : 'Row 3'
-		}
-	}];
 
-	// Add the list data items to a section
-	var listSection = Titanium.UI.createListSection({
-		items : data
-	});
+listView=Ti.UI.createListView({
 
-	// Add the list section to a list view
-	var listView = Titanium.UI.createListView({
-		sections : [listSection]
-	});
+templates:{
+template:myTemplate},
 
-	view_list.add(listView);
-	win.add(view_list);
-	win.add(view_bottom);
-	return win;
+
+
+defaultItemTemplate:'template'}),
+
+sections=[],
+
+fruitSection=Ti.UI.createListSection({
+headerTitle:'Fruits / Frutas'}),
+
+fruitDataSet=[
+
+
+
+{
+info:{
+text:'Apple'},
+
+es_info:{
+text:'Manzana'},
+
+pic:{
+image:'apple.png'}},
+
+{
+info:{
+text:'Banana'},
+
+es_info:{
+text:'Banana'},
+
+pic:{
+image:'banana.png'}}];
+
+
+fruitSection.setItems(fruitDataSet),
+sections.push(fruitSection);
+
+var vegSection=Ti.UI.createListSection({
+headerTitle:'Vegetables / Verduras'}),
+
+vegDataSet=[{
+info:{
+text:'Carrot'},
+
+es_info:{
+text:'Zanahoria'},
+
+pic:{
+image:'carrot.png'}},
+
+{
+info:{
+text:'Potato'},
+
+es_info:{
+text:'Patata'},
+
+pic:{
+image:'potato.png'}}];
+
+
+vegSection.setItems(vegDataSet),
+sections.push(vegSection);
+
+var grainSection=Ti.UI.createListSection({
+headerTitle:'Grains / Granos'}),
+
+grainDataSet=[{
+info:{
+text:'Corn'},
+
+es_info:{
+text:'Maiz'},
+
+pic:{
+image:'corn.png'}},
+
+{
+info:{
+text:'Rice'},
+
+es_info:{
+text:'Arroz'},
+
+pic:{
+image:'rice.png'}}];
+
+
+
+
+
+
+
+return grainSection.setItems(grainDataSet),sections.push(grainSection),listView.setSections(sections),win.add(listView),win;
 
 }
 
-module.exports = listView;
+module.exports=listView;

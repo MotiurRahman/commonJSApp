@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -11,26 +11,26 @@
 @class TiHost;
 
 @interface Bridge : NSObject {
-@private
-	id callback;
-	NSString *basename;
-@protected
-	NSURL *url;
-	TiHost *host;
+  @private
+  id callback;
+  NSString *basename;
+  @protected
+  NSURL *url;
+  TiHost *host;
 }
 
--(id)initWithHost:(TiHost*)host;
+- (id)initWithHost:(TiHost *)host;
 
--(void)boot:(id)callback url:(NSURL*)url preload:(NSDictionary*)preload;
+- (void)boot:(id)callback url:(NSURL *)url preload:(NSDictionary *)preload;
 
--(void)booted;
+- (void)booted;
 
--(void)shutdown:(NSCondition*)condition;
+- (void)shutdown:(NSCondition *)condition;
 
--(void)gc;
+- (void)gc;
 
--(TiHost*)host;
+- (TiHost *)host;
 
-- (NSString*)basename;
+- (NSString *)basename;
 
 @end

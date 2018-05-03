@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -14,33 +14,31 @@
 
 #pragma mark Factory methods
 
--(UIView<UITextInputTraits>*)textWidgetView;
+- (UIView<UITextInputTraits> *)textWidgetView;
 
 #pragma mark Public APIs
 
--(BOOL)hasText;
+- (BOOL)hasText;
 @end
 
+@interface TiUITextWidget : TiUIView <TiUITextWidget> {
 
-@interface TiUITextWidget : TiUIView<TiUITextWidget> {
+  @protected
+  UIView<UITextInputTraits> *textWidgetView;
+  BOOL suppressReturn;
+  NSInteger maxLength;
 
-@protected
-	UIView<UITextInputTraits>*	textWidgetView;
-	BOOL suppressReturn;
-	NSInteger maxLength;
-
-	TiUIView<TiScrolling> *	parentScrollView;
-@private
-
+  TiUIView<TiScrolling> *parentScrollView;
+  @private
 }
 
--(void)textWidget:(UIView<UITextInputTraits>*)tw didFocusWithText:(NSString *)value;
--(void)textWidget:(UIView<UITextInputTraits>*)tw didBlurWithText:(NSString *)value;
--(void)setValue_:(id)text;
--(void)setSelectionFrom:(id)start to:(id)end;
+- (void)textWidget:(UIView<UITextInputTraits> *)tw didFocusWithText:(NSString *)value;
+- (void)textWidget:(UIView<UITextInputTraits> *)tw didBlurWithText:(NSString *)value;
+- (void)setValue_:(id)text;
+- (void)setSelectionFrom:(id)start to:(id)end;
 #pragma mark - commonJS_App Internal Use Only
--(void)updateKeyboardStatus;
--(NSDictionary*)selectedRange;
+- (void)updateKeyboardStatus;
+- (NSDictionary *)selectedRange;
 @end
 
 #endif

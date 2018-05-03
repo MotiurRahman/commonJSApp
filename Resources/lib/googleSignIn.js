@@ -1,0 +1,48 @@
+function googleSignIn() {
+
+	var Google = require('ti.googlesignin');
+	Google.initialize({
+		clientID : "68540828861-e4sh2c8qvsv8u7ehkm9bod5enht8e04q.apps.googleusercontent.com"
+	});
+
+	var win = Ti.UI.createWindow({
+		backgroundColor : '#fff'
+	});
+
+	var scroll = Ti.UI.createScrollView({
+		top : 40,
+		layout : 'vertical'
+	});
+	win.add(scroll);
+
+	var btn = Ti.UI.createButton({
+		title : 'Sign In with Google'
+	});
+
+	Google.addEventListener('login', function(e) {
+		alert('Logged in!');
+		Ti.API.info(' ***** RESULT: ' + JSON.stringify(e));
+
+		//ANDROID RESULT:
+		// {
+		//     "familyName": "Family",
+		//     "givenName": "Person",
+		//     "fullName": "Person Name",
+		//     "accountName": "user@domain.com",
+		//     "token": "abc",
+		//     "email": "user@domain.com",
+		//     "displayName": "User Name",
+		//     "photo": "https://lh5.googleusercontent.com/-F58Ul6-zinE/AAAAAAAAAAI/AAAAAAAAAAAA/123456789/abc-d/photo.jpg",
+		// }
+	});
+
+	btn.addEventListener('click', function() {
+		Google.signIn();
+	});
+
+	scroll.add(btn);
+	return win;
+
+}
+
+module.exports = googleSignIn; 

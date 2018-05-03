@@ -1,48 +1,48 @@
-function touchID() {
+function touchID(){
 
-	var TiTouchId = require('ti.touchid');
+var TiTouchId=require('ti.touchid'),
 
-	var win = Ti.UI.createWindow();
+win=Ti.UI.createWindow(),
 
-	var btn = Ti.UI.createButton({
+btn=Ti.UI.createButton({
 
-		title : 'authenticate'
+title:'authenticate'});
 
-	});
 
-	win.add(btn);
 
-	btn.addEventListener('click', function() {
 
-		if (!TiTouchId.isSupported()) {
 
-			alert("Touch ID is not supported on this device!");
 
-			return;
 
-		}
 
-		TiTouchId.authenticate({
 
-			reason : 'We need your fingerprint to continue.',
 
-			callback : function(e) {
 
-				if (!e.success) {
 
-					alert('Message: ' + e.error);
 
-				} else {
 
-					alert('YAY! success');
 
-				}
 
-			}
-		});
-	});
 
-	return win;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return win.add(btn),btn.addEventListener('click',function(){return TiTouchId.isSupported()?void TiTouchId.authenticate({reason:'We need your fingerprint to continue.',callback:function(e){e.success?alert('YAY! success'):alert('Message: '+e.error)}}):void alert('Touch ID is not supported on this device!')}),win;
 }
 
-module.exports = touchID;
+module.exports=touchID;

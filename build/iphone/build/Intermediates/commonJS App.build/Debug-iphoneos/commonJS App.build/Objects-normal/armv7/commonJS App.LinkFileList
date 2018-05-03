@@ -5,14 +5,10 @@
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/AFItemView.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/AFOpenFlowView.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/AFUIImageReflection.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiPhoneScrollIndicatorStyleProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiSnapBehavior.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUITextWidgetProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUITableViewSectionProxy.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiPhoneTableViewStyleProxy.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiPhoneTableViewSeparatorStyleProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/AudioStreamer.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/Base64Transcoder.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUITextWidget.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/PlausibleDatabase.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/PLSqliteDatabase.o
@@ -50,7 +46,6 @@
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUITextField.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiOSSystemButtonProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUITextAreaProxy.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiPhoneListViewSeparatorStyleProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUITextArea.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiOSPreviewActionGroupProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUITabProxy.o
@@ -61,27 +56,20 @@
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiOSAnimationStyleProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUITabGroupProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUITabGroup.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiPhoneSystemIconProxy.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiPhoneSystemButtonStyleProxy.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiPhoneSystemButtonProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUISwitchProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUISwitch.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiPhoneStatusBarProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUISliderProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUISlider.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUISearchBarProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUISearchBar.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIRefreshControlProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiOSTableViewCellSelectionStyleProxy.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiPhoneRowAnimationStyleProxy.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiPhoneProgressBarStyleProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIProgressBarProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIProgressBar.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIOptionDialogProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUINavBarButton.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUILabelProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUILabel.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiPhoneProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIImageViewProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiOSSystemIconProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiOSLivePhoto.o
@@ -96,9 +84,7 @@
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIButtonBar.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiOSRowAnimationStyleProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIButton.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiPhoneAnimationStyleProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIAlertDialogProxy.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiPhoneActivityIndicatorStyleProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIActivityIndicatorProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIActivityIndicator.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiRect.o
@@ -106,7 +92,6 @@
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiPoint.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiModule.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiMediaVideoPlayerProxy.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiPhoneListViewScrollPositionProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiMediaSoundProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiOSStepperProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiMediaAudioPlayerProxy.o
@@ -118,6 +103,7 @@
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiContactsPerson.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiComplexValue.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiPreviewingDelegate.o
+/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiAppiOSUserActivityProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiColor.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiOSNavWindowProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiNetworkHTTPClientProxy.o
@@ -151,7 +137,6 @@
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/AppModule.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/APIModule.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/AccelerometerModule.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiPhoneListViewStyleProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiOSFeedbackGeneratorProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIScrollableViewProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIScrollableView.o
@@ -171,7 +156,6 @@
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiLogServer.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/ListenerEntry.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/XMLModule.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiPhoneTableViewScrollPositionProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiMediaAudioRecorderProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/SCListener.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiOSSplitWindow.o
@@ -189,7 +173,6 @@
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiMediaSystemAlertProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/UtilsModule.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiOSScrollIndicatorStyleProxy.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiPhoneTableViewCellSelectionStyleProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIMaskedImageProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiOSTransitionAnimationProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIMaskedImage.o
@@ -225,9 +208,6 @@
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiContactsGroup.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiOSPreviewContextProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/ApplicationMods.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiPhoneListViewCellSelectionStyleProxy.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiOSAdViewProxy.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiOSAdView.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiOSProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/Webcolor.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiFilesystemBlobProxy.o
@@ -265,7 +245,6 @@
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TIDOMCharacterDataProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TIDOMDOMImplementationProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiOSStepper.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiAppiOSUserActivityProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TIDOMDocumentTypeProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/AnalyticsModule.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/NSData+Additions.o
@@ -287,7 +266,6 @@
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiConsole.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/Ti3DMatrix.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiOSDocumentViewerProxy.o
-/Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiUIiPhoneAlertDialogStyleProxy.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiBindingEvent.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiBindingRunLoop.o
 /Users/user/Documents/Appcelerator_Studio_Workspace/commonJSApp/build/iphone/build/Intermediates/commonJS App.build/Debug-iphoneos/commonJS App.build/Objects-normal/armv7/TiBindingTiValue.o

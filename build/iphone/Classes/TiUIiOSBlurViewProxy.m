@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -16,21 +16,21 @@
 
 #pragma mark Proxy lifecycle
 
--(NSString*)apiName
+- (NSString *)apiName
 {
-    return @"Ti.UI.iOS.BlurView";
+  return @"Ti.UI.iOS.BlurView";
 }
 
--(void)dealloc
+- (void)dealloc
 {
-    [super dealloc];
+  [super dealloc];
 }
 
 #pragma mark Public APIs
 
 - (TiUIiOSBlurView *)blurView
 {
-    return (TiUIiOSBlurView *)self.view;
+  return (TiUIiOSBlurView *)self.view;
 }
 
 @end

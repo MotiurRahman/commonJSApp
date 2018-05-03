@@ -1,0 +1,46 @@
+function scrollableView(){
+var win=Ti.UI.createWindow({
+layout:'vertical'}),
+
+
+
+btn1=Ti.UI.createButton({
+title:'Remove View',
+height:Ti.UI.SIZE,
+width:Ti.UI.SIZE,
+top:50});
+
+
+win.add(btn1);
+
+var view1=Ti.UI.createView({
+backgroundColor:'red'}),
+
+view2=Ti.UI.createView({
+backgroundColor:'green'}),
+
+view3=Ti.UI.createView({
+backgroundColor:'blue'}),
+
+
+scrollableView=Ti.UI.createScrollableView({
+views:[view1,view2,view3],
+showPagingControl:!0,
+top:50,
+width:Ti.UI.FILL,
+height:400});
+
+
+
+
+
+
+
+
+
+
+
+return win.add(scrollableView),btn1.addEventListener('click',function(e){scrollableView.removeView(view3),alert('successfully removed blue')}),win;
+}
+
+module.exports=scrollableView;

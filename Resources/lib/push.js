@@ -13,7 +13,7 @@ function pushTest() {
 		left : 20,
 		right : 20,
 		hintText : 'Enter your channel name',
-		keyboardType : Ti.UI.KEYBOARD_DEFAULT,
+		//keyboardType : Ti.UI.KEYBOARD_DEFAULT,
 		returnKeyType : Ti.UI.RETURNKEY_DEFAULT,
 		borderStyle : Ti.UI.INPUT_BORDERSTYLE_ROUNDED
 	});
@@ -124,7 +124,12 @@ function pushTest() {
 
 		// Process incoming push notifications
 		function receivePush(e) {
-			alert('Received push: ' + JSON.stringify(e));
+
+			var alertString = e.data.aps.alert;
+			Ti.API.info(alertString);
+
+			Ti.API.info("Title Name:" + e.data.title + '\n'+"Alert name"+e.data.alert);
+			//alert('Received push: ' + JSON.stringify(e));
 		}
 
 		// Save the device token for subsequent API calls

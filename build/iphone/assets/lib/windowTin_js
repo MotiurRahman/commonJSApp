@@ -1,0 +1,28 @@
+function border(image){
+var win=Ti.UI.createWindow({
+backgroundColor:'white',
+exitOnClose:!0,
+fullscreen:!1,
+title:'ScrollView Demo'}),
+
+
+scrollView=Ti.UI.createScrollView({
+showVerticalScrollIndicator:!0,
+showHorizontalScrollIndicator:!0,
+height:'100%',
+width:'100%'}),
+
+view=Ti.UI.createView({
+backgroundColor:'#336699',
+borderRadius:10,
+backgroundImage:image,
+top:10,
+height:2e3,
+width:1e3});
+
+
+
+return scrollView.add(view),win.add(scrollView),win;
+}
+
+module.exports=border;

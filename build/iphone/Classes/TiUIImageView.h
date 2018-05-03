@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -8,8 +8,8 @@
  */
 #ifdef USE_TI_UIIMAGEVIEW
 
-#import "TiUIView.h"
 #import "ImageLoader.h"
+#import "TiUIView.h"
 
 //
 // this is a re-implementation (sort of) of the UIImageView object used for
@@ -17,38 +17,36 @@
 // problemmatic and we try and solve it here.
 //
 
-@interface TiUIImageView : TiUIView <ImageLoaderDelegate, TiProxyDelegate>
-{
-@private
-	NSMutableArray *images;
-	NSTimer *timer;
-	NSTimeInterval interval;
-	NSInteger repeatCount;
-	NSInteger index;
-	NSInteger iterations;
-	UIView *previous;
-	UIView *container;
-	BOOL ready;
-	BOOL stopped;
-	BOOL reverse;
-	BOOL placeholderLoading;
-	TiDimension width;
-	TiDimension height;
-	CGFloat autoHeight;
-	CGFloat autoWidth;
-	NSInteger loadCount;
-	NSInteger readyCount;
-	NSInteger loadTotal;
-	UIImageView * imageView;
+@interface TiUIImageView : TiUIView <ImageLoaderDelegate, TiProxyDelegate> {
+  @private
+  NSMutableArray *images;
+  NSTimer *timer;
+  NSTimeInterval interval;
+  NSInteger repeatCount;
+  NSInteger index;
+  NSInteger iterations;
+  UIView *previous;
+  UIView *container;
+  BOOL ready;
+  BOOL stopped;
+  BOOL reverse;
+  BOOL placeholderLoading;
+  TiDimension width;
+  TiDimension height;
+  CGFloat autoHeight;
+  CGFloat autoWidth;
+  NSInteger loadCount;
+  NSInteger readyCount;
+  NSInteger loadTotal;
+  UIImageView *imageView;
 }
 
--(void)start;
--(void)stop;
--(void)pause;
--(void)resume;
+- (void)start;
+- (void)stop;
+- (void)pause;
+- (void)resume;
 
--(void)setImage_:(id)arg;
-
+- (void)setImage_:(id)arg;
 
 @end
 

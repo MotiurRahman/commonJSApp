@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -15,14 +15,14 @@
  * can call a callback either on or off the main UI thread.
  */
 @interface OperationQueue : NSObject {
-	NSOperationQueue *queue;
+  NSOperationQueue *queue;
 }
 
 /**
  Returns shared instance.
  @return The shared instance.
  */
-+(OperationQueue*)sharedQueue;
++ (OperationQueue *)sharedQueue;
 
 /**
  Queues an operation.
@@ -37,6 +37,6 @@
  @param on The after target.
  @param ui The flag to invoke after on UI thread.
  */
--(void)queue:(SEL)selector target:(id)target arg:(id)arg after:(SEL)after on:(id)on ui:(BOOL)ui;
+- (void)queue:(SEL)selector target:(id)target arg:(id)arg after:(SEL)after on:(id)on ui:(BOOL)ui;
 
 @end

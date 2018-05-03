@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -11,28 +11,28 @@
 #import "TiUIView.h"
 
 @interface TiUIButton : TiUIView {
-@private
-	UIButton *button;
+  @private
+  UIButton *button;
 
 #ifndef TI_USE_AUTOLAYOUT
-    //In the rare case where the button is treated as a view group, we must have
-    //an empty wrapper for -[parentViewForChild:]
-	UIView * viewGroupWrapper;
+  //In the rare case where the button is treated as a view group, we must have
+  //an empty wrapper for -[parentViewForChild:]
+  UIView *viewGroupWrapper;
 #endif
-	UIImage * backgroundImageCache;
-	UIImage * backgroundImageUnstretchedCache;
+  UIImage *backgroundImageCache;
+  UIImage *backgroundImageUnstretchedCache;
 
-	int style;
-	
-    BOOL touchStarted;
+  int style;
+
+  BOOL touchStarted;
 }
 
--(UIButton*)button;
+- (UIButton *)button;
 #ifndef TI_USE_AUTOLAYOUT
--(UIView*)viewGroupWrapper;
+- (UIView *)viewGroupWrapper;
 #endif
 
--(void)setEnabled_:(id)value;
+- (void)setEnabled_:(id)value;
 
 @end
 

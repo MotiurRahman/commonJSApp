@@ -4,63 +4,143 @@ function listView() {
 		backgroundColor : 'white'
 	});
 
-	var view_list = Titanium.UI.createView({
+	// Create a custom template that displays an image on the left,
+	// then a title next to it with a subtitle below it.
+	var myTemplate = {
+		childTemplates : [{// Image justified left
+			type : 'Ti.UI.ImageView', // Use an image view for the image
+			bindId : 'pic', // Maps to a custom pic property of the item data
+			properties : {// Sets the image view  properties
+				width : '50dp',
+				height : '50dp',
+				left : 0
+			}
+		}, {// Title
+			type : 'Ti.UI.Label', // Use a label for the title
+			bindId : 'info', // Maps to a custom info property of the item data
+			properties : {// Sets the label properties
+				color : 'black',
+				font : {
+					fontFamily : 'Arial',
+					fontSize : '20dp',
+					fontWeight : 'bold'
+				},
+				left : '60dp',
+				top : 0,
+			}
+		}, {// Subtitle
+			type : 'Ti.UI.Label', // Use a label for the subtitle
+			bindId : 'es_info', // Maps to a custom es_info property of the item data
+			properties : {// Sets the label properties
+				color : 'gray',
+				font : {
+					fontFamily : 'Arial',
+					fontSize : '14dp'
+				},
+				left : '60dp',
+				top : '25dp',
+			}
+		}]
+	};
 
-		height : Ti.UI.SIZE
-
+	var listView = Ti.UI.createListView({
+		// Maps myTemplate dictionary to 'template' string
+		templates : {
+			'template' : myTemplate
+		},
+		// Use 'template', that is, the myTemplate dict created earlier
+		// for all items as long as the template property is not defined for an item.
+		defaultItemTemplate : 'template'
 	});
+	var sections = [];
 
-	var view_bottom = Titanium.UI.createView({
-
-		height : 70,
-		bottom : 0,
-		backgroundColor : "red"
-
+	var fruitSection = Ti.UI.createListSection({
+		headerTitle : 'Fruits / Frutas'
 	});
-
-	// Create a Button.
-	var check = Ti.UI.createButton({
-		title : 'check',
-		height : Ti.UI.SIZE,
-		width : Ti.UI.SIZE,
-
-	});
-
-	// Listen for click events.
-	check.addEventListener('click', function() {
-		alert('\'check\' was clicked!');
-	});
-
-	// Add to the parent view.
-	view_bottom.add(check);
-
-	var data = [{
-		properties : {
-			title : 'Row 1'
+	var fruitDataSet = [
+	// the text property of info maps to the text property of the title label
+	// the text property of es_info maps to text property of the subtitle label
+	// the image property of pic maps to the image property of the image view
+	{
+		info : {
+			text : 'Apple'
+		},
+		es_info : {
+			text : 'Manzana'
+		},
+		pic : {
+			image : 'apple.png'
 		}
 	}, {
-		properties : {
-			title : 'Row 2'
-		}
-	}, {
-		properties : {
-			title : 'Row 3'
+		info : {
+			text : 'Banana'
+		},
+		es_info : {
+			text : 'Banana'
+		},
+		pic : {
+			image : 'banana.png'
 		}
 	}];
+	fruitSection.setItems(fruitDataSet);
+	sections.push(fruitSection);
 
-	// Add the list data items to a section
-	var listSection = Titanium.UI.createListSection({
-		items : data
+	var vegSection = Ti.UI.createListSection({
+		headerTitle : 'Vegetables / Verduras'
 	});
+	var vegDataSet = [{
+		info : {
+			text : 'Carrot'
+		},
+		es_info : {
+			text : 'Zanahoria'
+		},
+		pic : {
+			image : 'carrot.png'
+		}
+	}, {
+		info : {
+			text : 'Potato'
+		},
+		es_info : {
+			text : 'Patata'
+		},
+		pic : {
+			image : 'potato.png'
+		}
+	}];
+	vegSection.setItems(vegDataSet);
+	sections.push(vegSection);
 
-	// Add the list section to a list view
-	var listView = Titanium.UI.createListView({
-		sections : [listSection]
+	var grainSection = Ti.UI.createListSection({
+		headerTitle : 'Grains / Granos'
 	});
+	var grainDataSet = [{
+		info : {
+			text : 'Corn'
+		},
+		es_info : {
+			text : 'Maiz'
+		},
+		pic : {
+			image : 'corn.png'
+		}
+	}, {
+		info : {
+			text : 'Rice'
+		},
+		es_info : {
+			text : 'Arroz'
+		},
+		pic : {
+			image : 'rice.png'
+		}
+	}];
+	grainSection.setItems(grainDataSet);
+	sections.push(grainSection);
 
-	view_list.add(listView);
-	win.add(view_list);
-	win.add(view_bottom);
+	listView.setSections(sections);
+	win.add(listView);
 	return win;
 
 }

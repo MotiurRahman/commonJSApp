@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -11,41 +11,41 @@
 #import "TiViewProxy.h"
 
 @interface TiUIiOSPreviewActionProxy : TiViewProxy {
-    UIPreviewAction *action;
+  UIPreviewAction *action;
 }
 
 /**
     The index of the action inside the previewing context.
  */
-@property(nonatomic, assign) NSUInteger actionIndex;
+@property (nonatomic, assign) NSUInteger actionIndex;
 
 /**
     The style of the preview action
  */
-@property(nonatomic, assign) UIPreviewActionStyle style;
+@property (nonatomic, assign) UIPreviewActionStyle style;
 
 /**
     The title of the preview action
  */
-@property(nonatomic, retain) NSString *title;
+@property (nonatomic, retain) NSString *title;
 
 /**
     The indexPath for accessing section and item of
     the tableView if specified.
 */
-@property(nonatomic, retain) NSDictionary *listViewEvent;
+@property (nonatomic, retain) NSDictionary *listViewEvent;
 
 /**
     Returns a configured preview action.
     @return The configured UIPreviewAction.
  */
--(UIPreviewAction*)action;
+- (UIPreviewAction *)action;
 
 /**
     Fires an event when an action is clicked.
     @param The clicked UIPreviewAction.
  */
--(void)fireEventWithAction:(UIPreviewAction*)action;
+- (void)fireEventWithAction:(UIPreviewAction *)action;
 
 @end
 

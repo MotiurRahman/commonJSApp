@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -14,22 +14,20 @@
 
 @synthesize value, properties;
 
-
--(id)initWithValue:(id)value_ properties:(NSDictionary*)properties_
+- (id)initWithValue:(id)value_ properties:(NSDictionary *)properties_
 {
-	if (self = [super init])
-	{
-		value = [value_ retain];
-		properties = [properties_ retain];
-	}
-	return self;
+  if (self = [super init]) {
+    value = [value_ retain];
+    properties = [properties_ retain];
+  }
+  return self;
 }
 
--(void)dealloc
+- (void)dealloc
 {
-	RELEASE_TO_NIL(value);
-	RELEASE_TO_NIL(properties);
-	[super dealloc];
+  RELEASE_TO_NIL(value);
+  RELEASE_TO_NIL(properties);
+  [super dealloc];
 }
 
 @end

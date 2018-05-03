@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 2.0.0
+apiversion: 4
+architectures: arm64-v8a armeabi-v7a x86
+description: bluesnap
+author: Milon
+license: Specify your license
+copyright: Copyright (c) 2017 by Your Company
+
+# these should not be edited
+name: bluesnap
+moduleid: com.medsymphony.bluesnap
+guid: 906edaf0-9c7a-45a4-b1e9-77df22349880
+platform: android
+minsdk: 7.0.0

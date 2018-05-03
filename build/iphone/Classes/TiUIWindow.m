@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -11,37 +11,34 @@
 
 @implementation TiUIWindow
 
-- (void) dealloc
+- (void)dealloc
 {
-	[super dealloc];
+  [super dealloc];
 }
 
 #ifdef TI_USE_AUTOLAYOUT
--(void)initializeTiLayoutView
+- (void)initializeTiLayoutView
 {
-    [super initializeTiLayoutView];
-    [self setDefaultHeight:TiDimensionAutoFill];
-    [self setDefaultWidth:TiDimensionAutoFill];
+  [super initializeTiLayoutView];
+  [self setDefaultHeight:TiDimensionAutoFill];
+  [self setDefaultWidth:TiDimensionAutoFill];
 }
 #endif
 
-
--(void)frameSizeChanged:(CGRect)frame bounds:(CGRect)bounds
+- (void)frameSizeChanged:(CGRect)frame bounds:(CGRect)bounds
 {
-    [super frameSizeChanged:frame bounds:bounds];
-    
-    //Need the delay so that we get the right navbar bounds
-    TiProxy* windowProxy = [self proxy];
-    if ([windowProxy respondsToSelector:@selector(willChangeSize)]) {
-        [(id)windowProxy willChangeSize];
-    }
-    if ([windowProxy respondsToSelector:@selector(updateNavBar)]) {
-        [windowProxy performSelector:@selector(updateNavBar) 
-                           withObject:nil 
-                           afterDelay:[[UIApplication sharedApplication] statusBarOrientationAnimationDuration] ];
-    }
+  [super frameSizeChanged:frame bounds:bounds];
+
+  //Need the delay so that we get the right navbar bounds
+  TiProxy *windowProxy = [self proxy];
+  if ([windowProxy respondsToSelector:@selector(willChangeSize)]) {
+    [(id)windowProxy willChangeSize];
+  }
+  if ([windowProxy respondsToSelector:@selector(updateNavBar)]) {
+    [windowProxy performSelector:@selector(updateNavBar)
+                      withObject:nil
+                      afterDelay:[[UIApplication sharedApplication] statusBarOrientationAnimationDuration]];
+  }
 }
 
-
 @end
-

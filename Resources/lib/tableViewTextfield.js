@@ -5,8 +5,6 @@ function tableViewTextfield() {
 		layout : 'vertical'
 
 	});
-	
-	
 
 	// Create a TextField.
 	var textValue = Ti.UI.createTextField({
@@ -66,7 +64,7 @@ function tableViewTextfield() {
 	}
 
 	// Listen for return events.
-	textValue.addEventListener('return', function(e) {
+	textValue.addEventListener('click', function(e) {
 		refresh();
 		//textValue.blur();
 		//textValue.setValue('');

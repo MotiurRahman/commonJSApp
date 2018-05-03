@@ -1,77 +1,77 @@
-function alertTest() {
+function alertTest(){
 
-	var win = Ti.UI.createWindow({
-		backgroundColor : 'white'
-	});
+var win=Ti.UI.createWindow({
+backgroundColor:'white'}),
 
-	var button = Ti.UI.createButton({
-		title : 'Open Popover!'
-	});
-	button.addEventListener('click', function(e) {
-		popover.show({
-			view : button
-		});
-	});
-	win.add(button);
-	var rightButton = Ti.UI.createButton({
-		title : 'Robin'
-	});
 
-	var contentWindow = Ti.UI.createWindow({
-		rightNavButton : rightButton,
-		title : 'Kermit'
-	});
+button=Ti.UI.createButton({
+title:'Open Popover!'});
 
-	var popover = Ti.UI.iPad.createPopover({
-		backgroundColor : 'green',
-		contentView : Ti.UI.iOS.createNavigationWindow({
-			width : 250,
-			height : 300,
-			window : contentWindow
-		})
-	});
+button.addEventListener('click',function(e){
+popover.show({
+view:button});
 
-	rightButton.addEventListener('click', function(e) {
-		//alert("But green's the color of spring.");
+}),
+win.add(button);
+var rightButton=Ti.UI.createButton({
+title:'Robin'}),
 
-	});
 
-	var tableData = [{
-		title : 'Apples'
-	}, {
-		title : 'Bananas'
-	}, {
-		title : 'Carrots'
-	}, {
-		title : 'Potatoes'
-	}];
+contentWindow=Ti.UI.createWindow({
+rightNavButton:rightButton,
+title:'Kermit'}),
 
-	var table = Ti.UI.createTableView({
-		data : tableData
-	});
-	contentWindow.add(table);
 
-	var dialog = Ti.UI.createAlertDialog({
-		message : 'The file has been deleted',
-		ok : 'Okay',
-		title : 'File Deleted'
-	});
+popover=Ti.UI.iPad.createPopover({
+backgroundColor:'green',
+contentView:Ti.UI.iOS.createNavigationWindow({
+width:250,
+height:300,
+window:contentWindow})});
 
-	table.addEventListener('click', function(e) {
 
-		popover.hide();
-		setTimeout(function() {
 
-			dialog.show();
+rightButton.addEventListener('click',function(e){
 
-		}, 50);
-	});
 
-	//win.add(table);
-	contentWindow.add(table);
+});
 
-	return win;
+var tableData=[{
+title:'Apples'},
+{
+title:'Bananas'},
+{
+title:'Carrots'},
+{
+title:'Potatoes'}],
+
+
+table=Ti.UI.createTableView({
+data:tableData});
+
+contentWindow.add(table);
+
+var dialog=Ti.UI.createAlertDialog({
+message:'The file has been deleted',
+ok:'Okay',
+title:'File Deleted'});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return table.addEventListener('click',function(e){popover.hide(),setTimeout(function(){dialog.show()},50)}),contentWindow.add(table),win;
 
 }
 
-module.exports = alertTest;
+module.exports=alertTest;

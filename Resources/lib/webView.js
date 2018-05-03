@@ -1,24 +1,23 @@
 function webTest() {
-	var win = Ti.UI.createWindow();
-	var webview = Ti.UI.createWebView({
-		url : '/index-withiframe.html'
+
+	var win = Ti.UI.createWindow({
+		backgroundColor : '#fff',
+		layout : "vertical"
 	});
-	var button = Ti.UI.createButton({
-		title : 'fromTitanium',
-		height : '50dp',
-		width : '130dp'
-	});
-	button.addEventListener('click', function(e) {
-		Ti.App.fireEvent('app:fromTitanium', {
-			message : 'event fired from Titanium, handled in WebView'
-		});
-	});
-	Ti.App.addEventListener('app:fromWebView', function(e) {
-		alert(e.message);
+	var web = Ti.UI.createWebView({
+		url : '1.html',
+		top : 0,
+		height : 300,
 	});
 
-	win.add(webview);
-	win.add(button);
+	web.addEventListener('load', function() {
+		var image = web.toImage();
+		var nextPage = require('lib/windowTin');
+		var Next_win = new nextPage(image);
+		Next_win.open();
+	});
+	win.add(web);
+
 	return win;
 
 }

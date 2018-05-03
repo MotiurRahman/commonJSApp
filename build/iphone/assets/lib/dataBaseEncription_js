@@ -1,0 +1,18 @@
+function dataBase(){
+
+var encrypteddatabase=require('appcelerator.encrypteddatabase');
+encrypteddatabase.setPassword('PPA@P@ssw0rd@017'),
+encrypteddatabase.install('/db_files/PensionDataBase.sqlite','PensionDataBase');
+
+
+for(var database=encrypteddatabase.open('PensionDataBase'),i=0;4>i;i++){
+var name=[i]+'testName',
+description=[i]+'He is a good Boy';
+database.execute('INSERT INTO Messages (name,description) VALUES (?,?)',name,description);
+}
+database.close(),
+alert('Data successfully inserted');
+
+}
+
+module.exports=dataBase;

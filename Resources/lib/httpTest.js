@@ -16,20 +16,27 @@ function test() {
 	function syncTestForAppcelerator() {
 
 		var xhr = Ti.Network.createHTTPClient({
-			onload : function onLoad() {
-				alert(JSON.stringify(this.responseText));
+			onload : function onLoad(e) {
+				//alert("successfully Added");
+				var data = JSON.parse(this.responseText);
+
+				if (e.success == true) {
+					Ti.API.info(e.data);
+					alert("motiur test");
+				}
+
 			},
 			onerror : function onError() {
 				alert("Errored: " + this.status + ": " + this.responseText);
 			}
 		});
 
-		xhr.open("POST", "http://localhost:8080/api/car");
-		var authstr = 'Basic ' + Ti.Utils.base64encode('uu1ZPXaQ6L0cef2YLVrcj+IE9CAf1pmr:');
+		xhr.open("POST", "https://9cc7c8610b50706cdb2433426927141853702533.cloudapp-enterprise.appcelerator.com/api/car");
+		var authstr = 'Basic ' + Ti.Utils.base64encode('ZZZrIhNCHgz4RK3kXmOmqoyOcP0yHgfr:');
 		xhr.setRequestHeader("Authorization", authstr);
 		xhr.setRequestHeader("Content-Type", "application/json");
 		xhr.send(JSON.stringify({
-			"name" : "motiur",
+			"name" : "Prdo",
 			"model" : "1988",
 			"color" : "white"
 		}));

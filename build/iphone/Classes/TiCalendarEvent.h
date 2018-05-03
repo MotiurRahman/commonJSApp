@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -14,15 +14,14 @@
 @class CalendarModule;
 
 @interface TiCalendarEvent : TiProxy {
-@private
-    
-    CalendarModule* module;
-    EKEvent* event;
-}
--(id)_initWithPageContext:(id<TiEvaluator>)context event:(EKEvent*)event_ calendar:(EKCalendar*)calendar_ module:(CalendarModule*)module_;
--(EKEvent*)event;
-+(NSArray*) convertEvents:(NSArray*)events_ withContext:(id<TiEvaluator>)context_  calendar:(EKCalendar*)calendar_ module:(CalendarModule*)module_;
+  @private
 
+  CalendarModule *module;
+  EKEvent *event;
+}
+- (id)_initWithPageContext:(id<TiEvaluator>)context event:(EKEvent *)event_ calendar:(EKCalendar *)calendar_ module:(CalendarModule *)module_;
+- (EKEvent *)event;
++ (NSArray *)convertEvents:(NSArray *)events_ withContext:(id<TiEvaluator>)context_ calendar:(EKCalendar *)calendar_ module:(CalendarModule *)module_;
 
 @end
 

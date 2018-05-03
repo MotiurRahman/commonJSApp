@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -11,13 +11,13 @@
 #define commonJS_App_ThirdpartyNS_h
 
 #ifndef __TI_NAMESPACE_PREFIX_
-#define __TI_NAMESPACE_PREFIX_	TI
+#define __TI_NAMESPACE_PREFIX_ TI
 #endif
 
 #ifndef __TI_NS_SYMBOL
 // Must have multiple levels of macros so that __TI_NAMESPACE_PREFIX_ is
 // properly replaced by the time the namespace prefix is concatenated.
-#define __TI_NS_REWRITE(ns, symbol) ns ## _ ## symbol
+#define __TI_NS_REWRITE(ns, symbol) ns##_##symbol
 #define __TI_NS_BRIDGE(ns, symbol) __TI_NS_REWRITE(ns, symbol)
 #define __TI_NS_SYMBOL(symbol) __TI_NS_BRIDGE(__TI_NAMESPACE_PREFIX_, symbol)
 #endif
@@ -165,26 +165,9 @@
 #define AudioStreamer __TI_NS_SYMBOL(AudioStreamer)
 #endif
 
-
 // SCListener
 #ifndef SCListener
 #define SCListener __TI_NS_SYMBOL(SCListener)
-#endif
-
-// Base64Transcoder
-#ifndef EstimateBas64EncodedDataSize
-#define EstimateBas64EncodedDataSize __TI_NS_SYMBOL(EstimateBas64EncodedDataSize)
-#endif
-#ifndef EstimateBas64DecodedDataSize
-// libtiverify dependency
-// EstimateBas64DecodedDataSize is now TI_EstimateBas64DecodedDataSize
-#endif
-#ifndef Base64EncodeData
-#define Base64EncodeData __TI_NS_SYMBOL(Base64EncodeData)
-#endif
-#ifndef Base64DecodeData
-// libtiverify dependency
-// Base64DecodeData is now TI_Base64DecodeData
 #endif
 
 // PlausibleDatabase

@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -13,15 +13,15 @@
 
 @implementation TiUIiOSSystemButtonStyleProxy
 
--(NSString*)apiName
+- (NSString *)apiName
 {
-    return @"Ti.UI.iOS.SystemButtonStyle";
+  return @"Ti.UI.iOS.SystemButtonStyle";
 }
 
+MAKE_SYSTEM_PROP(DONE, UIBarButtonItemStyleDone);
+MAKE_SYSTEM_PROP(BORDERED, UIBarButtonItemStylePlain);
+MAKE_SYSTEM_PROP(PLAIN, UIBarButtonItemStylePlain);
 
-MAKE_SYSTEM_PROP(DONE,UIBarButtonItemStyleDone);
-MAKE_SYSTEM_PROP(BORDERED,UIBarButtonItemStyleBordered);
-MAKE_SYSTEM_PROP(PLAIN,UIBarButtonItemStylePlain);
 @end
 
 #endif

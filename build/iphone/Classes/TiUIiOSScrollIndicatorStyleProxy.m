@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -14,14 +14,14 @@
 
 @implementation TiUIiOSScrollIndicatorStyleProxy
 
--(NSString*)apiName
+- (NSString *)apiName
 {
-    return @"Ti.UI.iOS.ScrollIndicatorStyle";
+  return @"Ti.UI.iOS.ScrollIndicatorStyle";
 }
 
-MAKE_SYSTEM_PROP(DEFAULT,UIScrollViewIndicatorStyleDefault);
-MAKE_SYSTEM_PROP(BLACK,UIScrollViewIndicatorStyleBlack);
-MAKE_SYSTEM_PROP(WHITE,UIScrollViewIndicatorStyleWhite);
+MAKE_SYSTEM_PROP(DEFAULT, UIScrollViewIndicatorStyleDefault);
+MAKE_SYSTEM_PROP(BLACK, UIScrollViewIndicatorStyleBlack);
+MAKE_SYSTEM_PROP(WHITE, UIScrollViewIndicatorStyleWhite);
 
 @end
 

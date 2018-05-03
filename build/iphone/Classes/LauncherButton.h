@@ -1,17 +1,16 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
  * WARNING: This is generated code. Modify at your own risk and without support.
  */
 
-
 // A good bit of this code was derived from the Three20 project
 // and was customized to work inside commonJS_App
 //
-// All modifications by commonJS_App are licensed under 
+// All modifications by commonJS_App are licensed under
 // the Apache License, Version 2.0
 //
 //
@@ -36,21 +35,19 @@
 @class LauncherItem;
 
 @interface LauncherButton : UIButton {
-	BOOL dragging;
-	BOOL editing;
-	LauncherItem *item;
-	UIButton *button;
-	UIButton *closeButton;
-	UIButton *badge;
+  BOOL dragging;
+  BOOL editing;
+  LauncherItem *item;
+  UIButton *button;
+  UIButton *closeButton;
+  UIButton *badge;
 }
 
-@property(nonatomic,readwrite,retain) LauncherItem *item;
-@property(nonatomic,readonly) UIButton *closeButton;
+@property (nonatomic, readwrite, retain) LauncherItem *item;
+@property (nonatomic, readonly) UIButton *closeButton;
 
-@property(nonatomic) BOOL dragging;
-@property(nonatomic) BOOL editing;
+@property (nonatomic) BOOL dragging;
+@property (nonatomic) BOOL editing;
 @end
-
-
 
 #endif

@@ -1,0 +1,278 @@
+function barcode(){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function reset(){
+scannedBarcodes={},
+scannedBarcodesCount=0,
+
+
+scanResult.text=' ',
+scanContentType.text=' ',
+scanFormat.text=' ',
+scanParsed.text=' ';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function parseContentType(contentType){return(
+contentType===
+Barcode.URL?
+'URL':contentType===
+Barcode.SMS?
+'SMS':contentType===
+Barcode.TELEPHONE?
+'TELEPHONE':contentType===
+Barcode.TEXT?
+'TEXT':contentType===
+Barcode.CALENDAR?
+'CALENDAR':contentType===
+Barcode.GEOLOCATION?
+'GEOLOCATION':contentType===
+Barcode.EMAIL?
+'EMAIL':contentType===
+Barcode.CONTACT?
+'CONTACT':contentType===
+Barcode.BOOKMARK?
+'BOOKMARK':contentType===
+Barcode.WIFI?
+'WIFI':
+
+'UNKNOWN');
+
+}
+
+function parseResult(event){
+var msg='';
+switch(event.contentType){
+case Barcode.URL:
+msg='URL = '+event.result;
+break;
+case Barcode.SMS:
+msg='SMS = '+JSON.stringify(event.data);
+break;
+case Barcode.TELEPHONE:
+msg='Telephone = '+event.data.phonenumber;
+break;
+case Barcode.TEXT:
+msg='Text = '+event.result;
+break;
+case Barcode.CALENDAR:
+msg='Calendar = '+JSON.stringify(event.data);
+break;
+case Barcode.GEOLOCATION:
+msg='Geo = '+JSON.stringify(event.data);
+break;
+case Barcode.EMAIL:
+msg='Email = '+event.data.email+'\nSubject = '+event.data.subject+'\nMessage = '+event.data.message;
+break;
+case Barcode.CONTACT:
+msg='Contact = '+JSON.stringify(event.data);
+break;
+case Barcode.BOOKMARK:
+msg='Bookmark = '+JSON.stringify(event.data);
+break;
+case Barcode.WIFI:
+return'WIFI = '+JSON.stringify(event.data);
+default:
+msg='unknown content type';}
+
+
+return msg;
+}var Barcode=require('ti.barcode');Barcode.allowRotation=!0,Barcode.displayedMessage=' ',Barcode.allowMenu=!1,Barcode.allowInstructions=!1,Barcode.useLED=!0;var window=Ti.UI.createWindow({backgroundColor:'white'}),scrollView=Ti.UI.createScrollView({contentWidth:'auto',contentHeight:'auto',top:0,showVerticalScrollIndicator:!0,layout:'vertical'}),overlay=Ti.UI.createView({backgroundColor:'transparent',top:0,right:0,bottom:0,left:0}),bottomView=Ti.UI.createButton({title:'Aim your phone at the VIN barcode in the drive side door jamb',textAlign:'center',color:'#fff',backgroundColor:'#000',style:0,font:{fontWeight:'bold',fontSize:16},width:Ti.UI.FILL,height:150,bottom:0});overlay.add(bottomView);var topView=Ti.UI.createButton({title:'Scan VIN Barcode',textAlign:'center',color:'#fff',backgroundColor:'#000',style:0,font:{fontWeight:'bold',fontSize:16},width:Ti.UI.FILL,height:80,top:0});overlay.add(topView);var scanCode=Ti.UI.createButton({title:'Scan Code',width:150,height:60,top:20});scanCode.addEventListener('click',function(){reset(),Barcode.capture({animate:!0,overlay:overlay,showCancel:!0,showRectangle:!0,keepOpen:!0})}),scrollView.add(scanCode);var scanImage=Ti.UI.createButton({title:'Scan Image from Gallery',width:150,height:60,top:20});scanImage.addEventListener('click',function(){reset(),Ti.Media.openPhotoGallery({success:function(evt){Barcode.parse({image:evt.media})}})}),scrollView.add(scanImage);var scannedBarcodes={},scannedBarcodesCount=0;Barcode.addEventListener('error',function(e){scanContentType.text=' ',scanFormat.text=' ',scanParsed.text=' ',scanResult.text=e.message}),Barcode.addEventListener('cancel',function(e){Ti.API.info('Cancel received')}),Barcode.addEventListener('success',function(e){Ti.API.info('Success called with barcode: '+e.result),scannedBarcodes[''+e.result]||(scannedBarcodes[e.result]=!0,scannedBarcodesCount+=1,cancelButton.title='Finished ('+scannedBarcodesCount+' Scanned)',scanResult.text+=e.result+' ',scanContentType.text+=parseContentType(e.contentType)+' ',scanFormat.text+=e.format+' ',scanParsed.text+=parseResult(e)+' ')}),scrollView.add(Ti.UI.createLabel({text:'You may need to rotate the device',top:10,height:Ti.UI.SIZE||'auto',width:Ti.UI.SIZE||'auto'})),scrollView.add(Ti.UI.createLabel({text:'Result: ',textAlign:'left',top:10,left:10,color:'black',height:Ti.UI.SIZE||'auto'}));var scanResult=Ti.UI.createLabel({text:' ',textAlign:'left',top:10,left:10,color:'black',height:Ti.UI.SIZE||'auto'});scrollView.add(scanResult),scrollView.add(Ti.UI.createLabel({text:'Content Type: ',top:10,left:10,textAlign:'left',color:'black',height:Ti.UI.SIZE||'auto'}));var scanContentType=Ti.UI.createLabel({text:' ',textAlign:'left',top:10,left:10,color:'black',height:Ti.UI.SIZE||'auto'});scrollView.add(scanContentType),scrollView.add(Ti.UI.createLabel({text:'Format: ',textAlign:'left',top:10,left:10,color:'black',height:Ti.UI.SIZE||'auto'}));var scanFormat=Ti.UI.createLabel({text:' ',textAlign:'left',top:10,left:10,color:'black',height:Ti.UI.SIZE||'auto'});scrollView.add(scanFormat),scrollView.add(Ti.UI.createLabel({text:'Parsed: ',textAlign:'left',top:10,left:10,color:'black',height:Ti.UI.SIZE||'auto'}));var scanParsed=Ti.UI.createLabel({text:' ',textAlign:'left',top:10,left:10,color:'black',height:Ti.UI.SIZE||'auto'});
+
+
+return scrollView.add(scanParsed),window.add(scrollView),window;
+
+
+}
+
+module.exports=barcode;

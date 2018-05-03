@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -8,22 +8,22 @@
  */
 #ifdef USE_TI_UIIMAGEVIEW
 
-#import "TiViewProxy.h"
 #import "ImageLoader.h"
+#import "TiViewProxy.h"
 
-@interface TiUIImageViewProxy : TiViewProxy<ImageLoaderDelegate> {
-	ImageLoaderRequest *urlRequest;
-    NSURL* imageURL;
+@interface TiUIImageViewProxy : TiViewProxy <ImageLoaderDelegate> {
+  ImageLoaderRequest *urlRequest;
+  NSURL *imageURL;
 }
 
-@property (nonatomic,retain) NSURL* imageURL;
+@property (nonatomic, retain) NSURL *imageURL;
 #ifdef TI_USE_KROLL_THREAD
-@property (nonatomic, assign) NSString* loadEventState;
+@property (nonatomic, assign) NSString *loadEventState;
 #endif
 
--(void)cancelPendingImageLoads;
--(void)startImageLoad:(NSURL *)url;
--(void)propagateLoadEvent:(NSString *)stateString;
+- (void)cancelPendingImageLoads;
+- (void)startImageLoad:(NSURL *)url;
+- (void)propagateLoadEvent:(NSString *)stateString;
 
 @end
 

@@ -1,0 +1,114 @@
+
+exports.pushSubscribe=function(){
+
+
+
+
+
+function receivePush(e){
+Ti.API.info('Received push: '+JSON.stringify(e));
+var pushData=require('arrowDb');
+
+Ti.API.info('Title Name:'+e.data.title+'\n'+e.data.alert);
+}
+
+
+function deviceTokenSuccess(e){
+deviceToken=e.deviceToken;
+}
+
+function deviceTokenError(e){
+Ti.API.info('Failed to register for push notifications! '+e.error);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function subscribeToChannel(){
+
+
+Cloud.PushNotifications.subscribeToken({
+device_token:deviceToken,
+channel:'update_alart',
+type:'android'==Ti.Platform.name?'android':'ios'},
+function(e){
+e.success?
+alert('Subscribed'):
+
+Ti.API.info('Error:\n'+(e.error&&e.message||JSON.stringify(e)));
+
+});
+}var Cloud=require('ti.cloud'),deviceToken=null;if(('iphone'===Ti.Platform.osname||'ipad'===Ti.Platform.osname)&&8<=parseInt(Ti.Platform.version.split('.')[0])){function registerForPush(){Ti.Network.registerForPushNotifications({success:deviceTokenSuccess,error:deviceTokenError,callback:receivePush}),Ti.App.iOS.removeEventListener('usernotificationsettings',registerForPush)}var acceptAction=Ti.App.iOS.createUserNotificationAction({identifier:'ACCEPT_IDENTIFIER',title:'Accept',activationMode:Ti.App.iOS.USER_NOTIFICATION_ACTIVATION_MODE_FOREGROUND,destructive:!1,authenticationRequired:!0}),rejectAction=Ti.App.iOS.createUserNotificationAction({identifier:'REJECT_IDENTIFIER',title:'Reject',activationMode:Ti.App.iOS.USER_NOTIFICATION_ACTIVATION_MODE_BACKGROUND,destructive:!0,authenticationRequired:!0}),invitationCategory=Ti.App.iOS.createUserNotificationCategory({identifier:'INVITE_CATEGORY',actionsForDefaultContext:[acceptAction,rejectAction],actionsForMinimalContext:[acceptAction,rejectAction]});Ti.App.iOS.registerUserNotificationSettings({types:[Ti.App.iOS.USER_NOTIFICATION_TYPE_ALERT,Ti.App.iOS.USER_NOTIFICATION_TYPE_SOUND,Ti.App.iOS.USER_NOTIFICATION_TYPE_BADGE],categories:[invitationCategory]});;Ti.App.iOS.addEventListener('usernotificationsettings',registerForPush)}else Ti.Network.registerForPushNotifications({types:[Ti.Network.NOTIFICATION_TYPE_BADGE,Ti.Network.NOTIFICATION_TYPE_ALERT,Ti.Network.NOTIFICATION_TYPE_SOUND],success:deviceTokenSuccess,error:deviceTokenError,callback:receivePush});
+
+
+Cloud.Users.login({
+login:'motiur.mbstu@gmail.com',
+password:'1234'},
+function(e){
+if(e.success){
+var user=e.users[0];
+Ti.API.info('Success:\nid: '+user.id+'\nsessionId: '+Cloud.sessionId+'\nfirst name: '+user.first_name+'\nlast name: '+user.last_name),
+subscribeToChannel();
+}else
+Ti.API.info('Error:\n'+(e.error&&e.message||JSON.stringify(e)));
+
+});
+
+};

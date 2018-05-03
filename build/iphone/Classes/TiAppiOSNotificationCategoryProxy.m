@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -14,27 +14,27 @@
 
 @implementation TiAppiOSNotificationCategoryProxy
 
--(void)dealloc
+- (void)dealloc
 {
-	RELEASE_TO_NIL(_notificationCategory);
-	[super dealloc];
+  RELEASE_TO_NIL(_notificationCategory);
+  [super dealloc];
 }
 
--(NSString*)apiName
+- (NSString *)apiName
 {
-	return @"Ti.App.iOS.NotificationCategory";
+  return @"Ti.App.iOS.NotificationCategory";
 }
--(UIUserNotificationCategory*)notificationCategory
+- (UIUserNotificationCategory *)notificationCategory
 {
-	if (_notificationCategory == nil) {
-		_notificationCategory = [[UIUserNotificationCategory alloc] init];
-	}
-	return _notificationCategory;
+  if (_notificationCategory == nil) {
+    _notificationCategory = [[UIUserNotificationCategory alloc] init];
+  }
+  return _notificationCategory;
 }
 
--(NSString*)identifier
+- (NSString *)identifier
 {
-	return [[self notificationCategory] identifier];
+  return [[self notificationCategory] identifier];
 }
 
 @end

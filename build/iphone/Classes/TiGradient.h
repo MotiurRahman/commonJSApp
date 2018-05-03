@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -15,45 +15,42 @@
 #import <QuartzCore/QuartzCore.h>
 
 typedef enum {
-	TiGradientTypeLinear,
-	TiGradientTypeRadial,
+  TiGradientTypeLinear,
+  TiGradientTypeRadial,
 } TiGradientType;
 
 @interface TiGradient : TiProxy {
-	TiGradientType type;
+  TiGradientType type;
 
-	TiPoint * startPoint;
-	TiPoint * endPoint;
+  TiPoint *startPoint;
+  TiPoint *endPoint;
 
-	TiDimension startRadius;
-	TiDimension endRadius;
-    
-	BOOL backfillStart;
-	BOOL backfillEnd;
-	
-	CGGradientRef cachedGradient;
-	
-	CFMutableArrayRef colorValues;
-	CGFloat * colorOffsets;	//A -1 indicates a lack of entry.
-	NSUInteger arraySize;
-	int offsetsDefined;
-@private
+  TiDimension startRadius;
+  TiDimension endRadius;
 
+  BOOL backfillStart;
+  BOOL backfillEnd;
+
+  CGGradientRef cachedGradient;
+
+  CFMutableArrayRef colorValues;
+  CGFloat *colorOffsets; //A -1 indicates a lack of entry.
+  NSUInteger arraySize;
+  int offsetsDefined;
+  @private
 }
 
-@property(nonatomic,readwrite,assign)	BOOL backfillStart;
-@property(nonatomic,readwrite,assign)	BOOL backfillEnd;
+@property (nonatomic, readwrite, assign) BOOL backfillStart;
+@property (nonatomic, readwrite, assign) BOOL backfillEnd;
 
--(void)paintContext:(CGContextRef)context bounds:(CGRect)bounds;
+- (void)paintContext:(CGContextRef)context bounds:(CGRect)bounds;
 
-+(TiGradient *)gradientFromObject:(id)value proxy:(TiProxy *)proxy;
++ (TiGradient *)gradientFromObject:(id)value proxy:(TiProxy *)proxy;
 
 @end
 
-@interface TiGradientLayer : CALayer
-{
-	TiGradient * gradient;
+@interface TiGradientLayer : CALayer {
+  TiGradient *gradient;
 }
-@property(nonatomic,readwrite,retain) TiGradient * gradient;
+@property (nonatomic, readwrite, retain) TiGradient *gradient;
 @end
-

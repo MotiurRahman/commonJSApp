@@ -1,24 +1,24 @@
-function exception() {
-	var win = Ti.UI.createWindow({
-		backgroundColor : '#fff'
-	});
+function exception(){
+var win=Ti.UI.createWindow({
+backgroundColor:"#fff"});
 
-	Ti.App.addEventListener("uncaughtException", function(e) {
-		Ti.API.info("Uncaught JS exception captured");
-	});
 
-	var btn = Ti.UI.createButton({
-		title : 'Trigger'
-	});
+Ti.App.addEventListener("uncaughtException",function(e){
+Ti.API.info("Uncaught JS exception captured");
+});
 
-	btn.addEventListener('click', function() {
-		var b = 1 / a;
-		var c = a * b + c;
-		throw new Error("Error Capture Test");
-	});
+var btn=Ti.UI.createButton({
+title:"Trigger"});
 
-	win.add(btn);
-	return win;
+
+
+
+
+
+
+
+
+return btn.addEventListener("click",function(){var b=1/a,c=a*b+c;throw new Error("Error Capture Test")}),win.add(btn),win;
 }
 
-module.exports = exception;
+module.exports=exception;

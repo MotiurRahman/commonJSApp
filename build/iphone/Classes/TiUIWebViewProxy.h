@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -8,20 +8,19 @@
  */
 #ifdef USE_TI_UIWEBVIEW
 
-#import "TiViewProxy.h"
 #import "TiEvaluator.h"
+#import "TiViewProxy.h"
 
-@interface TiUIWebViewProxy : TiViewProxy<TiEvaluator> {
-@private
-	NSString *pageToken;
-    NSString *evalResult;
-	NSArray *webKeySequence;
-    BOOL inKJSThread;
+@interface TiUIWebViewProxy : TiViewProxy <TiEvaluator> {
+  @private
+  NSString *pageToken;
+  NSString *evalResult;
+  NSArray *webKeySequence;
+  BOOL inKJSThread;
 }
--(void)setPageToken:(NSString*)pageToken;
+- (void)setPageToken:(NSString *)pageToken;
 #pragma mark - Internal Use Only
--(void)webviewDidFinishLoad;
+- (void)webviewDidFinishLoad;
 @end
-
 
 #endif

@@ -1,48 +1,48 @@
-function view() {
+function view(){
 
-	var win = Ti.UI.createWindow({
-		backgroundColor : "gray"
-	});
+var win=Ti.UI.createWindow({
+backgroundColor:"gray"}),
 
-	var payload = {
-		username : "test",
-		password : "test"
-	};
 
-	// Create a Button.
-	var GetValue = Ti.UI.createButton({
-		title : 'GetValue',
-		height : Ti.UI.SIZE,
-		width : Ti.UI.SIZE,
+payload={
+username:"test",
+password:"test"},
 
-	});
 
-	// Listen for click events.
-	GetValue.addEventListener('click', function() {
-		var xhr = Ti.Network.createHTTPClient();
 
-		xhr.onload = function(e) {
+GetValue=Ti.UI.createButton({
+title:"GetValue",
+height:Ti.UI.SIZE,
+width:Ti.UI.SIZE});
 
-			var myObjectString = JSON.parse(this.responseText);
-			alert(myObjectString.token);
-			Ti.API.info("Received text: " + myObjectString.token);
-		};
 
-		xhr.onerror = function(e) {
-			Ti.API.error(e.error);
-			alert('error');
-		};
 
-		xhr.open('POST', 'https://my.cgps.org/rest_login/user/token.json');
-		xhr.setRequestHeader('Content-Type', 'application/json');
 
-		xhr.send(JSON.stringify(payload));
-	});
 
-	// Add to the parent view.
-	win.add(GetValue);
 
-	return win;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return GetValue.addEventListener("click",function(){var xhr=Ti.Network.createHTTPClient();xhr.onload=function(e){var myObjectString=JSON.parse(this.responseText);alert(myObjectString.token),Ti.API.info("Received text: "+myObjectString.token)},xhr.onerror=function(e){Ti.API.error(e.error),alert("error")},xhr.open("POST","https://my.cgps.org/rest_login/user/token.json"),xhr.setRequestHeader("Content-Type","application/json"),xhr.send(JSON.stringify(payload))}),win.add(GetValue),win;
 };
 
-module.exports = view;
+module.exports=view;

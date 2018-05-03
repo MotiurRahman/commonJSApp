@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -14,14 +14,13 @@
 @class CalendarModule;
 
 @interface TiCalendarRecurrenceRule : TiProxy {
-@private
-    
-    EKRecurrenceRule* rule;
+  @private
+
+  EKRecurrenceRule *rule;
 }
 
-
--(id)_initWithPageContext:(id<TiEvaluator>)context rule:(EKRecurrenceRule*)rule_ ;
--(EKRecurrenceRule*)ruleForRecurrence;
+- (id)_initWithPageContext:(id<TiEvaluator>)context rule:(EKRecurrenceRule *)rule_;
+- (EKRecurrenceRule *)ruleForRecurrence;
 @end
 
 #endif

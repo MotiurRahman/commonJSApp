@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -10,19 +10,17 @@
 
 #import "TiProxy.h"
 
-
 @interface TiUIiOSStatusBarProxy : TiProxy {
-    
 }
 
-@property(nonatomic,readonly)	NSNumber *DEFAULT;
-@property(nonatomic,readonly)	NSNumber *GREY;
-@property(nonatomic,readonly)	NSNumber *GRAY;
-@property(nonatomic,readonly)	NSNumber *LIGHT_CONTENT;
+@property (nonatomic, readonly) NSNumber *DEFAULT;
+@property (nonatomic, readonly) NSNumber *GREY;
+@property (nonatomic, readonly) NSNumber *GRAY;
+@property (nonatomic, readonly) NSNumber *LIGHT_CONTENT;
 
-@property(nonatomic,readonly)	NSNumber *ANIMATION_STYLE_NONE;
-@property(nonatomic,readonly)	NSNumber *ANIMATION_STYLE_SLIDE;
-@property(nonatomic,readonly)	NSNumber *ANIMATION_STYLE_FADE;
+@property (nonatomic, readonly) NSNumber *ANIMATION_STYLE_NONE;
+@property (nonatomic, readonly) NSNumber *ANIMATION_STYLE_SLIDE;
+@property (nonatomic, readonly) NSNumber *ANIMATION_STYLE_FADE;
 
 @end
 

@@ -1,90 +1,90 @@
-function location() {
-	var win = Ti.UI.createWindow({
-		backgroundColor : '#fff',
-		layout : "vertical"
-	});
+function location(){
+var win=Ti.UI.createWindow({
+backgroundColor:'#fff',
+layout:'vertical'}),
 
-	// Create a Label.
-	var aLabel = Ti.UI.createLabel({
-		text : 'latLong',
-		color : "res",
-		font : {
-			fontSize : 20
-		},
-		height : Ti.UI.SIZE,
-		width : Ti.UI.SIZE,
-		top : 30,
-	});
 
-	// Add to the parent view.
-	win.add(aLabel);
 
-	var lat;
-	var longi;
+aLabel=Ti.UI.createLabel({
+text:'latLong',
+color:'res',
+font:{
+fontSize:20},
 
-	var locationAdded = false;
-	var handleLocation = function(e) {
-		if (!e.error) {
-			Ti.API.info(e.coords);
-			longi = e.coords.longitude;
+height:Ti.UI.SIZE,
+width:Ti.UI.SIZE,
+top:30});
 
-			lat = e.coords.latitude;
 
-		}
-	};
-	var addHandler = function() {
-		if (!locationAdded) {
-			Ti.Geolocation.addEventListener('location', handleLocation);
-			locationAdded = true;
-		}
-	};
-	var removeHandler = function() {
-		if (locationAdded) {
-			Ti.Geolocation.removeEventListener('location', handleLocation);
-			locationAdded = false;
-		}
-	};
 
-	Ti.Geolocation.accuracy = Ti.Geolocation.ACCURACY_BEST;
-	Ti.Geolocation.preferredProvider = Ti.Geolocation.PROVIDER_GPS;
+win.add(aLabel);
 
-	// Create a Button.
-	var Show = Ti.UI.createButton({
-		title : 'Show',
-		height : Ti.UI.SIZE,
-		width : Ti.UI.SIZE,
-		top : 200
+var lat,
+longi,
 
-	});
+locationAdded=!1,
+handleLocation=function(e){
+e.error||(
+Ti.API.info(e.coords),
+longi=e.coords.longitude,
 
-	// Listen for click events.
-	Show.addEventListener('click', function() {
+lat=e.coords.latitude);
 
-		if (Titanium.Platform.osname === "android") {
-			if (Ti.Geolocation.locationServicesEnabled) {
-				addHandler();
 
-				var activity = Ti.Android.currentActivity;
-				activity.addEventListener('destroy', removeHandler);
-				activity.addEventListener('pause', removeHandler);
-				activity.addEventListener('resume', addHandler);
+},
+addHandler=function(){
+locationAdded||(
+Ti.Geolocation.addEventListener('location',handleLocation),
+locationAdded=!0);
 
-				aLabel.setTex(lat + '\n' + longi);
-			} else {
-				alert('Please enable location services');
-			}
+},
+removeHandler=function(){
+locationAdded&&(
+Ti.Geolocation.removeEventListener('location',handleLocation),
+locationAdded=!1);
 
-		} else {
-			addHandler();
-			aLabel.setTex(lat + '\n' + longi);
-		}
+};
 
-	});
+Ti.Geolocation.accuracy=Ti.Geolocation.ACCURACY_BEST,
+Ti.Geolocation.preferredProvider=Ti.Geolocation.PROVIDER_GPS;
 
-	// Add to the parent view.
-	win.add(Show);
 
-	return win;
+var Show=Ti.UI.createButton({
+title:'Show',
+height:Ti.UI.SIZE,
+width:Ti.UI.SIZE,
+top:200});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return Show.addEventListener('click',function(){if('android'!==Titanium.Platform.osname)addHandler(),aLabel.setTex(lat+'\n'+longi);else if(Ti.Geolocation.locationServicesEnabled){addHandler();var activity=Ti.Android.currentActivity;activity.addEventListener('destroy',removeHandler),activity.addEventListener('pause',removeHandler),activity.addEventListener('resume',addHandler),aLabel.setTex(lat+'\n'+longi)}else alert('Please enable location services')}),win.add(Show),win;
 }
 
-module.exports = location;
+module.exports=location;

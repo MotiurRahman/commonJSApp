@@ -1,0 +1,44 @@
+function textAling(){
+
+var win=Ti.UI.createWindow({
+backgroundColor:"#fff",
+layout:"vertical"}),
+
+
+tf1=Ti.UI.createTextField({
+width:Ti.UI.FILL,
+top:20,
+height:40,
+left:20,
+right:20,
+color:"#000",
+borderColor:"red",
+borderWidth:1,
+
+keyboardType:Ti.UI.KEYBOARD_DEFAULT,
+returnKeyType:Ti.UI.RETURNKEY_DEFAULT}),
+
+
+tf3=Ti.UI.createTextField({
+width:Ti.UI.FILL,
+top:20,
+height:40,
+left:20,
+right:20,
+borderColor:"red",
+borderWidth:1,
+color:"#000",
+textAlign:Ti.UI.TEXT_ALIGNMENT_RIGHT,
+
+keyboardType:Ti.UI.KEYBOARD_DEFAULT,
+returnKeyType:Ti.UI.RETURNKEY_DEFAULT});
+
+
+
+
+
+return win.add(tf1),win.add(tf3),win;
+
+}
+
+module.exports=textAling;

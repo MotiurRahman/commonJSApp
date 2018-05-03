@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -13,17 +13,15 @@
 
 @implementation TiUIiOSTableViewScrollPositionProxy
 
--(NSString*)apiName
+- (NSString *)apiName
 {
-    return @"Ti.UI.iOS.TableViewScrollPosition";
+  return @"Ti.UI.iOS.TableViewScrollPosition";
 }
 
-
-MAKE_SYSTEM_PROP(NONE,  UITableViewScrollPositionNone);
-MAKE_SYSTEM_PROP(TOP,   UITableViewScrollPositionTop);
-MAKE_SYSTEM_PROP(MIDDLE,UITableViewScrollPositionMiddle);
-MAKE_SYSTEM_PROP(BOTTOM,UITableViewScrollPositionBottom);
-
+MAKE_SYSTEM_PROP(NONE, UITableViewScrollPositionNone);
+MAKE_SYSTEM_PROP(TOP, UITableViewScrollPositionTop);
+MAKE_SYSTEM_PROP(MIDDLE, UITableViewScrollPositionMiddle);
+MAKE_SYSTEM_PROP(BOTTOM, UITableViewScrollPositionBottom);
 
 @end
 

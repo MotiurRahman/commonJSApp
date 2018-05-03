@@ -1,19 +1,19 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
  * WARNING: This is generated code. Modify at your own risk and without support.
  */
 
-typedef struct TiBindingEventOpaque * TiBindingEvent;
+typedef struct TiBindingEventOpaque *TiBindingEvent;
 
 #if TARGET_OS_IPHONE
 
 #import "TiProxy.h"
 
-TiBindingEvent TiBindingEventCreateWithNSObjects(TiProxy * target, TiProxy * source, NSString * type, NSDictionary * payload);
+TiBindingEvent TiBindingEventCreateWithNSObjects(TiProxy *target, TiProxy *source, NSString *type, NSDictionary *payload);
 
 #endif
 
@@ -35,15 +35,14 @@ void TiBindingEventSetBubbles(TiBindingEvent event, bool bubbles);
  */
 
 enum {
-	kTiErrorCodeSuccess = 0,
-	kTiErrorUnknownFailure = -1,
+  kTiErrorCodeSuccess = 0,
+  kTiErrorUnknownFailure = -1,
 };
 void TiBindingEventSetErrorCode(TiBindingEvent event, NSInteger code);
 #if TARGET_OS_IPHONE
-void TiBindingEventSetErrorMessageWithNSString(TiBindingEvent event, NSString * message);
+void TiBindingEventSetErrorMessageWithNSString(TiBindingEvent event, NSString *message);
 #endif
 void TiBindingEventClearError(TiBindingEvent event);
-
 
 #pragma mark Processing and disposal
 

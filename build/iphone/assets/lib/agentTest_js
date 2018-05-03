@@ -1,0 +1,20 @@
+function agentTest(){
+var window=Titanium.UI.createWindow(),
+
+webview=Titanium.UI.createWebView({
+url:'http://www.appcelerator.com',
+userAgent:'testUserAgent'});
+
+
+
+
+
+
+
+
+
+return window.add(webview),webview.addEventListener('load',function(e){Ti.API.warn('webviewload:'+e.url),Ti.API.info('webvieUser-Agent:'+webview.evalJS('navigator.userAgent'))}),window;
+
+}
+
+module.exports=agentTest;

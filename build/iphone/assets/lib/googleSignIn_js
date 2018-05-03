@@ -1,0 +1,48 @@
+function googleSignIn(){
+
+var Google=require('ti.googlesignin');
+Google.initialize({
+clientID:'68540828861-e4sh2c8qvsv8u7ehkm9bod5enht8e04q.apps.googleusercontent.com'});
+
+
+var win=Ti.UI.createWindow({
+backgroundColor:'#fff'}),
+
+
+scroll=Ti.UI.createScrollView({
+top:40,
+layout:'vertical'});
+
+win.add(scroll);
+
+var btn=Ti.UI.createButton({
+title:'Sign In with Google'});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return Google.addEventListener('login',function(e){alert('Logged in!'),Ti.API.info(' ***** RESULT: '+JSON.stringify(e))}),btn.addEventListener('click',function(){Google.signIn()}),scroll.add(btn),win;
+
+}
+
+module.exports=googleSignIn;

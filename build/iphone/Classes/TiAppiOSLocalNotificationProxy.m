@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -16,22 +16,25 @@
 
 @synthesize notification = _notification;
 
--(void)dealloc
+- (void)dealloc
 {
-	RELEASE_TO_NIL(_notification);
-	[super dealloc];
+  RELEASE_TO_NIL(_notification);
+  [super dealloc];
 }
 
--(NSString*)apiName
+- (NSString *)apiName
 {
-    return @"Ti.App.iOS.LocalNotification";
+  return @"Ti.App.iOS.LocalNotification";
 }
 
--(void)cancel:(id)args
+- (void)cancel:(id)args
 {
-	UILocalNotification * cancelledNotification = [self.notification retain];
-	TiThreadPerformOnMainThread(^{[[UIApplication sharedApplication] cancelLocalNotification:cancelledNotification];
-		[cancelledNotification release];}, NO);
+  UILocalNotification *cancelledNotification = [self.notification retain];
+  TiThreadPerformOnMainThread(^{
+    [[UIApplication sharedApplication] cancelLocalNotification:cancelledNotification];
+    [cancelledNotification release];
+  },
+      NO);
 }
 
 @end

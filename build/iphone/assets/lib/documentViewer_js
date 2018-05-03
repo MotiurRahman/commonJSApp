@@ -1,0 +1,67 @@
+function documentViewer(){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function openPDF(){
+var fileName='motiur.pdf';
+
+
+
+
+isiOS11_2()&&(
+fileName=fileInTemporaryDirectory(fileName));
+
+
+var docViewer=Ti.UI.iOS.createDocumentViewer({
+url:fileName});
+
+
+docViewer.show();
+}
+
+
+function isiOS11_2(){
+var version=Ti.Platform.version.split('.');
+return 11<=parseInt(version[0])&&2<=parseInt(version[1]);
+}
+
+
+
+
+function fileInTemporaryDirectory(fileName){
+var file=Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory,fileName);
+
+if(!file.exists())
+
+return void alert('File does not exist in resources!');
+
+
+var newFile=Titanium.Filesystem.getFile(Ti.Filesystem.tempDirectory,fileName);return(
+newFile.createFile(),
+
+!newFile.exists())?void
+alert('New file could not be created in temporary directory!'):(
+
+
+
+newFile.write(file),
+
+newFile.nativePath);
+}var win=Ti.UI.createWindow({backgroundColor:'#fff'}),btn=Ti.UI.createButton({title:'Open PDF'});
+
+return btn.addEventListener('click',openPDF),win.add(btn),win;
+
+}
+
+module.exports=documentViewer;

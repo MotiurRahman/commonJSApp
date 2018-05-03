@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2009-2017 by Appcelerator, Inc. All Rights Reserved.
+ * Copyright (c) 2009-2018 by Appcelerator, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -15,27 +15,26 @@
 USE_VIEW_FOR_CONTENT_WIDTH
 USE_VIEW_FOR_CONTENT_HEIGHT
 
--(NSString*)apiName
+- (NSString *)apiName
 {
-    return @"Ti.UI.iOS.Stepper";
+  return @"Ti.UI.iOS.Stepper";
 }
 
--(NSNumber*)value
+- (NSNumber *)value
 {
-    return NUMDOUBLE([[(TiUIiOSStepper*)[self view] stepper] value]);
+  return NUMDOUBLE([[(TiUIiOSStepper *)[self view] stepper] value]);
 }
 
 #ifndef TI_USE_AUTOLAYOUT
--(TiDimension)defaultAutoWidthBehavior:(id)unused
+- (TiDimension)defaultAutoWidthBehavior:(id)unused
 {
-    return TiDimensionAutoSize;
+  return TiDimensionAutoSize;
 }
--(TiDimension)defaultAutoHeightBehavior:(id)unused
+- (TiDimension)defaultAutoHeightBehavior:(id)unused
 {
-    return TiDimensionAutoSize;
+  return TiDimensionAutoSize;
 }
 #endif
-
 
 @end
 #endif
